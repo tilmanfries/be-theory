@@ -1,0 +1,22 @@
+---
+title: "Mermaid demo"
+format:
+  revealjs:
+    theme: style.scss
+    transition: slide
+---
+
+## Scaling utilities in the EU proof
+
+```{mermaid}
+flowchart LR
+    %% --- styling ---------------------------------------------------
+    classDef txt fill:#ffffff,stroke-width:0,fontFamily:Roboto,fontSize:18px;
+    %% --- nodes -----------------------------------------------------
+    Worst["Worst"]:::txt
+    Best ["Best"] :::txt
+    Fp  ["f(p) Best + (1-f(p)) Worst"]:::txt
+    %% --- edges -----------------------------------------------------
+    Worst --- Best              %% horizontal line
+    Worst -.-> Fp               %% dotted helper to push Fp above
+```
