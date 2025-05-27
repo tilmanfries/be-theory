@@ -44,15 +44,6 @@ $font-family-sans-serif: "Roboto Slab", sans-serif;
   border-radius: 4px;
 }
 
-/* 5) Style for Axiom Blocks */
-.axiom {
-  border-left: 4px solid var(--my-green);
-  background-color: rgba(0, 77, 64, 0.1); /* Light overlay of MyGreen */
-  padding: 0.75rem 1rem;
-  margin: 1rem 0;
-  border-radius: 4px;
-}
-
 
 
 
@@ -61,8 +52,6 @@ $font-family-sans-serif: "Roboto Slab", sans-serif;
 .my-highlight-blue  { background-color: var(--my-blue);  color: #ffffff; }
 .my-highlight-green { background-color: var(--my-green); color: #ffffff; }
 .my-highlight-yellow{ background-color: var(--my-yellow);color: #000000; }
-.my-highlight-grey { background-color: #000000; color: #808080; }
-.my-highlight-black{ background-color: #000000;color: #ffffff; }
 
 .center img {
   display: flex;
@@ -86,4 +75,9 @@ $font-family-sans-serif: "Roboto Slab", sans-serif;
   transform: scale(0.95); /* Adjust the scale factor as needed */
   transform-origin: left center; /* Ensures proper alignment */
   line-height: 1.2; /* Adjust as needed */
+}
+
+.reveal .katex-display {
+  margin-top: 0em !important; /* Force override */
+  margin-bottom: 0em !important; /* Force override */
 }
