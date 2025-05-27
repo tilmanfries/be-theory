@@ -1,0 +1,82 @@
+---
+title: "Behavioral Economic Theory"
+subtitle: "Introduction"
+author: "Tilman Fries"
+format:
+  revealjs:
+    theme: style.scss
+    css:  custom.css
+    center: false
+    transition: slide
+quarto:
+  enable: [theorem]
+theorem:
+  environments:
+    axiom:       {name: "Axiom"}
+    proposition: {name: "Proposition"}
+    remark:      {name: "Remark"}
+    example:     {name: "Example"}
+    solution:    {name: "Solution"}
+---
+
+## About 
+
+::: {.no-bullets}
+
+- My name: Tilman Fries 
+- Behavioral economist, between theory and experiments. 
+- You can call me by my first name.
+    - Also when we speak in German.
+    - Just please no Prof., Professor, Dr., etc. 
+:::
+
+---
+
+### Course organization 
+
+::: {.no-bullets .incremental}
+
+- (We will discuss content in a minute)
+- Meetings Tuesdays, 8 - 12. 
+- Usually exercise first, then lecture. 
+
+:::
+
+--- 
+
+### Moodle
+
+::: {.no-bullets .incremental}
+
+- Moodle is an important resource for us:
+    - Slides
+    - Syllabus
+    - Exercise sheets
+    - Forum 
+    - ...
+- Moodle link: https://moodle.lmu.de/course/view.php?id=39806
+- Moodle key: `tversky`
+:::
+
+--- 
+
+### Exam 
+
+::: {.no-bullets .incremental}
+
+- You will write an exam.
+    - Probably at the date of the last lecture (July 22).
+    - But I will let you know after confirmation from ISC. 
+
+- You can bring a calculator and one page with handwritten notes (DIN A4, written on both sides).
+
+- Expect similar questions in the exam as in the exercises.
+    - So prepare the exercises *before* we discuss them in class. 
+    - AI can help you with exercises but not with exam. 
+
+:::
+---
+
+# Questions on organization?
+
+--- 

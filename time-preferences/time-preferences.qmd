@@ -1,0 +1,434 @@
+---
+title: "Time Preferences"
+subtitle: "Exponential discounting, present bias"
+author: "Tilman Fries"
+format:
+  revealjs:
+    theme: style.scss     # your custom theme
+    css:   custom.css     # any tweaks
+    center: false
+    transition: slide
+quarto:
+  enable: [theorem]       # allow theorem-like blocks
+theorem:
+  environments:
+    definition:  {name: "Definition"}
+    proposition: {name: "Proposition"}
+    example:     {name: "Example"}
+    remark:      {name: "Remark"}
+    solution:    {name: "Solution"}
+---
+
+<!-- ============================ SECTION 1 ============================ -->
+## Choice over time
+
+::: {.incremental .no-bullets}
+- The costs and benefits of decisions often occur at different point in time.
+- *Studying*, *exercising*, *investing* today bring future rewards, but present costs. 
+- *Borrowing*, *sin foods*, *recreational drugs* bring present rewards but future costs.
+:::
+
+---
+
+### The distribution of costs and benefits over time is often highly predictable...
+
+::: {.unnumbered style="text-align: center;"}
+![](figures/DrinksHangover.png){width=100%}
+:::
+
+---
+
+### ...but that doesn't lead to easily navigable decisions
+
+::: {.unnumbered style="text-align: center;"}
+![](figures/TimeUse.png){width=50%}
+:::
+
+In Allcott et al. (AER, 2022) most students say they *exercise too little, waste time online, eat junk, save too little, etc.*
+
+---
+
+## Formalizing choice over time 
+
+:::{.no-bullets}
+- Consider an agent with preferences over outcomes $\mathbf z.$
+- We have discrete time periods $t=0,\dots,T.$
+- In every $t,$ the agent receives **instantaneous utility** $u_t = u(z_t).$ 
+    - This results in an overall **utility stream** $\mathbf u=(u_0,\dots,u_T).$
+- Preferences at time $t$: $\succ_t$
+:::
+
+---
+
+## {auto-animate="true"}
+### Time discounting
+
+:::{.no-bullets}
+- We assume that utility is *time-separable*. This implies that we can write utility from the vantage point of $t$ as 
+$$
+\small
+U_t(u) = \sum_{k=0}^{T-t}D(k)u_{t+k} = D(0) + D(1)u_{t+1}+\dots + D(T-t)u_T.
+$$
+:::
+
+- Above, $D(k)$ is a **discount factor.**
+
+---
+
+## {auto-animate="true"}
+### Time discounting
+
+:::{.no-bullets}
+$$
+\small
+U_t(u) = \sum_{k=0}^{T-t}D(k)u_{t+k} = D(0) + D(1)u_{t+1}+\dots + D(T-t)u_T.
+$$
+:::
+
+- Above, $D(k)$ is a **discount factor.**
+
+:::{.axiom}
+**Assumption.** The discount factor is **exponential** if $D(k) = \delta^k,$ where $\delta\in(0,1]$. If $\delta < 1,$ this means that the agent weights the future less strongly than the present.
+:::
+
+---
+
+## {auto-animate="true"}
+
+:::{.axiom}
+**Assumption.** The discount factor is **exponential** if $D(k) = \delta^k,$ where $\delta\in(0,1]$. If $\delta < 1,$ this means that the agent weights the future less strongly than the present.
+:::
+
+:::{.no-bullets}
+- Standard economic models use exponential discounting. An arbitrary choice? 
+
+> *"It is completely arbitrary to assume that the individual behaves as to maximize an integral envisaged in [the exponential discounting model]"* — Paul Samuelson (1937), in the article introducing the concept.
+:::
+
+---
+
+## {auto-animate="true"}
+### A better (?) reason for exponential discounting
+::: {.no-bullets }
+- Suppose we believe that human behavior is time-consistent. By this, we mean that individuals carry through with their plans.
+:::
+
+::: {.definition}
+For all $t$ and $\tau\!>\!t$ an agent is **time-consistent** if  
+$\boldsymbol{z} \succ_t \boldsymbol{z}' \iff \boldsymbol{z} \succ_\tau \boldsymbol{z}'$  
+whenever $\boldsymbol{z}_t=\boldsymbol{z}_t'$ for $t<\tau$.
+:::
+
+---
+
+## {auto-animate="true"}
+### Time-consistency: Example 
+
+::: {.definition}
+For all $t$ and $\tau\!>\!t$ an agent is **time-consistent** if  
+$\boldsymbol{z} \succ_t \boldsymbol{z}' \iff \boldsymbol{z} \succ_\tau \boldsymbol{z}'$  
+whenever $\boldsymbol{z}_t=\boldsymbol{z}_t'$ for $t<\tau$.
+:::
+
+::: {.no-bullets}
+- Consider the outcome vectors $\boldsymbol{z} = (\text{relax, gym})$ and $\boldsymbol{z}' = (\text{relax, relax}).$ 
+- Time consistency says that if 
+    - today, I prefer going to the gym tomorrow ($\boldsymbol{z} \succ_0 \boldsymbol{z}'$),
+    - then, tomorrow, I will still prefer going to the gym ($\boldsymbol{z} \succ_1 \boldsymbol{z}'$)
+:::
+
+---
+
+### Exponential Discounting implies time consistency (and vice versa)
+
+
+::: proposition
+**Proposition.**
+An agent with utility function $U_t(u) = \sum_{k=0}^{T-t}D(k)u_{t+k}$ is time-consistent if and only if the discount function is exponential.
+:::
+
+(proof on board)
+
+::: {.incremental .no-bullets}
+- Therefore, if time consistency is important to us, we should assume exponential discounting. 
+- Conversely, if we do not believe that humans are time-consistent, we should not assume exponential discounting.
+:::
+
+---
+
+# Testing for time consistency?
+
+---
+
+### Early evidence – Thaler (EL, 1980) 
+
+Thaler asks participants the following question:
+
+> How much would you require in `[one month / one year / ten years]` to make you indifferent to receiving $15 now?
+
+|  | 1 mo | 1 yr | 10 yrs |
+|--|------|-----:|-------:|
+| Median answer | $20 | $50 | $100 | 
+| Implied monthly $\delta$ | .75 | .90 | .98 |
+
+
+::: fragment
+- $\delta$ depends on the time horizon → violates ED.  
+- People demand a big premium to delay by *one* month, smaller extra premium for later delays.
+:::
+
+---
+
+### The β-δ model (Present Bias)
+
+$$
+U_{t}^{\beta,\delta}(\mathbf u)=u_t+\beta\sum_{k=1}^{T-t}\delta^{\,k}u_{t+k},
+\qquad 0<\beta\le1.
+$$
+
+- $\delta$ : standard exponential discount factor
+- $\beta<1$ : **present bias** – all future periods are devalued by a common factor
+
+With $\beta=0.8$ Thaler’s answers give roughly **constant** $\delta\!\approx\!.94$.
+
+---
+
+### Problems with Thaler (EL, 1980)
+
+:::{.no-bullets}
+- Thaler's experiment did not use real incentives. Thus, the answers may not have been chosen carefully. 
+- For example, the implied discount rate is high.
+    - At such high $\delta,$ study participants should borrow generously by taking on consumer credit, more than people usually do. 
+- But incentivizing may be difficult.
+    - Logistics of paying someone in 10 years. 
+    - Hassle costs for participants if they have to return to the lab for cash payments...
+:::
+
+---
+
+## {auto-animate="true"}
+### Stationarity vs. Present Bias
+
+Modern tests of time discounting often test for stationarity. Denote an option generating outcome $z$ in $t$ as $(z,t)$. Then:
+
+::: definition
+**Stationarity**: $\succ$ depends only on *delay difference*, not on calendar date  
+$$
+\small
+(z,t{+}\Delta_1)\sim_t(z',t{+}\Delta_2)
+\;\;\Longrightarrow\;\;
+(z,t'{+}\Delta_1)\sim_{t'}(z',t'{+}\Delta_2),
+$$
+for $\Delta_1, \Delta_2 > 0.$
+:::
+
+- ED ⇒ stationarity.  
+
+## {auto-animate="true"}
+### Stationarity vs. Present Bias
+
+::: definition
+**Stationarity**: $\succ$ depends only on *delay difference*, not on calendar date  
+$$
+\small
+(z,t{+}\Delta_1)\sim_t(z',t{+}\Delta_2)
+\;\;\Longrightarrow\;\;
+(z,t'{+}\Delta_1)\sim_{t'}(z',t'{+}\Delta_2),
+$$
+for $\Delta_1, \Delta_2 > 0.$
+:::
+
+- **Present bias** breaks stationarity: “X€ now vs. Y€ in a week” ≠ “X€ tomorrow vs. Y€ in eight days”.
+
+---
+
+## {auto-animate="true"}
+### Andreoni and Sprenger (AER, 2012): Convex Time-Budget (CTB) experiment
+
+::: {.no-bullets .incremental}
+- A&S provide a comprehensive empirical description of choice over time.
+- Participants have to allocate a budget of 100 tokens between two dates (e.g., today or in 10 weeks).
+    - These tokens will be converted to dollars and paid out (incentives). 
+    - The exchange rates may differ between two dates → trace demand curves.
+:::
+
+---
+
+## {auto-animate="true"}
+### Andreoni and Sprenger (AER, 2012): Convex Time-Budget (CTB) experiment
+
+::: {.no-bullets .incremental}
+- They include a host of measures to convince participants that:
+    - They will be paid at the specified date. 
+    - There are no hassle costs involved with delayed payments.
+        - Payments are delivered by a mailed check, even today's.
+:::
+
+---
+
+### A&S: Decision screen
+
+![](figures/CTBDecisionScreen.png){width=70%}
+
+---
+
+### A&S: Choices over time are stationary
+
+![](figures/CBTDemandFunctions.png){width=70%}
+
+- Allocations between $t$ and $t+k$ do not depend on $t$ ⇒ they are **stationary**.  
+- Estimated $\beta\approx1$, annual $\delta\approx.7$.
+
+---
+
+### What gives? 
+
+::: {.no-bullets .incremental}
+- The experiment of A&S seems like a resounding success of the exponential discounting model. It can fit the data extremely well. 
+- Maybe A&S overcontrolled for potential confounds:
+    - Participants did not receive any immediate payment, even today's earnings were delivered by mail to their postbox. 
+    - Thus there may still be scope for present bias not between today vs. future but between *right now* vs. later.
+:::
+
+---
+
+### How soon is now? 
+
+::: {.no-bullets .incremental}
+- Balakrishnan, Haushofer, Jakiela (ExpEcon, 2020) conduct a CTB experiment where they vary the "now" payout. 
+- All participants receive money via mobile payment. 
+- They either pay the "now" payout immediately or at the end of the day. 
+:::
+
+---
+
+### BHJ (2020): Now is not this evening
+
+::: {.columns}
+::: {.column width="50%"}
+![](figures/CBTHowSoonIsNow.png){width=70%}
+:::
+::: {.column width="50%"}
+- Today-payment **immediate** ⇒ $\beta\approx 0.91.$
+- Today-payment **this evening** ⇒ $\beta\approx 1.$
+- Suggests that present bias is about *right now* vs. *later*, not today vs. tomorrow.
+:::
+:::
+
+---
+
+### Meta-analysis of CTB studies
+
+Imai, Rutter, Camerer (EJ, 2021) provide a **meta study** of CBT experiments. Each dot below is a $\beta$-estimate coming from a separate study. 
+
+![](figures/CBTMeta.png){width=70%}
+
+---
+
+### IRC: Findings
+
+::: {.incremental .no-bullets}
+- In experiments following A&S (allocate money over time, get today's payment this evening), $\beta \approx 1.$ 
+- In experiments where participants have to work during experimental sessions and can allocate how much to work at different points in time, $\beta \approx 0.88$ → people postpone work.
+    - This coheres well with BHJ, as participants usually conduct today's work directly after making the allocation choice.
+    - Therefore, the decision over work is also a decision about *right now* vs. *later*.
+
+:::
+
+---
+
+### Back to the $\beta-\delta$ model
+
+::: {.incremental .no-bullets}
+- The $\beta-\delta$ model can describe intertemporal choice rather well, if the "now" period is sufficiently narrowly defined. 
+- A question coming out of this model is whether agents are aware of their bias. 
+:::
+
+--- 
+
+## {auto-animate="true"}
+### Example: Smoking {.example}
+
+::: {.incremental .no-bullets}
+- Consider an agent who considers whether to smoke or not. The agent is present biased ($\beta < 1$). For simplicity, assume that $\delta = 1.$
+- Smoking gives the agent an immediate consumption joy $j$ but carries some cost $c$ in a future time period. 
+- Suppose that $c > j > \beta c.$ 
+    - The agent prefers smoking right now over not smoking ($j>\beta c$).
+    - But the agent prefers to quit smoking later ($c > j$).
+:::
+
+---
+
+## {auto-animate="true"}
+### Example: Smoking {.example}
+
+::: {.incremental .no-bullets}
+- Suppose that $c > j > \beta c.$ 
+    - The agent prefers smoking right now over not smoking ($j>\beta c$).
+    - But the agent prefers to quit smoking later ($c > j$).
+- If the agent is aware of their bias, they might try to stop themselves from smoking later: go to rehab, do not buy tobacco, etc. 
+- If the agent is unaware, they will naively expect to quit smoking. 
+    - Because of this, they *underinvest* in mitigation.
+:::
+
+---
+
+## {auto-animate="true"}
+### Sophistication in the $\beta-\delta$ model
+
+::: {.incremental .no-bullets}
+- The example illustrates how **sophistication** about present bias plays a key role for the welfare implications of the $\beta-\delta$ model. 
+- If individuals are aware of their bias, they might get proactive to stop them from being short-sighted:
+    - Avoid restaurants with "tempting" menu options. 
+    - Install screen time blockers on their phone. 
+    - ...
+:::
+
+---
+
+## {auto-animate="true"}
+### Sophistication in the $\beta-\delta$ model
+
+::: {.no-bullets}
+- The example illustrates how **sophistication** about present bias plays a key role for the welfare implications of the $\beta-\delta$ model. 
+- If they fully or partially neglect their bias, private initiative will not be enough. 
+    - This then motivates various corrective taxes on alcohol, soda, cigarettes, etc. 
+    - Regulation of social media algorithms.
+    - Programs to improve sleep hygiene. 
+:::
+
+---
+
+### Empirical evidence on sophistication 
+
+Alcott, Gentzkow, Song (AER 2022) document that individuals would like to limit their social media use, so they are generally aware of the problem.
+
+::: {.unnumbered style="text-align: center;"}
+![](figures/DigitalAddictionDemand.png){width=50%}
+:::
+
+---
+
+### Empirical evidence on sophistication 
+
+But individuals systematically underestimate their future use. This points to only partial sophistication.
+
+::: {.unnumbered style="text-align: center;"}
+![](figures/DigitalAddictionSophistication.png){width=60%}
+:::
+
+---
+
+## {auto-animate="true"}
+### Takeaways
+
+::: {.incremental .no-bullets}
+- In dynamic decisions, humans disproportionately prefer the right now to the later. 
+    - This causes **dynamic inconsistency.**
+    - A model combining exponential discounting with a **present bias** factor ($\beta-\delta$ model) can describe empirical data well. 
+- The $\beta-\delta$ model raises questions about sophistication. 
+    - Humans are only partially sophisticated. 
+    - Private effort is not enough to overcome present bias.
+:::
+
+---

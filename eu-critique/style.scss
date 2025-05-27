@@ -1,0 +1,89 @@
+/* 1) Font Settings: Roboto Slab */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+/*-- scss:defaults --*/
+
+$body-bg: #fff;
+$body-color: black;
+$link-color: #42affa;
+$font-family-sans-serif: "Roboto Slab", sans-serif;
+
+/* 2) Color Variables */
+:root {
+  --my-red:   #D81B60;
+  --my-blue:  #1E88E5;
+  --my-yellow:#FFC107;
+  --my-green: #004D40;
+}
+
+
+/* 4) Style for Proposition Blocks */
+.proposition {
+  border-left: 4px solid var(--my-blue);
+  background-color: rgba(30, 136, 229, 0.1); /* Light overlay of MyBlue */
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+/* 5) Style for Definition Blocks */
+.definition {
+  border-left: 4px solid var(--my-green);
+  background-color: rgba(0, 77, 64, 0.1); /* Light overlay of MyGreen */
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+/* 5) Style for Example Blocks */
+.example {
+  border-left: 4px solid var(--my-yellow);
+  background-color: rgba(255,193,7,0.1); /* Light overlay of MyYellow */
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+/* 5) Style for Axiom Blocks */
+.axiom {
+  border-left: 4px solid var(--my-green);
+  background-color: rgba(0, 77, 64, 0.1); /* Light overlay of MyGreen */
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+
+
+
+/* 6) Optionally define classes to highlight text inline */
+.my-highlight-red   { background-color: var(--my-red);   color: #ffffff; }
+.my-highlight-blue  { background-color: var(--my-blue);  color: #ffffff; }
+.my-highlight-green { background-color: var(--my-green); color: #ffffff; }
+.my-highlight-yellow{ background-color: var(--my-yellow);color: #000000; }
+.my-highlight-grey { background-color: #000000; color: #808080; }
+.my-highlight-black{ background-color: #000000;color: #ffffff; }
+
+.center img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* colour for all KaTeX-rendered math */
+.reveal .math,                   /* the outer <span class="math …">   */
+.reveal .katex-display,          /* the <div class="katex-display">   */
+.reveal .katex,                  /* the inner  <span class="katex">   */
+.reveal .math *,                 /* every child span inside the math  */
+.reveal .katex * {
+  color: #880518;   /* or any hex like #1E88E5 */
+}
+
+/* Reduce font size for math expressions globally */
+.reveal .math {
+  display: inline-block;
+  transform: scale(0.95); /* Adjust the scale factor as needed */
+  transform-origin: left center; /* Ensures proper alignment */
+  line-height: 1.2; /* Adjust as needed */
+}

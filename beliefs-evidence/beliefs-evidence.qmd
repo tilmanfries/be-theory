@@ -1,0 +1,441 @@
+---
+title: "Beliefs (evidence)"
+subtitle: "Beliefs in Markets and Experiments, Over-/Under-Inference"
+author: "Tilman Fries"
+format:
+  revealjs:
+    theme: style.scss        # your custom theme
+    css:   custom.css
+    center: false
+    transition: slide
+    slide-number: true
+quarto:
+  enable: [theorem]
+theorem:
+  environments:
+    definition:  {name: "Definition"}
+    proposition: {name: "Proposition"}
+    example:     {name: "Example"}
+---
+
+<!-- =============================================================== -->
+### From *Normative* to *Positive*  
+
+::: {.incremental .no-bullets}
+- Last time we learned how beliefs *should* update.  
+- Now, we will learn how human beliefs **actually** update.
+  - Lab evidence: *bookbags-and-pokerchips* paradigm  
+  - Field evidence: betting & forecasting data  
+  - A unifying model: **over- vs. under-reaction** to information  
+:::
+
+# Direct Tests – Bookbags and Pokerchips 
+
+---
+
+### Experimental setup
+
+::: {.columns}
+::: {.column width="65%"}
+- Two bags, each with 100 chips  
+  - **Bag A:** $q$% [red]{style="color:var(--my-red)"}, $1-q$% [blue]{style="color:var(--my-blue)"}  
+  - **Bag B:** $1-q$% [red]{style="color:var(--my-red)"}, $q$% [blue]{style="color:var(--my-blue)"}  
+  - $q>0.5$ → red is *diagnostic* of A  
+- Bag A is chosen with probability $\lambda.$
+- $n$ draws revealed to participant.  
+- Task: report $p\equiv P(\text{Bag}=A\,|\,n\text{ draws}).$
+:::
+::: {.column width="35%"}
+![](figures/BallsUrns.png){width=85%}
+:::
+:::
+
+---
+
+### Many such experiments since the 1960s... 
+
+![](figures/Edwards1.png){.absolute top="300"   left="50"   width="500"}
+![](figures/Edwards2.png){.absolute top="0" left="500" width="500" style="z-index:10"}
+
+---
+
+### ...let's add another
+
+**ADD QR CODE**
+
+---
+
+## {auto-animate="true"}
+### Meta-analytical Results 
+
+Benjamin (2019) provides a *meta-analysis* summarizing more than 50 years of research.
+
+![](figures/BenjaminUpdating.png){width=70% alt="Benjamin et al. (2019) meta-study"}
+
+---
+
+## {auto-animate="true"}
+### Meta-analytical Results 
+
+![](figures/BenjaminUpdating.png){width=70% alt="Benjamin et al. (2019) meta-study"}
+
+:::{.no-bullets}
+- The figure plots participant estimates (y-axis) vs. Bayesian estimates (x-axis). 
+- Participant estimates are compressed towards their prior.
+  - This is commonly known as **conservatism bias:** People revise their beliefs in the correct direction but **not far enough.**
+:::
+
+---
+
+### Limits and Advantages
+
+:::{.no-bullets}
+- The **bookbags and pokerchips** paradigm allows for a precise comparison of beliefs to a Bayesian benchmark. 
+- But the beliefs that we are more interested in do not allow for the same, precise comparison:
+  - Eg., it may be relevant to ask whether *financial markets* over- or underreact to information, or whether people learn rationally from *reading the news.* Finding the normative benchmark (how much people *should* react) is often impossible in these cases.
+- But some did still try (next).
+:::
+
+# Testing Beliefs in the Wild  
+
+---
+
+### Challenges when moving outside the lab
+
+::: {.incremental .no-bullets}
+- In the lab, we have full control over the signal-generating process. This allows us to compare subjective estimates of $p$ to the Bayesian estimate. 
+- In the field, we often do not know the Bayesian estimate, so it is difficult to say how wrong beliefs are. 
+- But we can test other properties of probability measures. A nice candidate is:
+
+<div style="text-align:center;">
+- [**The Martingale Property**]{style="color:var(--my-red)"}
+</div>
+
+:::
+
+---
+
+## {auto-animate="true"}
+### Potential Empirical Setup 
+
+::: {.incremental .no-bullets}
+- Suppose we can identify an empirical setting with a binary state that can be *true* or *false,* $\small\Omega = \{T,F\}.$ Many potential scenarios:
+  - Whether the EU lifts sanctions on Russia by 2026. 
+  - Whether inflation will be higher than GDP growth this year. 
+  - Whether LMU admin will go digital by 2035...
+
+:::
+
+---
+
+## {auto-animate="true"}
+### Potential Empirical Setup 
+
+::: {.no-bullets}
+- Suppose we can identify an empirical setting with a binary state that can be *true* or *false,* $\small\Omega = \{T,F\}.$
+- In such a setting, we could repeatedly ask participants for $P_t(\omega = T)$ at different $t,$ denoted as $p_t.$ 
+  - Or we could simply use betting market data. 
+- The nice thing when the state is binary is that eliciting $p_t$ pins down the whole belief distribution:
+$$
+\mu_t(\omega = T) = p_t,\,\mu_t(\omega = F) = 1 - p_t,\, \text{Var}_{\mu_t} = p_t(1-p_t).
+$$
+
+:::
+
+---
+
+## {auto-animate="true"}
+### Potential Empirical Setup 
+
+::: {.no-bullets}
+- We can additionally define *belief movement* and *uncertainty reduction* between $t=1$ and $t=2$.
+:::
+
+:::{.definition}
+**Definition.** 
+*Belief movement* $M$ denotes by how much beliefs change between the evaluation periods **1** and **2**:
+$$
+M = (p_2 - p_1)^2.
+$$
+
+:::
+
+---
+
+## {auto-animate="true"}
+### Potential Empirical Setup 
+
+::: {.no-bullets}
+- We can additionally define *belief movement* and *uncertainty reduction* between $t=1$ and $t=2$.
+:::
+
+:::{.definition}
+**Definition.** 
+*Uncertainty reduction* $R$ denotes the reduction in belief variance between periods **1** and **2**:
+$$
+R = p_1(1-p_1) - p_2(1-p_2). 
+$$
+
+:::
+
+---
+
+### The insight of Augenblick and Rabin (QJE, 2021)
+
+A&R observe the following result:
+
+:::{.proposition}
+**Proposition.**
+If $\mu_t$ is a probability measure, then $\mathbb{E}[M] = \mathbb{E}[R].$
+:::
+
+This is a direct consequence of the martingale property. 
+
+(Proof on board)
+
+---
+
+## {auto-animate="true"}
+### Illustration w/ betting market data
+
+::: {.columns}
+::: {.column width="50%"}
+![](figures/BetBarcaDortmund.png){width=95% alt="Betting: Barcelona vs Dortmund"}
+:::
+::: {.column width="50%"}
+![](figures/BetTariff.png){width=95% alt="Betting: Tariff Event"}
+:::
+:::
+
+:::{.no-bullets}
+- On the left, belief $\mu_t(\text{BAR wins})$ starts at >50% and moves towards 100% over time. As beliefs move, uncertainty is reduced...
+:::
+
+---
+
+## {auto-animate="true"}
+### Illustration w/ betting market data
+
+::: {.columns}
+::: {.column width="50%"}
+![](figures/BetBarcaDortmund.png){width=95% alt="Betting: Barcelona vs Dortmund"}
+:::
+::: {.column width="50%"}
+![](figures/BetTariff.png){width=95% alt="Betting: Tariff Event"}
+:::
+:::
+
+:::{.no-bullets}
+- On the right, belief starts at <20% and moves to 60% over time. Here, we observe belief movement and an *increase* in uncertainty.
+:::
+
+---
+
+## {auto-animate="true"}
+### Illustration w/ betting market data
+
+::: {.columns}
+::: {.column width="50%"}
+![](figures/BetBarcaDortmund.png){width=95% alt="Betting: Barcelona vs Dortmund"}
+:::
+::: {.column width="50%"}
+![](figures/BetTariff.png){width=95% alt="Betting: Tariff Event"}
+:::
+:::
+
+:::{.no-bullets}
+- The proposition tells us that beliefs should move like the beliefs on the left *most of the time.*
+:::
+
+---
+
+## {auto-animate="true"}
+### Illustration w/ betting market data
+
+::: {.columns}
+::: {.column width="50%"}
+![](figures/BetBarcaDortmund.png){width=95% alt="Betting: Barcelona vs Dortmund"}
+:::
+::: {.column width="50%"}
+![](figures/BetTariff.png){width=95% alt="Betting: Tariff Event"}
+:::
+:::
+
+:::{.no-bullets}
+- While belief uncertainty can increase sometimes, this should be an exception, not the rule.
+:::
+
+---
+
+### Testing with real forecasts  
+
+::: {.incremental .no-bullets}
+- A&R test their predictions:
+  - Using a panel of experts making probabilistic forecasts. 
+    - E.g., *"Will Greece remain a member of the EU through June 2012?"*
+  - Using a baseball prediction algorithm. 
+  - Using sports betting market data.
+:::
+
+---
+
+## {auto-animate="true"}
+### Testing with real forecasts  
+
+![](figures/ExcessMovement.png){width=80% alt="Augenblick, F. et al. (2021) – excess movement"}  
+
+::: {.no-bullets}
+- Excess movement is defined as $M - R.$
+- Experts (Col. 1) **overshoot**: $\mathbb E[M]>\mathbb E[R]$ by $\approx 20\%.$ 
+:::
+
+---
+
+## {auto-animate="true"}
+### Testing with real forecasts  
+
+![](figures/ExcessMovement.png){width=80% alt="Augenblick, F. et al. (2021) – excess movement"}  
+
+::: {.no-bullets}
+- Algorithm & betting markets (cols 2 + 3) are much closer to Bayesian benchmark.
+- But betting market movement still overshoots by $\approx 4.6\%.$
+:::
+
+---
+
+### A puzzle? 
+
+::: {.no-bullets}
+- Lab experiments on bookbags and pokerchips suggest that individual beliefs move too little in response to new information. 
+- A&R conceive a comparable test to test for belief movements outside the lab. They find that individual forecasters move their predictions by too much. 
+- We will learn about a unifying explanation next. 
+:::
+
+
+# Over- vs. underinference
+
+---
+
+## {auto-animate="true"}
+:::{.incremental .no-bullets}
+- Augenblick, Lazarus, Thaler (QJE, 2025) study why individuals sometimes over- and sometimes underinfer from data. 
+
+- **Idea:** Distinguishing **good news** from **bad news** is often easy. It is much harder to say *how much better* one piece of good news is to another piece.
+  - E.g., beating earnings expectations is good news for a firm's valuation. But difficult to assess by *how much* its value should increase.
+- In other words, a signal's **qualitative valence** ($+$ or $-$) is easier to assess than the **quantitative size** of the signal.  
+:::
+
+---
+
+## {auto-animate="true"}
+:::{ .no-bullets}
+- **Idea:** Distinguishing **good news** from **bad news** is often easy. It is much harder to say *how much better* one piece of good news is to another piece.
+  - E.g., beating earnings expectations is good news for a firm's valuation. But difficult to assess by *how much* its value should increase.
+- In other words, a signal's **qualitative valence** ($+$ or $-$) is easier to assess than the **quantitative size** of the signal.  
+- $\rightarrow$ Developing this idea in a model we get overinference from weak signals and underinference from strong signals. (Next)
+:::
+
+---
+
+### Setup
+
+::: {.no-bullets .incremental}
+- Binary state of the world, $\omega \in\{H,L\};$ an agent has prior $P(\omega = H) = \lambda.$
+- The agent receives a signal $s\in\{g,b\}$ with signal strength $P(s = g | \omega = H) = P(s=b|\omega=L) = q.$ 
+- However, the agent does not know $q$ for sure. They have some idea that the average good signal has a $q$ distributed according to $\mathcal{N}(\bar{q}_0, \sigma_0).$ 
+- Upon observing $s$, the agent receives an additional signal *about the size of $q$*, $q_s|q \sim \mathcal{N}(q, \sigma_q).$
+:::
+
+---
+
+### Setup
+
+::: {.no-bullets .incremental}
+- This setup combines a binary-binary updating model with a normal-normal model. 
+  - The agent receives a binary signal about a binary state. 
+  - They receive a normal signal about the normally distributed signal strength.
+- Updating follows a two-step procedure:
+  1. Observe signal valence and estimate signal strength.
+  2. Use the estimated signal strength to update beliefs about the state of the world.
+:::
+
+---
+
+### Over- vs. underinference 
+
+:::{.proposition}
+**Proposition.** 
+The agent's estimated signal strength is equal to 
+$$
+\bar{q}_1 = \alpha q_s + (1-\alpha)\bar{q}_0,\text{ where }\alpha = \frac{\sigma_0}{\sigma_0 + \sigma_q}
+$$
+:::
+
+This directly follows from the normal-normal model. 
+
+---
+
+## {auto-animate="true"}
+### Over- vs. underinference 
+
+![](figures/OverUnder.png){width=60% .center}
+
+:::{.no-bullets}
+**Implication:** Individuals overestimate weak signals and they underestimate strong signals. 
+:::
+
+---
+
+## {auto-animate="true"}
+### Over- vs. underinference 
+
+![](figures/OverUnder.png){width=60% .center}
+
+:::{.no-bullets}
+**Key prediction:** Individuals overinfer from weak signals and underinfer from strong signals.
+:::
+
+---
+
+### Bookbags & pokerchips revisited  
+
+ALT conduct a lab belief updating experiment and find overinference if $q < 0.6$ and underinference if $q>0.6.$
+
+![](figures/ALTLab.png){width=66% alt="Over-/under-inference in urn experiments"}
+
+    - The y-axis is normalized. y>1 means overinference and y<1 means underinference.
+
+- The metastudy by Benjamin (2019) we saw earlier could not find this as all experiments it considered had $q\geq 0.6$!
+
+---
+
+### Betting-market evidence  
+
+:::{.no-bullets}
+- ALT also aim for a test of reactions towards weak and strong signals in sports betting and financial markets.
+
+- They propose that, in sports, news that are revealed early in the game are less informative about the game outcome than equivalent news revealed later. 
+  - E.g., in football, scoring the first goal in min. 1 is less informative than scoring the first goal in min. 89. 
+
+- Based on this, they predict that **belief movement > uncertainty reduction** early in the game and **belief movement < uncertainty reduction** late in the game. 
+:::
+
+---
+
+### Betting-market evidence  
+
+![](figures/OverUnderSports.png){width=75% alt="Excess movement early vs. late in sports matches"}
+
+- Markets move **too much** early, **too little** late.  
+- Similar for long- vs. short-maturity stock options.
+
+# Takeaways  
+
+::: {.incremental .no-bullets}
+1. **Lab tests** (bookbags & pokerchips) → *conservatism* on average.  
+2. **Field tests** (forecast panels, betting) → *excess belief movement*.  
+3. Aggregation in markets partly corrects individual biases.  
+4. A unified view: People find it easier to judge the valence than the size of a signal.
+   ⇒ they **over-react to weak** and **under-react to strong** information.  
+:::
+
