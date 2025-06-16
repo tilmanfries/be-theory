@@ -1,0 +1,348 @@
+---
+title:  "Expectation Management"
+subtitle: "Motivated Cognition & Belief-Based Utility"
+author:  "Tilman Fries"
+format:
+  revealjs:
+    theme:  style.scss
+    css:    custom.css
+    center: false
+    transition: slide
+    slide-number: true
+quarto:
+  enable: [theorem]
+theorem:
+  environments:
+    definition:  {name: "Definition"}
+    proposition: {name: "Proposition"}
+    example:     {name: "Example"}
+---
+
+<!-- ============================================================= -->
+### Why study expectation management?
+
+::: {.incremental .no-bullets}
+- Standard **Expected-Utility Theory (EUT)** says information can often help make better decisions. 
+- Since, in EUT, agents only care about the *outcomes* of their decision, information is never harmful.  
+- Hence, the classical view that individuals aim to increase their understanding of the world. 
+- **This lecture,** we will learn about why under a richer model of human motivation, the classical has serious shortcomings. 
+:::
+
+# Empirical puzzles EUT cannot explain
+
+---
+
+## {auto-animate="true"}
+### Puzzle 1: Valuation depends on timing
+
+Loewenstein (EJ, 1987) asks people for their valuation of (i) receiving an electrical shock, (ii) kissing their favorite movie star at different points in time. 
+
+::: {.columns}
+::: {.column width="50%"}
+![](figures/ExperiencedUtility.png){width=100%}
+:::
+::: {.column width="50%"}
+- They prefer kiss in 3 days to kiss today.
+- But prefer shock today to shock next year.
+:::
+:::
+
+---
+
+## {auto-animate="true"}
+### Puzzle 1: Valuation depends on timing
+
+::: {.columns}
+::: {.column width="50%"}
+![](figures/ExperiencedUtility.png){width=50%}
+:::
+::: {.column width="50%"}
+- They prefer kiss in 3 days to kiss today.
+- But prefer shock today to shock next year.
+:::
+::: 
+
+The result is opposite from the time discounting prediction. Denote utility with shock as $u_s$ and utility without as $u_w$, with $u_w > u_s.$ Shock today and no shock in a year result in utility $u_s + \delta u_w.$ If $\delta < 1,$ this utility is smaller than $u_w + \delta u_s$ (shock in one year). Yet, people prefer former.
+
+---
+
+### Puzzle 2: Avoiding perfect information
+
+::: {.no-bullets .incremental}
+- Oster, Shoulson, Dorsey (AER, 2013) study whether people get tested for Huntington's disease.
+  - This is a lethal disease, reducing life expectancy to around 40-50 years. 
+  - It is also genetically transmitted. Therefore perfectly predictive DNA tests exist. 
+  - Therefore: Hugely consequential if one has it, and accurate information is easily available
+:::
+
+---
+
+### Puzzle 2: Avoiding perfect information
+
+OSD document that: Only a small minority of at-risk patients gets tested (left panel), but once positive, they change behavior drastically (right panel).
+
+![](figures/Huntington.png){width=49%}
+![](figures/HuntingtonLC.png){width=49%}
+
+---
+
+## {auto-animate="true"}
+### Standard EUT logic & the paradox  
+::: {.no-bullets .incremental}
+- Consider an agent who makes a decision like whether to become pregnant or to retire ($z\in \mathcal Z).$
+- Any decision will be evaluated differently depending on whether they have Huntington's or not. Denote the utilities with and without Huntington's as $u_h(z)$ and $u_n(z).$
+- If the belief to have Huntington's is $p$, the agent chooses $z$ that solves: $\max_{z\in\mathcal Z} \;p\,u_h(z)+(1-p)u_n(z)$
+  - A well-behaved solution will solve the first-order condition: $p u_h'(z^e) + (1-p)u_n'(z^e) = 0.$
+:::
+
+---
+
+## {auto-animate="true"}
+### Standard EUT logic & the paradox  
+::: {.no-bullets}
+- If the belief to have Huntington's is $p$, the agent chooses $z$ that solves: $\max_{z\in\mathcal Z} \;p\,u_h(z)+(1-p)u_n(z)$
+  - A well-behaved solution will solve the first-order condition: $p u_h'(z^e) + (1-p)u_n'(z^e) = 0.$
+- Different from choice when knowing that one has Huntington's or not, solving: $u_h'(z^h) = 0$ or $u_n'(z^n) = 0$. 
+  - Therefore, the decision taken under uncertainty will always be *suboptimal* once the agent learns about having the disease or not. $\rightarrow$ Agent prefers having the info when making the decision.
+:::
+
+---
+
+### Resolving the paradox
+::: {.incremental .no-bullets}
+- The paradoxes can be resolved by adopting a psychological notion of utilty. 
+- Agents may experience anticipatory anxiety or dread, they may wish to dream about the future, and receive value from anticipating good things to happen to them. This likely explains the results:
+  - People don't want to be anxious for a year expecting the electrical shock to come. 
+  - They enjoy thinking about how they are going to kiss soon. 
+  - In the case of Huntington's disease, ignorance is bliss.
+:::
+
+
+# Belief-based utility
+
+---
+
+## Belief-based utility: Model setup
+
+We embed *beliefs* $\tilde\theta$ directly in utility.
+
+::: definition
+**Utility with ego pay-off**
+
+$$
+U(z,\theta,\tilde{\theta}) = u(z,\theta)\;+\;\mu\,\tilde{\theta},\qquad \mu>0.
+$$
+
+$u$: material (outcome) utility • $\tilde\theta$: *belief* “I’m talented”.
+:::
+
+**Eg:** Agent is an entrepreneur with talent $\theta.$ Their material outcome depends on their talent, but they may also wish to think that they are talented.
+
+---
+
+### Belief-based utility: Application
+*Memory-manipulation game*
+
+Consider an entrepreneur who can invest ($z=1$) in a project at cost $c>0.$ Depending on the entrepreneur's ability, the project return is positive or negative:
+$$
+u(z,\theta) \begin{cases}
+1 - c, & a = 1\text{ and }\theta = \theta_H, \\
+- c, & a = 1\text{ and }\theta = \theta_H, \\
+0, & a = 0.
+\end{cases}
+$$
+
+The **total utility** is the sum of the investment utility and the entrepreneur's  belief that they are high ability: $u(z,\theta) + \mu P(\theta = \theta_H).$
+---
+
+### Belief-based utility: Application
+
+:::{.incremental .no-bullets}
+- To study attitudes towards information, suppose that, in $t = 1$, the agent receives a signal $s$ about their talent *before* deciding whether to invest.
+  - Signal $s$ can either be bad ($b$) or null (no info, $\varnothing$). 
+- The agent decides whether to invest in $t = 2.$ We assume that, after observing a bad signal, the agent can decide whether to memorize ($m = b$) or forget ($m = \varnothing$). 
+:::
+
+---
+
+### Memory-manipulation game (two periods)
+
+
+*Signal*: bad news with Pr\(b|θ_L)=q>½.  
+*Suppression cost* \(m>0\).
+
+---
+
+### Backward induction
+
+**Founding rule** (period 2 belief \(𝜃̃₂\)):
+\[
+\text{Found ⇔ } 𝜃̃₂ \ge c.
+\]
+
+---
+
+#### Perfect memory vs. Ignorance
+
+We consider three cost regions (founding cost \(c\))
+
+| Region | Beliefs | Found? | Memory outcome | Equilibrium? |
+|--------|---------|--------|----------------|--------------|
+| **A** \(𝜃̃_∅ > 𝜃̃_b ≥ c\) | Bad news pivotal? no | Always | remember or forget identical | ✓ perfect memory, ✓ ignorance |
+| **B** \(𝜃̃_∅ ≥ c > 𝜃̃_b\) | Pivotal yes | Good news → found, bad news → no | Forgetting changes decision | ✓ perfect memory, **× ignorance** |
+| **C** \(c ≥ 𝜃̃_∅ > 𝜃̃_b\) | Never found | Memory only hurts ego | **× perfect memory**, ✓ ignorance |
+
+(derivation: compare expected ego+material utility with/without suppression)
+
+---
+
+### Equilibrium regions (text diagram, no TikZ)
+
+
+Overlap = both equilibria sustainable; welfare differs.
+
+---
+
+## 2.2 Present-bias motive (β-δ model)
+
+*Short-run* self evaluates utility
+
+\[
+\tilde u(a,\theta,β)=
+\begin{cases}
+β - c, & a=1, θ=θ_H,\\
+- c,   & a=1, θ=θ_L,\\
+0,     & a=0.
+\end{cases}
+\]
+
+Long-run self (at \(t=1\)) may **suppress bad memory** to ensure \(β\tilde θ_2≥c\).  
+Proposition: if
+
+\[
+\tilde θ_b > c > β \tilde θ_b\quad\text{and}\quad β\tilde θ_∅ ≥ c,
+\]
+
+then *perfect memory* cannot be an equilibrium – short-run self would under-invest.
+
+---
+
+# 3 Evidence for belief-manipulation
+
+---
+
+### 3.1 Selective recall (Zimmermann 2020)
+
+![](figures/MotivatedMemory.png){width=92%}
+
+* Bad-news signals largely **forgotten** one month later.  
+* Announcement of future recall **or** €50 reward restores memory of bad news.
+
+---
+
+### 3.2 Self-motivation before exams (Bönisch 2024)
+
+![](figures/MicroExpectations.png){width=75%}
+
+*Expected points gain from doubling study-hours* **peaks right before exam**  
+⇒ students inflate returns when effort decision is imminent.
+
+---
+
+### 3.3 Effort task, uncertain pay (Lobeck 2023)
+
+![](figures/MotivatingBeliefs.png){width=78%}
+
+* When participants know they’ll work again, they over-state “my effort will be paid” – otherwise not.  
+
+---
+
+# 4 Applications  
+
+---
+
+## 4.1 Belief-in-a-just-world & welfare state (Bénabou & Tirole 2006)
+
+### Environment  
+
+- Rich (\(\lambda_r\)) vs. poor (\(\lambda_p\)), share \(\rho<½\).  
+- Success prob.: \((1-θ)\lambda_g + θe\).  
+- Anticipatory weight \(\mu\), present-bias \(\beta\), memory cost \(m\).  
+- Majority votes tax \(\tau\).
+
+### Effort choice  
+
+\[
+e^*(\tilde θ,\tau)=\beta(1-\tau)\tilde θ.
+\]
+
+### Poor-majority tax preference  
+
+\[
+\tau^*(\tilde θ)=1-\frac{(1-\tilde θ)(\bar\lambda-\lambda_p)}{\beta \tilde θ^2}.
+\]
+
+Higher optimism → lower tax.
+
+---
+
+### Memory equilibria with endogenous taxes  
+
+- **Realism**: remember bad news ⇒ pessimistic belief \( \tilde θ_b\) ⇒ high tax ⇒ low return to effort ⇒ no incentive to distort.  
+- **Just-world**: suppress bad news ⇒ optimistic \( \tilde θ_0\) ⇒ low tax ⇒ high return to effort ⇒ incentive to keep optimism.  
+
+Overlap region (both equilibria) exists when  
+
+\[
+1-\alpha \;≥\; 2(1-q)\qquad
+\bigl(\text{low responsibility / many good signals}\bigr)
+\]
+
+Empirically: countries with *strong “work pays” beliefs* spend **less** on social protection (figure).
+
+![](figures/JustWorldBeliefs.png){width=74%}
+
+---
+
+## 4.2 Groupthink model  
+
+- Large \(N\) agents; project payoff \(\theta∈\{+π,\,-π\}\).  
+- Public, perfectly informative signal \(s\).  
+- Each can *erase* bad memory at cost \(m\).  
+- Complementarity of own effort \(\alpha\).
+
+### Effort rule  
+
+\[
+\text{work ⇔ } \tilde θ \ge \frac{c}{(1+\mu)\alpha}.
+\]
+
+### Existence conditions  
+
+- **Realism** equilibrium (act on truth) if  
+\[
+\mu \le \frac{m+c+\alpha π}{π}.
+\]
+
+- **Collective delusion** equilibrium if  
+\[
+\mu \ge \frac{m+c+\alpha π}{π(2q-\alpha)}.
+\]
+
+- Both sustainable when \(1-\alpha ≥ 2(1-q)\): small individual responsibility, moderately precise signal.
+
+---
+
+# 5 Key take-aways  
+
+::: {.incremental .no-bullets}
+1. **Beliefs are consumables.**  
+   Utility may rise with self-esteem or hope and fall with dread.  
+2. **Information avoidance & memory suppression** are rational once beliefs enter utility.  
+3. **Present-bias** gives a motive to *engineer optimism* (expectation management).  
+4. Equilibria:  
+   - Perfect memory (realism)  
+   - Ignorance / delusion (self-deception)  
+   - Both may coexist; coordination or institutions pick one.  
+5. Policy levers: lower memory-distortion cost \(m\), raise stakes, or increase personal responsibility \(\alpha\) to shift society toward realism.
+:::

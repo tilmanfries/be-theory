@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="memory_files/libs/clipboard/clipboard.min.js"></script>
-<script src="memory_files/libs/quarto-html/tabby.min.js"></script>
-<script src="memory_files/libs/quarto-html/popper.min.js"></script>
-<script src="memory_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="memory_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="memory_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="memory_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="expectation-management_files/libs/clipboard/clipboard.min.js"></script>
+<script src="expectation-management_files/libs/quarto-html/tabby.min.js"></script>
+<script src="expectation-management_files/libs/quarto-html/popper.min.js"></script>
+<script src="expectation-management_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="expectation-management_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="expectation-management_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="expectation-management_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.42">
 
   <meta name="author" content="Tilman Fries">
@@ -14,8 +14,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="memory_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="memory_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="expectation-management_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="expectation-management_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -29,12 +29,12 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="memory_files/libs/revealjs/dist/theme/quarto-40e5c67be7746d1b714c1569af03b762.css">
+  <link rel="stylesheet" href="expectation-management_files/libs/revealjs/dist/theme/quarto-40e5c67be7746d1b714c1569af03b762.css">
   <link rel="stylesheet" href="custom.css">
-  <link href="memory_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="memory_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="memory_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="memory_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link href="expectation-management_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="expectation-management_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="expectation-management_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="expectation-management_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -159,64 +159,140 @@ Tilman Fries
 <h1>Empirical puzzles EUT cannot explain</h1>
 
 </section>
-<section class="slide level2">
-
-<h3 id="valuation-depends-on-timing-loewenstein-1987">Valuation depends on timing (Loewenstein 1987)</h3>
-
-<img data-src="figures/ExperiencedUtility.png" id="fig-ExperiencedUtility" style="width:70.0%" class="r-stretch quarto-figure-center"><p class="caption">
-Figure&nbsp;1
-</p><div class="no-bullets">
+<section id="section" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<h3 id="puzzle-1-valuation-depends-on-timing">Puzzle 1: Valuation depends on timing</h3>
+<p>Loewenstein (EJ, 1987) asks people for their valuation of (i) receiving an electrical shock, (ii) kissing their favorite movie star at different points in time.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="figures/ExperiencedUtility.png" style="width:100.0%"></p>
+</div><div class="column" style="width:50%;">
 <ul>
-<li>WTP to <em>avoid</em> a shock <strong>falls</strong> with delay.<br>
-</li>
-<li>WTP for a <em>kiss</em> <strong>rises</strong> with delay.<br>
-</li>
-<li>Simple exponential discounting: should always delay pain ⇒ contradiction.</li>
+<li>They prefer kiss in 3 days to kiss today.</li>
+<li>But prefer shock today to shock next year.</li>
 </ul>
-</div>
+</div></div>
+</section>
+<section id="section-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<h3 id="puzzle-1-valuation-depends-on-timing-1">Puzzle 1: Valuation depends on timing</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="figures/ExperiencedUtility.png" style="width:50.0%"></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>They prefer kiss in 3 days to kiss today.</li>
+<li>But prefer shock today to shock next year.</li>
+</ul>
+</div></div>
+<p>The result is opposite from the time discounting prediction. Denote utility with shock as <span class="math inline">\(u_s\)</span> and utility without as <span class="math inline">\(u_w\)</span>, with <span class="math inline">\(u_w &gt; u_s.\)</span> Shock today and no shock in a year result in utility <span class="math inline">\(u_s + \delta u_w.\)</span> If <span class="math inline">\(\delta &lt; 1,\)</span> this utility is smaller than <span class="math inline">\(u_w + \delta u_s\)</span> (shock in one year). Yet, people prefer former.</p>
 </section>
 <section class="slide level2">
 
-<h3 id="avoiding-perfect-information-oster-et-al.-2013">Avoiding perfect information (Oster et al.&nbsp;2013)</h3>
-<p><img data-src="figures/Huntington.png" style="width:49.0%"> <img data-src="figures/HuntingtonLC.png" style="width:49.0%"></p>
+<h3 id="puzzle-2-avoiding-perfect-information">Puzzle 2: Avoiding perfect information</h3>
 <div class="no-bullets">
 <ul>
-<li>Huntington’s disease: lethal, perfectly predictable by DNA.<br>
-</li>
-<li><strong>&lt; 20 %</strong> of at-risk individuals take a free test.<br>
-</li>
-<li>Those who learn a positive result radically change life-plans.<br>
-</li>
-<li>EUT: test strictly helps future decisions ⇒ everyone should test.</li>
+<li class="fragment">Oster, Shoulson, Dorsey (AER, 2013) study whether people get tested for Huntington’s disease.
+<ul>
+<li class="fragment">This is a lethal disease, reducing life expectancy to around 40-50 years.</li>
+<li class="fragment">It is also genetically transmitted. Therefore perfectly predictive DNA tests exist.</li>
+<li class="fragment">Therefore: Hugely consequential if one has it, and accurate information is easily available</li>
+</ul></li>
 </ul>
 </div>
 </section>
-<section id="standard-eut-logic-the-paradox" class="slide level2">
-<h2>Standard EUT logic &amp; the paradox</h2>
-<p><strong>Case 1 (Huntington’s):</strong></p>
-<p>[ _{zZ} ;p,u_s(z)+(1-p)u_n(z) ]</p>
-<p>Testing converts uncertainty into certainty ⇒ strictly higher expected utility ⇒ should be chosen.<br>
-Observation: majority refuse.</p>
-<p><strong>Case 2 (Shock now vs later):</strong></p>
-<p>Assume exponential discount factor ( (0,1)).</p>
-<p>[ u_s+u_n ;&gt;; u_n+u_s ;;;; &gt;1 ]</p>
-<p>Impossible.<br>
-Yet many prefer “get it over with”.</p>
+<section class="slide level2">
+
+<h3 id="puzzle-2-avoiding-perfect-information-1">Puzzle 2: Avoiding perfect information</h3>
+<p>OSD document that: Only a small minority of at-risk patients gets tested (left panel), but once positive, they change behavior drastically (right panel).</p>
+<p><img data-src="figures/Huntington.png" style="width:49.0%"> <img data-src="figures/HuntingtonLC.png" style="width:49.0%"></p>
+</section>
+<section id="section-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<h3 id="standard-eut-logic-the-paradox">Standard EUT logic &amp; the paradox</h3>
+<div class="no-bullets">
+<ul>
+<li class="fragment">Consider an agent who makes a decision like whether to become pregnant or to retire (<span class="math inline">\(z\in \mathcal Z).\)</span></li>
+<li class="fragment">Any decision will be evaluated differently depending on whether they have Huntington’s or not. Denote the utilities with and without Huntington’s as <span class="math inline">\(u_h(z)\)</span> and <span class="math inline">\(u_n(z).\)</span></li>
+<li class="fragment">If the belief to have Huntington’s is <span class="math inline">\(p\)</span>, the agent chooses <span class="math inline">\(z\)</span> that solves: <span class="math inline">\(\max_{z\in\mathcal Z} \;p\,u_h(z)+(1-p)u_n(z)\)</span>
+<ul>
+<li class="fragment">A well-behaved solution will solve the first-order condition: <span class="math inline">\(p u_h'(z^e) + (1-p)u_n'(z^e) = 0.\)</span></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="section-3" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<h3 id="standard-eut-logic-the-paradox-1">Standard EUT logic &amp; the paradox</h3>
+<div class="no-bullets">
+<ul>
+<li>If the belief to have Huntington’s is <span class="math inline">\(p\)</span>, the agent chooses <span class="math inline">\(z\)</span> that solves: <span class="math inline">\(\max_{z\in\mathcal Z} \;p\,u_h(z)+(1-p)u_n(z)\)</span>
+<ul>
+<li>A well-behaved solution will solve the first-order condition: <span class="math inline">\(p u_h'(z^e) + (1-p)u_n'(z^e) = 0.\)</span></li>
+</ul></li>
+<li>Different from choice when knowing that one has Huntington’s or not, solving: <span class="math inline">\(u_h'(z^h) = 0\)</span> or <span class="math inline">\(u_n'(z^n) = 0\)</span>.
+<ul>
+<li>Therefore, the decision taken under uncertainty will always be <em>suboptimal</em> once the agent learns about having the disease or not. <span class="math inline">\(\rightarrow\)</span> Agent prefers having the info when making the decision.</li>
+</ul></li>
+</ul>
+</div>
 </section>
 <section class="slide level2">
 
+<h3 id="resolving-the-paradox">Resolving the paradox</h3>
+<div class="no-bullets">
+<ul>
+<li class="fragment">The paradoxes can be resolved by adopting a psychological notion of utilty.</li>
+<li class="fragment">Agents may experience anticipatory anxiety or dread, they may wish to dream about the future, and receive value from anticipating good things to happen to them. This likely explains the results:
+<ul>
+<li class="fragment">People don’t want to be anxious for a year expecting the electrical shock to come.</li>
+<li class="fragment">They enjoy thinking about how they are going to kiss soon.</li>
+<li class="fragment">In the case of Huntington’s disease, ignorance is bliss.</li>
+</ul></li>
+</ul>
+</div>
 </section></section>
 <section>
-<section id="belief-based-utility-two-motives" class="title-slide slide level1 center">
-<h1>2 Belief-based utility: two motives</h1>
-<p>We embed <em>beliefs</em> ( ) directly in utility.</p>
+<section id="belief-based-utility" class="title-slide slide level1 center">
+<h1>Belief-based utility</h1>
+
 </section>
-<section id="ego-self-esteem-utility" class="slide level2">
-<h2>2.1 Ego / self-esteem utility</h2>
+<section id="belief-based-utility-model-setup" class="slide level2">
+<h2>Belief-based utility: Model setup</h2>
+<p>We embed <em>beliefs</em> <span class="math inline">\(\tilde\theta\)</span> directly in utility.</p>
 <div class="definition">
 <p><strong>Utility with ego pay-off</strong></p>
-<p>[ U(z,) = u(z,);+;,,&gt;0. ]</p>
-<p>(u): material (outcome) utility • (): <em>belief</em> “I’m talented”.</p>
+<p><span class="math display">\[
+U(z,\theta,\tilde{\theta}) = u(z,\theta)\;+\;\mu\,\tilde{\theta},\qquad \mu&gt;0.
+\]</span></p>
+<p><span class="math inline">\(u\)</span>: material (outcome) utility • <span class="math inline">\(\tilde\theta\)</span>: <em>belief</em> “I’m talented”.</p>
+</div>
+<p><strong>Eg:</strong> Agent is an entrepreneur with talent <span class="math inline">\(\theta.\)</span> Their material outcome depends on their talent, but they may also wish to think that they are talented.</p>
+</section>
+<section class="slide level2">
+
+<h3 id="belief-based-utility-application">Belief-based utility: Application</h3>
+<p><em>Memory-manipulation game</em></p>
+<p>Consider an entrepreneur who can invest (<span class="math inline">\(z=1\)</span>) in a project at cost <span class="math inline">\(c&gt;0.\)</span> Depending on the entrepreneur’s ability, the project return is positive or negative: <span class="math display">\[
+u(z,\theta) \begin{cases}
+1 - c, &amp; a = 1\text{ and }\theta = \theta_H, \\
+- c, &amp; a = 1\text{ and }\theta = \theta_H, \\
+0, &amp; a = 0.
+\end{cases}
+\]</span></p>
+<p>The <strong>total utility</strong> is the sum of the investment utility and the entrepreneur’s belief that they are high ability: <span class="math inline">\(u(z,\theta) + \mu P(\theta = \theta_H).\)</span></p>
+</section>
+<section class="slide level2">
+
+<h3 id="belief-based-utility-application-1">Belief-based utility: Application</h3>
+<div class="no-bullets">
+<ul>
+<li class="fragment">To study attitudes towards information, suppose that, in <span class="math inline">\(t = 1\)</span>, the agent receives a signal <span class="math inline">\(s\)</span> about their talent <em>before</em> deciding whether to invest.
+<ul>
+<li class="fragment">Signal <span class="math inline">\(s\)</span> can either be bad (<span class="math inline">\(b\)</span>) or null (no info, <span class="math inline">\(\varnothing\)</span>).</li>
+</ul></li>
+<li class="fragment">The agent decides whether to invest in <span class="math inline">\(t = 2.\)</span> We assume that, after observing a bad signal, the agent can decide whether to memorize (<span class="math inline">\(m = b\)</span>) or forget (<span class="math inline">\(m = \varnothing\)</span>).</li>
+</ul>
 </div>
 </section>
 <section class="slide level2">
@@ -427,19 +503,19 @@ Utility may rise with self-esteem or hope and fall with dread.<br>
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="memory_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="expectation-management_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="memory_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="memory_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="memory_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="memory_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="memory_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="expectation-management_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="expectation-management_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="expectation-management_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="expectation-management_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="expectation-management_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="memory_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="memory_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="memory_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="memory_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="expectation-management_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="expectation-management_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="expectation-management_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="expectation-management_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

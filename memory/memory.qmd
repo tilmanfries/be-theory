@@ -24,7 +24,7 @@ theorem:
 
 ::: {.incremental .no-bullets}
 - *Less* information sometimes *improves* decisions  
-  – E.g., the introduction of blind orchestral auditions increased female hires (Goldin & Rouse 2000).  
+  - E.g., the introduction of blind orchestral auditions increased female hires (Goldin & Rouse, AER 2000).  
 - This implies **pre-existing stereotypes** can distort decisions.
 - How do such stereotypes form and persist?  
   <br/>This lecture: robust empirical patterns and a new memory-based model.
@@ -61,6 +61,7 @@ Belief dots lie above 45° line → **exaggeration** of the partisan gap.
 
 ---
 
+## {auto-animate="true"}
 ### The representativeness heuristic
 
 ::: {.example}
@@ -69,6 +70,20 @@ Which is **more probable**?
 1. Linda is a bank-teller  
 2. Linda is a bank-teller **and** a feminist  
 :::
+
+---
+
+## {auto-animate="true"}
+### The representativeness heuristic
+
+::: {.example}
+Linda is 31, single, outspoken, very bright.  Philosophy major, active in social-justice & anti-nuclear demos.  
+Which is **more probable**?  
+1. Linda is a bank-teller  
+2. Linda is a bank-teller **and** a feminist  
+:::
+
+
 Tversky and Kahneman (PR, 1982) report that 85 % pick (2). This violates **sum rule**:  
 
 - The event "bank-teller + feminist" is a subset of the event "bank-teller". By the sum rule, $P(\text{bank-teller + feminist})\le P(\text{bank-teller}).$  
@@ -76,7 +91,7 @@ Tversky and Kahneman (PR, 1982) report that 85 % pick (2). This violates **sum r
 ---
 
 ::: {.incremental .no-bullets}
-- The Linda example is interesting because it intuitively cues associations in our brain. 
+- The Linda example is interesting because it intuitively cues associations in our brain:
     - *"Linda cares about social justice and is against nuclear power, so she **must be** a feminist."*
 - The same kind of thinking seems to occur in other contexts.
     - For example, people may reason: *"He supports right-wing populism so he **must be** a misogynist, bigot, and have a worryingly high consumption of energy drinks."*
@@ -102,7 +117,7 @@ Goldfayn-Frank and Wohlfahrt (JME, 2020): Inflation expectations in Germany were
 
 ---
 
-### Imperfect memory 
+### Modeling memory 
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -137,13 +152,25 @@ Goldfayn-Frank and Wohlfahrt (JME, 2020): Inflation expectations in Germany were
 
 ---
 
+## {auto-animate="true"}
+
 ::: {.incremental .no-bullets}
 - A better analogy may be **memory as [Google search:]{style="color:var(--my-blue)"}**
     1. Google is imperfect, you do not always find what you search for. 
     2. But what you find can change day-by-day, just as you might sometimes remember what you thought you had forgotten. 
     3. Google makes does not always provide you with exactly what you are looking for.
         - E.g., googling *"weather in munich"* might return ad results on summer clothes. 
-        - Just as when thinking about *summer,* I make associations to *ice cream*. 
+        - Just as when thinking about *summer,* you may make associations to *ice cream*. 
+:::
+
+---
+
+## {auto-animate="true"}
+
+::: {.no-bullets}
+- A better analogy may be **memory as [Google search.]{style="color:var(--my-blue)"}**
+- Psychologists broadly think about memory along these lines. They call it **associative memory.**
+- We will link associative memory to the existence and persistence of stereotypes.
 :::
 
 ---
@@ -174,9 +201,9 @@ Goldfayn-Frank and Wohlfahrt (JME, 2020): Inflation expectations in Germany were
 ---
 
 ### A minimal formal set-up  
+*Bordalo, Conlon, Gennaioli, Kwon, Shleifer (QJE, 2022)*
 
 ::: {.no-bullets}
-- This discussion follows Bordalo, Conlon, Gennaioli, Kwon, Shleifer (QJE, 2022).
 - Consider an agent with a **memory database** $E$ which contains entries with *attribute vector* $a=(a_1,a_2).$ 
     - For example: $a_1 =$ hair color (red/other), $a_2 =$ nationality (Irish/non-Irish). 
 - The agent's **task** is to estimate a conditional share $P(a_1|a_2).$
@@ -188,25 +215,25 @@ Goldfayn-Frank and Wohlfahrt (JME, 2020): Inflation expectations in Germany were
 ### The memory database 
 
 ::: {.no-bullets}
-- Think of the memory database as capturing the joint distribution of $(a_1,a_2).$ For example, if the database is broadly accurate, then:  
+- Think of the memory database as capturing the joint distribution of $(a_1,a_2).$ For example, the database may be:  
 :::
 
 | | **Red Hair** | **Other hair** |
 |-| ------------ | -------------- |
-| **Irish** | 0.1% | 0.9% |
-| **Non-Irish** | 1.5% | 97.5% |
+| **Irish** | 1% | 9% |
+| **Non-Irish** | 1% | 89% |
 
-- Searching for $(\text{Red Hair, Irish})$ returns $E(\text{Red Hair, Irish}) = 0.1\%.$
-- An unbiased of $P(\text{Red Hair | Irish})$ is $\frac{0.1}{0.1 + 0.9} = 10\%.$ 
+- Searching for $(\text{Red Hair, Irish})$ returns $\small E(\text{Red Hair, Irish}) = 1\%.$
+- An unbiased of $P(\text{Red Hair | Irish})$ is $\small \frac{0.01}{0.01 + 0.09} = 10\%.$ 
 
 ---
 
-### Assumptions on Memory 
+### Assumption 1 --- Sampling and Counting
 
 :::{.definition}
-**Assumption** (Sampling and counting). To form belief $P(a_1 = x|a_2 = y)$, an agent sends two requests to their memory database, $q_1,$ asking for $T$ samples as evidence of $(a_1 = x\text{ and }a_2 = y)$ and $q_2,$ asking for $T>0$ samples as evidence of $(a_1 \neq x\text{ and }a_2 = y).$ The agent then keeps all the results that cohere with each request. Denote the observed coherent results by $R_{q_1}$ and $R_{q_2}$, respectively. In a second step, the agent combines these requests to obtain the estimate:
+**Sampling and counting**. To form belief $P(a_1 = x|a_2 = y),$ an agent sends two requests to their memory database, $q_1,$ asking for $T$ samples as evidence of $(a_1 = x\text{ and }a_2 = y)$ and $q_2,$ asking for $T>0$ samples as evidence of $(a_1 \neq x\text{ and }a_2 = y).$ The agent then keeps all the results that cohere with each request. Denote the observed coherent results by $R_{q_1}$ and $R_{q_2}$, respectively. In a second step, the agent combines these requests to obtain the estimate:
 $$
-\hat{P}(a_1 = x|a_2 = y) = \frac{R_{q_1}}{R_{q_1} + R_{q_2}}.
+\small\hat{P}(a_1 = x|a_2 = y) = \frac{R_{q_1}}{R_{q_1} + R_{q_2}}.
 $$
 :::
 ---
@@ -218,12 +245,12 @@ $$
 
 | | **Red Hair** | **Other hair** |
 |-| ------------ | -------------- |
-| **Irish** | 0.1% | 0.9% |
-| **Non-Irish** | 1.5% | 97.5% |
+| **Irish** | 1% | 9% |
+| **Non-Irish** | 1% | 89% |
 
-- Suppose the agent samples with $T = 10,000.$
-- The agent first draws 10,000 samples from their database and keeps all results with (Red Hair, Irish) ... 
-- The agent then draws 10,000 samples from their database and keeps all results with (Other Hair, Irish) ... 
+- Suppose the agent samples with $T = 100.$
+- The agent first draws 100 samples from their database and keeps all results with (Red Hair, Irish) ... 
+- The agent then draws 100 samples from their database and keeps all results with (Other Hair, Irish) ... 
 - If this sampling is unbiased, then $R_{q_1} \approx 0.1\%\cdot T = 10$ and $R_{q_2} \approx 0.9\% \cdot T = 90$. 
 - The estimate based on unbiased sampling is approx. equal to the truth:
 $P(\text{red hair, Irish}) \approx \frac{10}{10 + 90} = 10\%$
@@ -232,67 +259,168 @@ $P(\text{red hair, Irish}) \approx \frac{10}{10 + 90} = 10\%$
 ---
 
 ::: {.no-bullets .incremental}
-- If this sampling is unbiased, then $\small R_{q_1} \approx 0.1\%\cdot T = 10$ and $\small R_{q_2} \approx 0.9\% \cdot T = 90.$
+- If this sampling is unbiased, then $\small R_{q_1} \approx 0.1\%\cdot T = 1$ and $\small R_{q_2} \approx 0.9\% \cdot T = 9.$
 - The estimate based on unbiased sampling is approx. equal to the truth:
-$\small P(\text{red hair, Irish}) \approx \frac{10}{10 + 90} = 10\%.$
+$\small P(\text{red hair} | \text{Irish}) \approx \frac{1}{1 + 9} = 10\%.$
 - This sampling approach to belief formation is very common in cognitive psychology. 
-    - It approximates the recall process. People sort through examples in their memory. 
+    - It approximates the recall process, where people sort through examples in their memory. 
     - You can also think of this as **simulation.** Rather than sorting through past memories of meeting Irish people, people may simulate examples of how Irish people look like. 
 :::
 
 ---
 
-### Step 2 – *Cued* recall  
+### Assumption 2 --- Cued recall  
 
 ::: definition
-**Similarity weight** $S(a,q)\in[0,1]$  
-highest when $a=q$, lowest when nothing matches.
+**Cued recall.** When cued with a query $q$, the probability of recalling an entry with attributes $\mathbf{a}$ is equal to 
 
-**Cued recall probability**  
+$$
+r_q(\mathbf{a})=\frac{S(\mathbf{a},q)\;E(\mathbf{a})}{\sum_{\mathbf{a}'\in\mathcal A}S(\mathbf{a}',q)\,E(\mathbf{a}')}.
+$$
 
-\[
-r_q(a)=\frac{S(a,q)\;E(a)}{\sum_{a'\in\mathcal A}S(a',q)\,E(a')}.
-\]
+Above, $S$ is a *similarity function* and $\mathcal{A}$ is the set of all possible attribute combinations.
 :::
 
-Search term “red-haired + Irish” mostly returns red-haired Irish,  
-but also (fewer) red-haired non-Irish, etc.
+Under cued recall, the agent is more likely to recall items similar to their query.
 
 ---
 
-### Expected reported belief  
+## {auto-animate="true"}
+### Cued recall: Example
 
-Combining sampling + cued recall (with $T$ large):
+::: {.no-bullets}
+- Suppose that the similarity function is: 
 
-\[
-\mathbb E[\hat P(x\mid y)]
-=\frac{r_{q_1}}{\,r_{q_1}+r_{q_2}\,}
-=\frac{E(x,y)}{E(x,y)+\alpha\;E(\neg x,y)},
-\]
+$$
+\small
+S(\mathbf{a},q) = \begin{cases}
+1 &, q_1 = a_1 \text{and }q_2 = a_2 \\ 
+\small 1/2 &, q_1 = a_1 \text{and }q_2 \neq a_2 \text{ or }q_1\neq a_1 \text{and }q_2=a_2  \\ 
+\small 0 &, q_1 \neq a_1 \text{and }q_2 \neq a_2 \\ 
+\end{cases}
+$$
 
-\[
-\alpha
-=\frac{\displaystyle\sum_{a} \tfrac{S(a,q_1)}{S(q_1,q_1)}E(a)}
-         {\displaystyle\sum_{a} \tfrac{S(a,q_2)}{S(q_2,q_2)}E(a)}.
-\]
+::: {.fragment}
 
-- If unrelated items are **more similar** to $q_2$ than $q_1$ → $\alpha>1$ → **under-inference**.  
-- If they are less similar → $\alpha<1$ → **over-inference**.
+- Then, in our leading example, after searching for $q_1 = (\text{red hair, irish}):$
+
+$$
+\small r_{q_1}(\text{red hair, irish}) = \frac{1\cdot 0.01}{1\cdot 0.01 + 1/2 \cdot 0.09 + 1/2\cdot 0.01 + 0\cdot 0.9} \approx 0.167
+$$
+
+:::
+:::
+---
+
+## {auto-animate="true"}
+### Cued recall: Example
+
+::: {.no-bullets}
+- Then, in our leading example, after searching for $q_1 = (\text{red hair, irish}):$
+
+$$
+\small r_{q_1}(\text{red hair, irish}) = \frac{1\cdot 0.01}{1\cdot 0.01 + 1/2 \cdot 0.09 + 1/2\cdot 0.01 + 0\cdot 0.89} \approx 0.167
+$$
+
+- After searching for $q_2 = (\text{other hair, irish}):$
+
+$$
+\small r_{q_2}(\text{other hair, irish}) = \frac{1\cdot 0.09}{1\cdot 0.09 + 1/2 \cdot 0.01 + 1/2\cdot 0.89 + 0\cdot 0.01} \approx 0.167
+$$
+
+:::
+---
+
+## {auto-animate="true"}
+### Combining both assumptions
+
+::: {.no-bullets .incremental}
+- Recall that, under sampling and counting, the agent samples $T$ times for search terms $q_1$ and $q_2$ and forms the estimate
+$\small\hat{P}(\text{red hair} | \text{irish}) = \frac{R_{q_1}}{R_{q_1} + R_{q_2}}.$
+- By the law of large numbers, if $T$ is large, the agent's belief is approx. equal to $\small\hat{P}(\text{red hair} | \text{irish}) \approx \frac{r_{q_1}(\text{red hair, irish})}{r_{q_1}(\text{red hair, irish}) + r_{q_2}(\text{other hair, irish})}.$
+- In our example, we have $\small\hat{P}(\text{red hair} | \text{irish}) \approx \frac{0.167}{0.167 + 0.167} = 50\%.$
+  - The agent widely overestimates $P(\text{red hair} | \text{irish})!$
+:::
 
 ---
 
-## Irish hair-colour example  
+## {auto-animate="true"}
+### Model Mechanism
 
-|                | Red hair | Other hair |
-|----------------|----------|------------|
-| Irish          | 10 %     | 90 %       |
-| Non-Irish      | 1.5 %    | 98.5 %     |
+::: {.no-bullets .incremental}
+- When searching $(\text{red hair, irish})$, the agent either finds what they are looking for, or there is *interference* by (i) other hair Irish, (ii) red hair non-Irish.
+- When searching $(\text{other hair, irish})$, the agent either finds what they are looking for, or there is *interference* by (i) red hair Irish, (ii) other hair non-Irish.
+:::
+---
 
-Query $(\text{red},\text{Irish})$: few unrelated memories ⇒ $\alpha<1$ ⇒ **over-estimate** share of red-haired Irish.
+## {auto-animate="true"}
+### Model Mechanism
 
-Query $(\text{other},\text{Irish})$: many unrelated memories ⇒ $\alpha>1$ ⇒ **under-estimate**.
+::: {.no-bullets}
+- When searching $(\text{red hair, irish})$, the agent either finds what they are looking for, or there is *interference* by (i) [other hair Irish]{style="color:var(--my-blue)"}, (ii) red hair non-Irish.
+- When searching $(\text{other hair, irish})$, the agent either finds what they are looking for, or there is *interference* by (i) [red hair Irish]{style="color:var(--my-blue)"}, (ii) other hair non-Irish.
+  1. In both searches, the terms interfere with [one another.]{style="color:var(--my-blue)"}
+:::
+---
+
+## {auto-animate="true"}
+### Model Mechanism
+
+::: {.no-bullets}
+- When searching $(\text{red hair, irish})$, the agent either finds what they are looking for, or there is *interference* by (i) [other hair Irish]{style="color:var(--my-blue)"}, (ii) [red hair non-Irish.]{style="color:var(--my-red)"}
+- When searching $(\text{other hair, irish})$, the agent either finds what they are looking for, or there is *interference* by (i) [red hair Irish]{style="color:var(--my-blue)"}, (ii) [other hair non-Irish.]{style="color:var(--my-red)"}
+  1. In both searches, the terms interfere with [one another.]{style="color:var(--my-blue)"}
+  2. The searches are also interfered by the [other group's members.]{style="color:var(--my-red)"}
+:::
 
 ---
+
+## {auto-animate="true"}
+### Model Mechanism
+
+::: {.no-bullets}
+- When searching $(\text{red hair, irish})$, the agent either finds what they are looking for, or there is *interference* by (i) [other hair Irish]{style="color:var(--my-blue)"}, (ii) [red hair non-Irish.]{style="color:var(--my-red)"}
+- When searching $(\text{other hair, irish})$, the agent either finds what they are looking for, or there is *interference* by (i) [red hair Irish]{style="color:var(--my-blue)"}, (ii) [other hair non-Irish.]{style="color:var(--my-red)"}
+
+→ Because there are many more other hair non-Irish than red hair non-Irish, the search interference is much higher for $q_2$ than for $q_1.$ This leads the agent to overestimate.
+:::
+
+---
+
+### Model Summary
+
+::: {.no-bullets}
+- In the model, memory is probabilistic. 
+  - The agent cannot access the whole memory database at once. 
+- Searching the memory database is imperfect.
+  - The agent does not only end up with evidence for which they searched for.
+  - However, *cued recall* skews the search towards memories more similar to the search term.
+:::
+
+---
+
+### Model Results
+
+::: {.no-bullets}
+- The model predicts that individuals overestimate features that are **diagnostic** of a certain group 
+  - This is because there's less interference when recalling **diagnostic** features.
+  - E.g., red hair is relatively overrepresented (i.e., diagnostic) among the Irish.
+  - Other examples: Old people among Floridians, beer drinkers among Bavarians, rational calculators among economists.
+
+→ Cued recall *amplifies* pre-existing differences.
+:::
+
+---
+
+### Model Extensions
+
+::: {.no-bullets}
+- The model can be extended among several domains to make it more realistic. Two important domains are:
+  - **Imperfect memory and learning:** The agent may forget parts of their memory database or consciously add entries to it. 
+  - **Skewed memory databases:** The memory database entries may be biased through: Cultural norms, media bias, subjective experiences, etc.
+- Even under such extension the main result still applies: Cued recall will *amplify* any pre-existing group differences present in the memory database.
+:::
+
 
 # Laboratory evidence for cued recall  
 
@@ -300,14 +428,33 @@ Query $(\text{other},\text{Irish})$: many unrelated memories ⇒ $\alpha>1$ ⇒ 
 
 ### Design – Bordalo et al. (2022)
 
-![](figures/MemoryExperiment.png){width=70% .center}
+People see words or numbers that are either colored orange or blue:
 
-40 slides → filler task → ask  
-$P(\text{word}\mid\text{orange})\;?$
+<div style="font-size:1.5em; line-height:2;">
+  <span style="color:orange;">apple</span> &nbsp;
+  <span style="color:blue;">table</span> &nbsp;
+  <span style="color:orange;">17</span> &nbsp;
+  <span style="color:blue;">car</span> &nbsp;
+  <span style="color:orange;">music</span> &nbsp;
+  <span style="color:blue;">42</span> &nbsp;
+  <span style="color:orange;">river</span> &nbsp;
+  <span style="color:blue;">dog</span> &nbsp;
+  <span style="color:orange;">book</span> &nbsp;
+  <span style="color:blue;">99</span>
+</div>
 
-- *Neutral*: true share = 50 %.  
-- Increasing **blue words** raises *interference*.  
-- Increasing **orange words** raises true share.
+40 such items → filler task → ask for $\small P(\text{word}\mid\text{orange})\;?$
+
+---
+
+### Treatments
+
+Across treatments, they increase (i) the share of words among blue, (ii) the share of words among orange.
+
+![](figures/MemoryExperiment.png){width=68% .center}
+
+- Increasing blue words tests for **interference.** 
+- Increasing orange words tests whether recall is tied to the true underlying frequencies.
 
 ---
 
@@ -315,72 +462,66 @@ $P(\text{word}\mid\text{orange})\;?$
 
 ![](figures/MemoryExperimentResults.png){width=68% .center}
 
-::: {.no-bullets}
-- More blue-word clutter ↓ estimated orange-word share.  
-- Raising true share raises estimate **less than 1-for-1**.  
+::: {.no-bullets .incremental}
+1. More blue-word clutter reduces the recalled orange-word share.  
+2. Raising true orange-word share raises estimates, but **less than 1-for-1**.  
 ✔️ Matches model predictions.
 :::
 
----
 
-# Field evidence I – Inflation memories  
-
----
-
-# Field evidence II – Contact & stereotypes  
+# Field evidence --- Media narratives
 
 ---
 
-### Random military postings (Spain)
+### Memory associations induced by the media
+*Keita, Renault, and Valette (EJ, 2023)*
 
-![](figures/SpainSentiment.png){width=78% .center}
+::: {.no-bullets .incremental}
+- **Testable model prediction:** What kind of features people ascribe to groups depends on what they learned in the past.
+- When cued with a feature, individuals will draw on their memory to "fill in" the group that is likely to have this feature.
+  - For example, people may have certain associations in mind between what groups in society are likely to commit crimes, receive welfare, etc. 
+  - The media potentially influences these associations by how they report about events.
 
-Bagues & Esteve-Volart (2023): serving **outside** home region ↑ trust & Spanish identity.
-
+:::
 ---
 
-### Cooperative vs. adversarial contact  
+### KRV: Setting
 
-![](figures/TypesOfContact.png){width=78% .center}
-
-Lowe (2021) – Indian cricket leagues  
- • Mixed-caste teams (co-op) ↓ bias  
- • Same-caste teams (purely competitive) ↑ bias
-
----
-
-# Field evidence III – Media narration  
-
----
-
-::: columns
-::: column width="55%"
 ![](figures/SZDisclosure.png){width=100%}
-:::
-::: column width="45%"
+
+KRV use an editorial change at the *Sächsische Zeitung* as a natural experiment. In 2016, the newspaper consistently began to disclose an offender's nationality whenever reporting on a crime.
+
+---
+
+## {auto-animate="true"}
+### KRV: Findings
+
 ![](figures/SZEffects.png){width=100%}
-:::
-:::
 
-Keita (2023): German newspaper started **always** stating offenders’ nationality.  
+Regression outcome variable: "How important is topic X to you?"
+
+Main dependent variable: SZ market share w/ post editorial change interaction
+ 
+---
+
+## {auto-animate="true"}
+### KRV: Findings
+
+![](figures/SZEffects.png){width=100%}
+
 → Readers **downgraded** immigration worries, **upgraded** crime worries.  
-(Counter-stereotypical info enters memory.)
+
+This suggests that the consistent disclosure of offender nationality introduced *counter-stereotypical* memory associations. 
 
 ---
 
-# Putting it together  
-
 ---
 
-## Take-aways  
+## Takeaways
 
-::: {.incremental .no-bullets}
-1. People **over-react** to weak cues, **under-react** to strong cues  
-   – reconciles “conservatism” (lab) with “excess movement” (field).  
-2. A **cued-recall** model formalises associative memory: similar but irrelevant evidence distorts sampling.  
-3. Lifetime experiences & media cues shape beliefs for decades.  
-4. **Contact quality matters** – cooperative exposure can loosen stereotypes, adversarial can harden them.  
-5. Policy: design information & encounters to **steer the cue set** (blind auditions, balanced crime reporting, cooperative programmes).  
-:::
-
----
+::: {.no-bullets}
+- Stereotypes and belief distortions can arise from how memory works, not just from biased data.
+- Associative (cued) recall amplifies diagnostic features of groups, leading to overestimation.
+- Laboratory and field evidence support the model: memory interference and media cues shape beliefs.
+- Understanding memory-based belief formation helps explain persistent social stereotypes.
+::: 
