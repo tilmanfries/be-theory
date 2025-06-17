@@ -389,9 +389,9 @@ $$
 **Proposition.** In the binary-binary model,
 $$
 P(H\mid g)=
-\frac{\lambda q_g}{\lambda q_g+(1-\lambda)(1-q_g)},\\
+\frac{\lambda q_g}{\lambda q_g+(1-\lambda)(1-q_b)},\\
 P(H\mid b)=
-\frac{\lambda(1-q_b)}{\lambda(1-q_b)+(1-\lambda)q_b}.
+\frac{\lambda(1-q_g)}{\lambda(1-q_g)+(1-\lambda)q_b}.
 $$
 :::
 
@@ -400,11 +400,11 @@ $$
 ## {auto-animate="true"}
 ### Likelihood-ratio Form
 
-We can use Bayes theorem to derive the following result:
+We can use Bayes' theorem to derive the following result:
 
 $$
 \small\frac{P(H\mid g)}{P(L\mid g)}=
-\frac{\lambda}{1-\lambda}\frac{q_g}{1-q_g}.
+\frac{\lambda}{1-\lambda}\frac{q_g}{1-q_b}.
 $$
 
 - Posterior LR = Prior LR × Signal strength.  
