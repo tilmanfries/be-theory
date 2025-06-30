@@ -1,6 +1,6 @@
 ---
-title: "Memory & Stereotypes"
-subtitle: "Belief distortions in the long run"
+title: "Memory as a foundation for beliefs"
+subtitle: "Belief distortions in the long run, Stereotypes"
 author: "Tilman Fries"
 format:
   revealjs:
@@ -314,10 +314,9 @@ $$
 
 ::: {.fragment}
 
-- Then, in our leading example, after searching for $q_1 = (\text{red hair, irish}):$
-
+- Then, in our leading example, after searching for $\small q_1 = (\text{red hair, irish}):$
 $$
-\small r_{q_1}(\text{red hair, irish}) = \frac{1\cdot 0.01}{1\cdot 0.01 + 1/2 \cdot 0.09 + 1/2\cdot 0.01 + 0\cdot 0.9} \approx 0.167
+\small r_{q_1}(\text{red, irish}) = \frac{1\cdot 0.01}{1\cdot 0.01 + 1/2 \cdot 0.09 + 1/2\cdot 0.01 + 0\cdot 0.9} \approx 0.167
 $$
 
 :::
@@ -331,13 +330,13 @@ $$
 - Then, in our leading example, after searching for $q_1 = (\text{red hair, irish}):$
 
 $$
-\small r_{q_1}(\text{red hair, irish}) = \frac{1\cdot 0.01}{1\cdot 0.01 + 1/2 \cdot 0.09 + 1/2\cdot 0.01 + 0\cdot 0.89} \approx 0.167
+\small r_{q_1}(\text{red, irish}) = \frac{1\cdot 0.01}{1\cdot 0.01 + 1/2 \cdot 0.09 + 1/2\cdot 0.01 + 0\cdot 0.89} \approx 0.167
 $$
 
 - After searching for $q_2 = (\text{other hair, irish}):$
 
 $$
-\small r_{q_2}(\text{other hair, irish}) = \frac{1\cdot 0.09}{1\cdot 0.09 + 1/2 \cdot 0.01 + 1/2\cdot 0.89 + 0\cdot 0.01} \approx 0.167
+\small r_{q_2}(\text{other, irish}) = \frac{1\cdot 0.09}{1\cdot 0.09 + 1/2 \cdot 0.01 + 1/2\cdot 0.89 + 0\cdot 0.01} \approx 0.167
 $$
 
 :::

@@ -143,11 +143,11 @@ $u$: material (outcome) utility • $\tilde\theta$: *belief* “I’m talent
 ### Belief-based utility: Application
 *Memory-manipulation game*
 
-Consider an entrepreneur who can invest ($z=1$) in a project at cost $c>0.$ Depending on the entrepreneur's ability, the project return is positive or negative:
+Consider an entrepreneur who can invest ($z=1$) in a project at cost $c\in(0,1).$ Depending on the entrepreneur's ability (*high* or *low*), the project return is:
 $$
 u(z,\theta) \begin{cases}
 1 - c, & a = 1\text{ and }\theta = \theta_H, \\
-- c, & a = 1\text{ and }\theta = \theta_H, \\
+- c, & a = 1\text{ and }\theta = \theta_L, \\
 0, & a = 0.
 \end{cases}
 $$
@@ -158,191 +158,312 @@ The **total utility** is the sum of the investment utility and the entrepreneur'
 ### Belief-based utility: Application
 
 :::{.incremental .no-bullets}
-- To study attitudes towards information, suppose that, in $t = 1$, the agent receives a signal $s$ about their talent *before* deciding whether to invest.
-  - Signal $s$ can either be bad ($b$) or null (no info, $\varnothing$). 
-- The agent decides whether to invest in $t = 2.$ We assume that, after observing a bad signal, the agent can decide whether to memorize ($m = b$) or forget ($m = \varnothing$). 
+- To study attitudes towards information, suppose that the entrepreneur receives a signal $s$ about their talent *before* deciding whether to invest.
+  - Signal $s$ can either be bad ($b$) or null (no info, $\varnothing$).
+  - After observing $s=b,$ the entrepreneur then decides whether to memorize ($m = b$) or forget ($m = \varnothing$). 
+  - When deciding whether to invest, the agent can only recall what's in their memory, but not the precise signal.
 :::
 
 ---
 
-### Memory-manipulation game (two periods)
+### Timeline
 
+![](figures/manipulation_timeline.png){width=80%}
 
-*Signal*: bad news with Pr\(b|θ_L)=q>½.  
-*Suppression cost* \(m>0\).
-
----
-
-### Backward induction
-
-**Founding rule** (period 2 belief \(𝜃̃₂\)):
-\[
-\text{Found ⇔ } 𝜃̃₂ \ge c.
-\]
+- $t=1:$ Observe signal $s\in\{b,\varnothing\}.$ After receiving $b,$ decide to remember ($m=b$) or not ($m=\varnothing$).
+- $t=2:$ Observe $m$ and make investment choice. 
+- $t=3:$ If invested, observe investment outcome ($\Pi$). If successful, entrepreneur knows they are $\theta_H.$ If fails, entrepreneur knows they are $\theta_L.$
+- $t=4:$ Utilities materialize.
 
 ---
 
-#### Perfect memory vs. Ignorance
+### Model solution
 
-We consider three cost regions (founding cost \(c\))
+:::{.no-bullets}
+- We solve this model using Perfect Bayesian Equilibrium. 
 
-| Region | Beliefs | Found? | Memory outcome | Equilibrium? |
-|--------|---------|--------|----------------|--------------|
-| **A** \(𝜃̃_∅ > 𝜃̃_b ≥ c\) | Bad news pivotal? no | Always | remember or forget identical | ✓ perfect memory, ✓ ignorance |
-| **B** \(𝜃̃_∅ ≥ c > 𝜃̃_b\) | Pivotal yes | Good news → found, bad news → no | Forgetting changes decision | ✓ perfect memory, **× ignorance** |
-| **C** \(c ≥ 𝜃̃_∅ > 𝜃̃_b\) | Never found | Memory only hurts ego | **× perfect memory**, ✓ ignorance |
+:::{.definition}
+**Perfect Bayesian Equilibrium (PBE)**
 
-(derivation: compare expected ego+material utility with/without suppression)
+A strategy profile and belief system are a Perfect Bayesian Equilibrium if:
 
----
+1. The agent's strategy maximizes their expected utility given their belief.
 
-### Equilibrium regions (text diagram, no TikZ)
-
-
-Overlap = both equilibria sustainable; welfare differs.
+2. Beliefs are updated using Bayes’ rule wherever possible.
+:::
+:::
 
 ---
 
-## 2.2 Present-bias motive (β-δ model)
-
-*Short-run* self evaluates utility
-
-\[
-\tilde u(a,\theta,β)=
-\begin{cases}
-β - c, & a=1, θ=θ_H,\\
-- c,   & a=1, θ=θ_L,\\
-0,     & a=0.
-\end{cases}
-\]
-
-Long-run self (at \(t=1\)) may **suppress bad memory** to ensure \(β\tilde θ_2≥c\).  
-Proposition: if
-
-\[
-\tilde θ_b > c > β \tilde θ_b\quad\text{and}\quad β\tilde θ_∅ ≥ c,
-\]
-
-then *perfect memory* cannot be an equilibrium – short-run self would under-invest.
+:::{.no-bullets .incremental}
+- This is a **psychological** model because:
+  1. The agent has *belief-based utility;* their utility depends on how talented they think they are. 
+  2. The agent can *manipulate* their memory. In particular, they can decide to forget bad news. 
+    - There is strong empirical evidence that individuals can choose what to remember (to some extent). We'll learn about one such example later.
+- Everything else is rational. In particular, we need PBE to close the model and derive a solution. 
+  - Definitely unrealistic, but PBE is an important benchmark.
+:::
 
 ---
 
-# 3 Evidence for belief-manipulation
+### Solving the model
+
+:::{.no-bullets .incremental}
+- We solve the model by backwards induction. 
+- In $t=2,$ the agent holds some belief $\tilde{\theta}_2$ about their talent and chooses $a\in\{0,1\}.$ 
+  - If $a=0,$ material utility is zero and the agent will not update their talent belief. Therefore, $E_2[U(a = 0, \theta,\tilde{\theta})] = \mu\tilde{\theta}_2(m).$
+  - If $a=1,$ the material utility depends on talent. The expected utility is:
+  \begin{align*}
+  E_2[U(a=1, \theta,\tilde{\theta})] = \tilde{\theta}_2(m)(1-c + \mu\times 1) \\ + (1-\tilde{\theta}_2(m))(-c + \mu\times 0)
+  \end{align*}
+:::
 
 ---
 
-### 3.1 Selective recall (Zimmermann 2020)
+### Solving the model
+
+:::{.no-bullets .incremental}
+- Consequently, invest if:
+\begin{align*}
+\small E_2[U(a=1, \theta,\tilde{\theta})] \geq E_2[U(a=0, \theta,\tilde{\theta})] 
+\small \Rightarrow \tilde{\theta}_2(m) \geq c.
+\end{align*}
+- This is an intuitive solution: The agent invests if their talent belief is sufficiently high. 
+- This finishes the analysis of the decision in $t=2.$ Now we move to $t=1$ and ask how the entrepreneur decides to remember, given their $t=2$ decision.
+:::
+
+---
+
+### Solving the model
+
+:::{.no-bullets .incremental}
+- In $t=1,$ after receiving $s=b,$ entrepreneur decides whether to remember it or not. 
+- Note that in $t=1$ the entrepreneur's talent belief is equal to:
+\begin{align*}\small
+\tilde{\theta}_1(s = b) = \frac{\tilde{\theta}_0 (1-q)}{\tilde{\theta}_0 (1-q) + (1 - \tilde{\theta}_0) q},\,
+\tilde{\theta}_1(s = \varnothing) = \frac{\tilde{\theta}_0 q}{\tilde{\theta}_0 q + (1 - \tilde{\theta}_0) (1-q)}.
+\end{align*}
+- (Above, $q$ is signal precision.)
+- We will investigate the existence of two types of equilibria: (i) **Full Realism** (always remember), (ii) **Delusion** (always forget).
+:::
+
+---
+
+### Equilibrium Existence
+
+:::{.proposition}
+**Full Realism Equilibrium.** There is a $\hat{c} \in(0,1)$ such that a full realism equilibrium exists if and only if $c \leq \hat{c}.$
+:::
+
+:::{.proposition}
+**Delusionary Equilibrium.** There are two thresholds $\hat{c}_L\in (0,1)$ and $\hat{c}_H \in(\hat{c}_L, 1)$ such that a delusionary equilibrium exists if (i) either $c \leq \hat{c}_L$ or (ii) $c \geq \hat{c}_H.$
+:::
+
+(Proof on board)
+
+---
+
+## {auto-animate="true"}
+### Model Intuitions
+
+:::{.no-bullets .incremental}
+- The model describes a tradeoff between deluding oneself to boost ego-utility and holding realistic beliefs to make a better investment decision:
+  - If $c$ is very high, the entrepreneur never invests. But then, *realism* cannot be an equilibrium as forgetting bad news always boosts the entrepreneur's without leading to investment.
+  - Delusion is optimal if it has no material consequences. 
+:::
+
+---
+
+## {auto-animate="true"}
+### Model Intuitions
+
+:::{.no-bullets}
+- The model describes a tradeoff between deluding oneself to boost ego-utility and holding realistic beliefs to make a better investment decision:
+  - If $c$ is in an intermediate range, the entrepreneur invests when remembering $m = \varnothing$ but not when remembering $m = b.$ Therefore, *delusion* cannot be an equilibrium in this intermediate range, as a deluded entrepreneur would invest and, thus, learn about their true talent. 
+:::
+
+---
+
+## {auto-animate="true"}
+### Model Intuitions
+
+:::{.no-bullets}
+- The model describes a tradeoff between deluding oneself to boost ego-utility and holding realistic beliefs to make a better investment decision:
+  - The model also suggests that *delusion* is economically inefficient. A delusionary entrepreneur sometimes does not invest when they should. 
+  - Intuitively, an investor remembering $m=\varnothing$ cannot be sure whether they deluded themselves or really did not observe bad news. Therefore, investors are overly skeptical after remembering nothing and cautious to invest.
+:::
+
+
+# Evidence for belief-manipulation
+
+---
+
+## {auto-animate="true"}
+### Selective recall (Zimmermann, AER, 2020)
+
+:::{.no-bullets .incremental}
+- Zimmermann conducts an IQ test with participants to obtain a proxy for "talent."
+- Participants are then matched into groups of ten and ranked according to performance. 
+- **Prior belief elicitation:** Directly after matching, they are asked: What is $P(\text{top half rank})?$
+- **Signal provision:** Are compared to 3 random group members and told about the relative rank. E.g:
+  - *"You rank higher than 2 and lower than 1."* (good)
+  - *"You rank higher than 1 and lower than 2."* (bad)
+:::
+
+---
+
+## {auto-animate="true"}
+### Selective recall (Zimmermann, AER, 2020)
+
+:::{.no-bullets}
+- **Prior belief elicitation:** Directly after matching, they are asked: What is $P(\text{top half rank})?$
+- **Signal provision:** Are compared to 3 random group members and told about the relative rank. E.g:
+  - *"You rank higher than 2 and lower than 1."* (good)
+  - *"You rank higher than 1 and lower than 2."* (bad)
+- **Posterior belief elicitation:** Then, they are asked: What is $P(\text{top half rank}|s)?$
+- **Variation in timing:** Posterior belief elicitation either immediately or after 1 month, to identify *memory.*
+:::
+
+---
+
+### Results 
 
 ![](figures/MotivatedMemory.png){width=92%}
 
 * Bad-news signals largely **forgotten** one month later.  
-* Announcement of future recall **or** €50 reward restores memory of bad news.
+* Good-news signals are largely **remembered.**
+  - This points to asymmetric memory.
 
 ---
 
-### 3.2 Self-motivation before exams (Bönisch 2024)
+### Wishful thinking 
+*Engelmann, Lebreton, Salem-Garcia, Schwardmann, van der Weele (AER, 2024)*
 
-![](figures/MicroExpectations.png){width=75%}
-
-*Expected points gain from doubling study-hours* **peaks right before exam**  
-⇒ students inflate returns when effort decision is imminent.
-
----
-
-### 3.3 Effort task, uncertain pay (Lobeck 2023)
-
-![](figures/MotivatingBeliefs.png){width=78%}
-
-* When participants know they’ll work again, they over-state “my effort will be paid” – otherwise not.  
-
----
-
-# 4 Applications  
-
----
-
-## 4.1 Belief-in-a-just-world & welfare state (Bénabou & Tirole 2006)
-
-### Environment  
-
-- Rich (\(\lambda_r\)) vs. poor (\(\lambda_p\)), share \(\rho<½\).  
-- Success prob.: \((1-θ)\lambda_g + θe\).  
-- Anticipatory weight \(\mu\), present-bias \(\beta\), memory cost \(m\).  
-- Majority votes tax \(\tau\).
-
-### Effort choice  
-
-\[
-e^*(\tilde θ,\tau)=\beta(1-\tau)\tilde θ.
-\]
-
-### Poor-majority tax preference  
-
-\[
-\tau^*(\tilde θ)=1-\frac{(1-\tilde θ)(\bar\lambda-\lambda_p)}{\beta \tilde θ^2}.
-\]
-
-Higher optimism → lower tax.
-
----
-
-### Memory equilibria with endogenous taxes  
-
-- **Realism**: remember bad news ⇒ pessimistic belief \( \tilde θ_b\) ⇒ high tax ⇒ low return to effort ⇒ no incentive to distort.  
-- **Just-world**: suppress bad news ⇒ optimistic \( \tilde θ_0\) ⇒ low tax ⇒ high return to effort ⇒ incentive to keep optimism.  
-
-Overlap region (both equilibria) exists when  
-
-\[
-1-\alpha \;≥\; 2(1-q)\qquad
-\bigl(\text{low responsibility / many good signals}\bigr)
-\]
-
-Empirically: countries with *strong “work pays” beliefs* spend **less** on social protection (figure).
-
-![](figures/JustWorldBeliefs.png){width=74%}
-
----
-
-## 4.2 Groupthink model  
-
-- Large \(N\) agents; project payoff \(\theta∈\{+π,\,-π\}\).  
-- Public, perfectly informative signal \(s\).  
-- Each can *erase* bad memory at cost \(m\).  
-- Complementarity of own effort \(\alpha\).
-
-### Effort rule  
-
-\[
-\text{work ⇔ } \tilde θ \ge \frac{c}{(1+\mu)\alpha}.
-\]
-
-### Existence conditions  
-
-- **Realism** equilibrium (act on truth) if  
-\[
-\mu \le \frac{m+c+\alpha π}{π}.
-\]
-
-- **Collective delusion** equilibrium if  
-\[
-\mu \ge \frac{m+c+\alpha π}{π(2q-\alpha)}.
-\]
-
-- Both sustainable when \(1-\alpha ≥ 2(1-q)\): small individual responsibility, moderately precise signal.
-
----
-
-# 5 Key take-aways  
-
-::: {.incremental .no-bullets}
-1. **Beliefs are consumables.**  
-   Utility may rise with self-esteem or hope and fall with dread.  
-2. **Information avoidance & memory suppression** are rational once beliefs enter utility.  
-3. **Present-bias** gives a motive to *engineer optimism* (expectation management).  
-4. Equilibria:  
-   - Perfect memory (realism)  
-   - Ignorance / delusion (self-deception)  
-   - Both may coexist; coordination or institutions pick one.  
-5. Policy levers: lower memory-distortion cost \(m\), raise stakes, or increase personal responsibility \(\alpha\) to shift society toward realism.
+:::{.incremental .no-bullets}
+- They ask: If people receive news they find scary, are they more likely to ignore it? 
+- In particular, participants in the experiment may receive an electrical shock. They receive information about whether they will receive it or not. Do people ignore information that they will receive a shock?
 :::
+
+--- 
+
+### Gabor task
+
+ELSSW use a **Gabor task** to measure belief updating.
+
+A figure appears for 150ms on the screen. Participants guess whether it tilts left or right.
+
+:::{.fragment}
+![](figures/gabor.png){width=40%}
+:::
+
+---
+
+### Treatment manipulation
+
+::: {.no-bullets .incremental}
+- The treatments vary:
+  - Whether participants can receive an electrical shock after a left-tilt or a right-tilt. 
+  - How tilted the shapes are. Intuitively, the task is easy is tilt is strong and difficult if tilt is weak.
+- This allows them to identify:
+  1. Whether participants are **less accurate** at identifying tilts that may entail an electrical shock. If they do, they engage in *wishful thinking.*
+  2. Whether wishful thinking depends on the task complexity. 
+:::
+
+---
+
+### Results
+
+![](figures/AnticipatoryAnxiety.png){width=40%}
+
+* Participants are less accurate when identifying [shock patterns]{style="color: var(--my-red);"} than when identifying neutral patterns. 
+* Especially if the tilt is low (i.e., the task is difficult).
+
+---
+
+### Takeaways
+
+::: {.no-bullets .incremental}
+- Belief-based motives such as striving for *self-esteem* or the avoidance of *dread* influence belief formation. 
+- But human beliefs are not infinitely flexible:
+  - In Zimmermann (2020), participants forget bad news after one month, but they incorporate these news when asked immediately. 
+  - In ELSSW (2024), wishful thinking is higher when information is ambiguous than when it is precise. 
+- This suggests that *self-serving beliefs* are more likely to occur in ambiguous information environments. 
+  - But many economic environments are ambiguous.
+:::
+
+---
+
+### Extensions I
+
+::: {.no-bullets .incremental}
+- Belief based utility and information management have many economic applications:
+  - Bénabou (ReStud, 2013): Groups are prone to motivated beliefs because such beliefs are often complements. 
+  - E.g., if others ignore climate change, there may be no point of being realistic about it as: (i) Realism brings dread, (ii) fighting climate change requires a *critical mass* not ignoring it. 
+  - "Realist" and "Delusionary" equilibria often coexist, so sudden shifts from Delusion to Realism are possible.
+:::
+
+---
+
+### Extensions II
+
+::: {.no-bullets .incremental}
+- Motivated beliefs as a means of *self control:*
+  - Bénabou & Tirole (QJE, 2003): Present-biased individuals may delude themselves into thinking that hard work pays off because such a belief helps them stop procrastinate.
+  - Bönisch et al. (WP, 2024) provide consistent evidence: Shortly before the micro exam, students believe that learning is more useful than long before or right after the exam. 
+:::
+
+---
+
+## {auto-animate="true"}
+### Extensions II
+
+::: {.no-bullets .incremental}
+- Bénabou and Tirole (QJE, 2006) use the self-control channel to explain US-Europe difference in the tax and transfer system:
+  - Americans delude themselves into thinking that hard work pays off → They think they can reach anything by working hard → Hence, they vote for lower taxes and transfers → This makes the delusion that working hard pays off even more attractive...
+  - "Lock-in" effect, where the American Dream and a slim state reinforce each other.
+:::
+
+---
+
+## {auto-animate="true"}
+### Extensions II
+
+::: {.no-bullets}
+- Bénabou and Tirole (QJE, 2006) use the self-control channel to explain US-Europe difference in the tax and transfer system:
+  - Europeans delude themselves by thinking that effort does not matter for success → They expect that social structures predetermine everything → Hence, they vote for redistribution from *"undeserving rich"* to others → This makes it even more attractive to think that working hard does not pay off...
+  - "Lock-in" effect, where belief in a rigged system and a large state reinforce each other.
+:::
+
+---
+
+## {auto-animate="true"}
+### The Big Picture
+
+::: {.no-bullets .incremental}
+- **The classical view:** Individuals acquire information to inform themselves, they wish to have accurate beliefs about the world to improve their decisions. 
+  - The fundamentals of the economy determine beliefs. 
+- **The modern view:** Individuals trade off accuracy with desires such as *self-esteem, ego utility, dread, self-control.* 
+  - People may vote on changes to the tax-and-transfer system to support their delusions, they may seek out teams with diffused responsibilities that support "delusionary" optimistic beliefs. 
+:::
+
+---
+
+## {auto-animate="true"}
+### The Big Picture
+
+::: {.no-bullets}
+- **The modern view:** Individuals trade off accuracy with desires such as *self-esteem, ego utility, dread, self-control.* 
+  - People may vote on changes to the tax-and-transfer system to support their delusions, they may seek out teams with diffused responsibilities that support "delusionary" optimistic beliefs. 
+  - **Beliefs as a collective action problem:** Incentives for realism vs. delusions depend on the structure of society: Hence, beliefs can be *socially determined* and changing them may require social coordination.
+:::
+
+---
+
+### Final Takeaways
+
+::: {.incremental}
+- Standard theory assumes people seek accurate beliefs, but real-world behavior often deviates from this.
+- Behavioral models explain why people avoid information or distort their beliefs: psychological motives like self-esteem, hope, or dread matter.
+- Empirical evidence shows selective memory and wishful thinking are common, especially when information is ambiguous or emotionally charged.
+- This opens up space to a whole different economics.
+::: 

@@ -273,10 +273,10 @@ U(z,\theta,\tilde{\theta}) = u(z,\theta)\;+\;\mu\,\tilde{\theta},\qquad \mu&gt;0
 
 <h3 id="belief-based-utility-application">Belief-based utility: Application</h3>
 <p><em>Memory-manipulation game</em></p>
-<p>Consider an entrepreneur who can invest (<span class="math inline">\(z=1\)</span>) in a project at cost <span class="math inline">\(c&gt;0.\)</span> Depending on the entrepreneur’s ability, the project return is positive or negative: <span class="math display">\[
+<p>Consider an entrepreneur who can invest (<span class="math inline">\(z=1\)</span>) in a project at cost <span class="math inline">\(c\in(0,1).\)</span> Depending on the entrepreneur’s ability (<em>high</em> or <em>low</em>), the project return is: <span class="math display">\[
 u(z,\theta) \begin{cases}
 1 - c, &amp; a = 1\text{ and }\theta = \theta_H, \\
-- c, &amp; a = 1\text{ and }\theta = \theta_H, \\
+- c, &amp; a = 1\text{ and }\theta = \theta_L, \\
 0, &amp; a = 0.
 \end{cases}
 \]</span></p>
@@ -287,214 +287,366 @@ u(z,\theta) \begin{cases}
 <h3 id="belief-based-utility-application-1">Belief-based utility: Application</h3>
 <div class="no-bullets">
 <ul>
-<li class="fragment">To study attitudes towards information, suppose that, in <span class="math inline">\(t = 1\)</span>, the agent receives a signal <span class="math inline">\(s\)</span> about their talent <em>before</em> deciding whether to invest.
+<li class="fragment">To study attitudes towards information, suppose that the entrepreneur receives a signal <span class="math inline">\(s\)</span> about their talent <em>before</em> deciding whether to invest.
 <ul>
 <li class="fragment">Signal <span class="math inline">\(s\)</span> can either be bad (<span class="math inline">\(b\)</span>) or null (no info, <span class="math inline">\(\varnothing\)</span>).</li>
+<li class="fragment">After observing <span class="math inline">\(s=b,\)</span> the entrepreneur then decides whether to memorize (<span class="math inline">\(m = b\)</span>) or forget (<span class="math inline">\(m = \varnothing\)</span>).</li>
+<li class="fragment">When deciding whether to invest, the agent can only recall what’s in their memory, but not the precise signal.</li>
 </ul></li>
-<li class="fragment">The agent decides whether to invest in <span class="math inline">\(t = 2.\)</span> We assume that, after observing a bad signal, the agent can decide whether to memorize (<span class="math inline">\(m = b\)</span>) or forget (<span class="math inline">\(m = \varnothing\)</span>).</li>
 </ul>
 </div>
 </section>
 <section class="slide level2">
 
-<h3 id="memory-manipulation-game-two-periods">Memory-manipulation game (two periods)</h3>
-<p><em>Signal</em>: bad news with Pr(b|θ_L)=q&gt;½.<br>
-<em>Suppression cost</em> (m&gt;0).</p>
+<h3 id="timeline">Timeline</h3>
+
+<img data-src="figures/manipulation_timeline.png" style="width:80.0%" class="r-stretch"><ul>
+<li><span class="math inline">\(t=1:\)</span> Observe signal <span class="math inline">\(s\in\{b,\varnothing\}.\)</span> After receiving <span class="math inline">\(b,\)</span> decide to remember (<span class="math inline">\(m=b\)</span>) or not (<span class="math inline">\(m=\varnothing\)</span>).</li>
+<li><span class="math inline">\(t=2:\)</span> Observe <span class="math inline">\(m\)</span> and make investment choice.</li>
+<li><span class="math inline">\(t=3:\)</span> If invested, observe investment outcome (<span class="math inline">\(\Pi\)</span>). If successful, entrepreneur knows they are <span class="math inline">\(\theta_H.\)</span> If fails, entrepreneur knows they are <span class="math inline">\(\theta_L.\)</span></li>
+<li><span class="math inline">\(t=4:\)</span> Utilities materialize.</li>
+</ul>
 </section>
 <section class="slide level2">
 
-<h3 id="backward-induction">Backward induction</h3>
-<p><strong>Founding rule</strong> (period 2 belief (𝜃̃₂)): [ 𝜃̃₂ c. ]</p>
+<h3 id="model-solution">Model solution</h3>
+<div class="no-bullets">
+<ul>
+<li>We solve this model using Perfect Bayesian Equilibrium.</li>
+</ul>
+<div class="definition">
+<p><strong>Perfect Bayesian Equilibrium (PBE)</strong></p>
+<p>A strategy profile and belief system are a Perfect Bayesian Equilibrium if:</p>
+<ol type="1">
+<li><p>The agent’s strategy maximizes their expected utility given their belief.</p></li>
+<li><p>Beliefs are updated using Bayes’ rule wherever possible.</p></li>
+</ol>
+</div>
+</div>
 </section>
 <section class="slide level2">
 
-<h4 id="perfect-memory-vs.-ignorance">Perfect memory vs.&nbsp;Ignorance</h4>
-<p>We consider three cost regions (founding cost (c))</p>
-<table class="caption-top" style="width:100%;">
-<colgroup>
-<col style="width: 14%">
-<col style="width: 16%">
-<col style="width: 14%">
-<col style="width: 29%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Region</th>
-<th>Beliefs</th>
-<th>Found?</th>
-<th>Memory outcome</th>
-<th>Equilibrium?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>A</strong> (𝜃̃_∅ &gt; 𝜃̃_b ≥ c)</td>
-<td>Bad news pivotal? no</td>
-<td>Always</td>
-<td>remember or forget identical</td>
-<td>✓ perfect memory, ✓ ignorance</td>
-</tr>
-<tr class="even">
-<td><strong>B</strong> (𝜃̃_∅ ≥ c &gt; 𝜃̃_b)</td>
-<td>Pivotal yes</td>
-<td>Good news → found, bad news → no</td>
-<td>Forgetting changes decision</td>
-<td>✓ perfect memory, <strong>× ignorance</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>C</strong> (c ≥ 𝜃̃_∅ &gt; 𝜃̃_b)</td>
-<td>Never found</td>
-<td>Memory only hurts ego</td>
-<td><strong>× perfect memory</strong>, ✓ ignorance</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>(derivation: compare expected ego+material utility with/without suppression)</p>
+<div class="no-bullets">
+<ul>
+<li class="fragment">This is a <strong>psychological</strong> model because:
+<ol type="1">
+<li class="fragment">The agent has <em>belief-based utility;</em> their utility depends on how talented they think they are.</li>
+<li class="fragment">The agent can <em>manipulate</em> their memory. In particular, they can decide to forget bad news.</li>
+</ol>
+<ul>
+<li class="fragment">There is strong empirical evidence that individuals can choose what to remember (to some extent). We’ll learn about one such example later.</li>
+</ul></li>
+<li class="fragment">Everything else is rational. In particular, we need PBE to close the model and derive a solution.
+<ul>
+<li class="fragment">Definitely unrealistic, but PBE is an important benchmark.</li>
+</ul></li>
+</ul>
+</div>
 </section>
 <section class="slide level2">
 
-<h3 id="equilibrium-regions-text-diagram-no-tikz">Equilibrium regions (text diagram, no TikZ)</h3>
-<p>Overlap = both equilibria sustainable; welfare differs.</p>
-</section>
-<section id="present-bias-motive-β-δ-model" class="slide level2">
-<h2>2.2 Present-bias motive (β-δ model)</h2>
-<p><em>Short-run</em> self evaluates utility</p>
-[ u(a,,β)=
-<span class="math display">\[\begin{cases}
-β - c, &amp; a=1, θ=θ_H,\\
-- c,   &amp; a=1, θ=θ_L,\\
-0,     &amp; a=0.
-\end{cases}\]</span>
-<p>]</p>
-<p>Long-run self (at (t=1)) may <strong>suppress bad memory</strong> to ensure (βθ_2≥c).<br>
-Proposition: if</p>
-<p>[ θ_b &gt; c &gt; β θ_bβθ_∅ ≥ c, ]</p>
-<p>then <em>perfect memory</em> cannot be an equilibrium – short-run self would under-invest.</p>
+<h3 id="solving-the-model">Solving the model</h3>
+<div class="no-bullets">
+<ul>
+<li class="fragment">We solve the model by backwards induction.</li>
+<li class="fragment">In <span class="math inline">\(t=2,\)</span> the agent holds some belief <span class="math inline">\(\tilde{\theta}_2\)</span> about their talent and chooses <span class="math inline">\(a\in\{0,1\}.\)</span>
+<ul>
+<li class="fragment">If <span class="math inline">\(a=0,\)</span> material utility is zero and the agent will not update their talent belief. Therefore, <span class="math inline">\(E_2[U(a = 0, \theta,\tilde{\theta})] = \mu\tilde{\theta}_2(m).\)</span></li>
+<li class="fragment">If <span class="math inline">\(a=1,\)</span> the material utility depends on talent. The expected utility is: <span class="math display">\[\begin{align*}
+E_2[U(a=1, \theta,\tilde{\theta})] = \tilde{\theta}_2(m)(1-c + \mu\times 1) \\ + (1-\tilde{\theta}_2(m))(-c + \mu\times 0)
+\end{align*}\]</span></li>
+</ul></li>
+</ul>
+</div>
 </section>
 <section class="slide level2">
 
+<h3 id="solving-the-model-1">Solving the model</h3>
+<div class="no-bullets">
+<ul>
+<li class="fragment">Consequently, invest if: <span class="math display">\[\begin{align*}
+\small E_2[U(a=1, \theta,\tilde{\theta})] \geq E_2[U(a=0, \theta,\tilde{\theta})]
+\small \Rightarrow \tilde{\theta}_2(m) \geq c.
+\end{align*}\]</span></li>
+<li class="fragment">This is an intuitive solution: The agent invests if their talent belief is sufficiently high.</li>
+<li class="fragment">This finishes the analysis of the decision in <span class="math inline">\(t=2.\)</span> Now we move to <span class="math inline">\(t=1\)</span> and ask how the entrepreneur decides to remember, given their <span class="math inline">\(t=2\)</span> decision.</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="solving-the-model-2">Solving the model</h3>
+<div class="no-bullets">
+<ul>
+<li class="fragment">In <span class="math inline">\(t=1,\)</span> after receiving <span class="math inline">\(s=b,\)</span> entrepreneur decides whether to remember it or not.</li>
+<li class="fragment">Note that in <span class="math inline">\(t=1\)</span> the entrepreneur’s talent belief is equal to: <span class="math display">\[\begin{align*}\small
+\tilde{\theta}_1(s = b) = \frac{\tilde{\theta}_0 (1-q)}{\tilde{\theta}_0 (1-q) + (1 - \tilde{\theta}_0) q},\,
+\tilde{\theta}_1(s = \varnothing) = \frac{\tilde{\theta}_0 q}{\tilde{\theta}_0 q + (1 - \tilde{\theta}_0) (1-q)}.
+\end{align*}\]</span></li>
+<li class="fragment">(Above, <span class="math inline">\(q\)</span> is signal precision.)</li>
+<li class="fragment">We will investigate the existence of two types of equilibria: (i) <strong>Full Realism</strong> (always remember), (ii) <strong>Delusion</strong> (always forget).</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="equilibrium-existence">Equilibrium Existence</h3>
+<div class="proposition">
+<p><strong>Full Realism Equilibrium.</strong> There is a <span class="math inline">\(\hat{c} \in(0,1)\)</span> such that a full realism equilibrium exists if and only if <span class="math inline">\(c \leq \hat{c}.\)</span></p>
+</div>
+<div class="proposition">
+<p><strong>Delusionary Equilibrium.</strong> There are two thresholds <span class="math inline">\(\hat{c}_L\in (0,1)\)</span> and <span class="math inline">\(\hat{c}_H \in(\hat{c}_L, 1)\)</span> such that a delusionary equilibrium exists if (i) either <span class="math inline">\(c \leq \hat{c}_L\)</span> or (ii) <span class="math inline">\(c \geq \hat{c}_H.\)</span></p>
+</div>
+<p>(Proof on board)</p>
+</section>
+<section id="section-4" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<h3 id="model-intuitions">Model Intuitions</h3>
+<div class="no-bullets">
+<ul>
+<li class="fragment">The model describes a tradeoff between deluding oneself to boost ego-utility and holding realistic beliefs to make a better investment decision:
+<ul>
+<li class="fragment">If <span class="math inline">\(c\)</span> is very high, the entrepreneur never invests. But then, <em>realism</em> cannot be an equilibrium as forgetting bad news always boosts the entrepreneur’s without leading to investment.</li>
+<li class="fragment">Delusion is optimal if it has no material consequences.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="section-5" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<h3 id="model-intuitions-1">Model Intuitions</h3>
+<div class="no-bullets">
+<ul>
+<li>The model describes a tradeoff between deluding oneself to boost ego-utility and holding realistic beliefs to make a better investment decision:
+<ul>
+<li>If <span class="math inline">\(c\)</span> is in an intermediate range, the entrepreneur invests when remembering <span class="math inline">\(m = \varnothing\)</span> but not when remembering <span class="math inline">\(m = b.\)</span> Therefore, <em>delusion</em> cannot be an equilibrium in this intermediate range, as a deluded entrepreneur would invest and, thus, learn about their true talent.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="section-6" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<h3 id="model-intuitions-2">Model Intuitions</h3>
+<div class="no-bullets">
+<ul>
+<li>The model describes a tradeoff between deluding oneself to boost ego-utility and holding realistic beliefs to make a better investment decision:
+<ul>
+<li>The model also suggests that <em>delusion</em> is economically inefficient. A delusionary entrepreneur sometimes does not invest when they should.</li>
+<li>Intuitively, an investor remembering <span class="math inline">\(m=\varnothing\)</span> cannot be sure whether they deluded themselves or really did not observe bad news. Therefore, investors are overly skeptical after remembering nothing and cautious to invest.</li>
+</ul></li>
+</ul>
+</div>
 </section></section>
 <section>
 <section id="evidence-for-belief-manipulation" class="title-slide slide level1 center">
-<h1>3 Evidence for belief-manipulation</h1>
+<h1>Evidence for belief-manipulation</h1>
 
+</section>
+<section id="section-7" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<h3 id="selective-recall-zimmermann-aer-2020">Selective recall (Zimmermann, AER, 2020)</h3>
+<div class="no-bullets">
+<ul>
+<li class="fragment">Zimmermann conducts an IQ test with participants to obtain a proxy for “talent.”</li>
+<li class="fragment">Participants are then matched into groups of ten and ranked according to performance.</li>
+<li class="fragment"><strong>Prior belief elicitation:</strong> Directly after matching, they are asked: What is <span class="math inline">\(P(\text{top half rank})?\)</span></li>
+<li class="fragment"><strong>Signal provision:</strong> Are compared to 3 random group members and told about the relative rank. E.g:
+<ul>
+<li class="fragment"><em>“You rank higher than 2 and lower than 1.”</em> (good)</li>
+<li class="fragment"><em>“You rank higher than 1 and lower than 2.”</em> (bad)</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="section-8" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<h3 id="selective-recall-zimmermann-aer-2020-1">Selective recall (Zimmermann, AER, 2020)</h3>
+<div class="no-bullets">
+<ul>
+<li><strong>Prior belief elicitation:</strong> Directly after matching, they are asked: What is <span class="math inline">\(P(\text{top half rank})?\)</span></li>
+<li><strong>Signal provision:</strong> Are compared to 3 random group members and told about the relative rank. E.g:
+<ul>
+<li><em>“You rank higher than 2 and lower than 1.”</em> (good)</li>
+<li><em>“You rank higher than 1 and lower than 2.”</em> (bad)</li>
+</ul></li>
+<li><strong>Posterior belief elicitation:</strong> Then, they are asked: What is <span class="math inline">\(P(\text{top half rank}|s)?\)</span></li>
+<li><strong>Variation in timing:</strong> Posterior belief elicitation either immediately or after 1 month, to identify <em>memory.</em></li>
+</ul>
+</div>
 </section>
 <section class="slide level2">
 
-<h3 id="selective-recall-zimmermann-2020">3.1 Selective recall (Zimmermann 2020)</h3>
+<h3 id="results">Results</h3>
 
 <img data-src="figures/MotivatedMemory.png" style="width:92.0%" class="r-stretch"><ul>
 <li>Bad-news signals largely <strong>forgotten</strong> one month later.<br>
 </li>
-<li>Announcement of future recall <strong>or</strong> €50 reward restores memory of bad news.</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="self-motivation-before-exams-bönisch-2024">3.2 Self-motivation before exams (Bönisch 2024)</h3>
-
-<img data-src="figures/MicroExpectations.png" style="width:75.0%" class="r-stretch"><p><em>Expected points gain from doubling study-hours</em> <strong>peaks right before exam</strong><br>
-⇒ students inflate returns when effort decision is imminent.</p>
-</section>
-<section class="slide level2">
-
-<h3 id="effort-task-uncertain-pay-lobeck-2023">3.3 Effort task, uncertain pay (Lobeck 2023)</h3>
-
-<img data-src="figures/MotivatingBeliefs.png" style="width:78.0%" class="r-stretch"><ul>
-<li>When participants know they’ll work again, they over-state “my effort will be paid” – otherwise not.</li>
-</ul>
-</section>
-<section class="slide level2">
-
-</section></section>
-<section>
-<section id="applications" class="title-slide slide level1 center">
-<h1>4 Applications</h1>
-
-</section>
-<section id="belief-in-a-just-world-welfare-state-bénabou-tirole-2006" class="slide level2">
-<h2>4.1 Belief-in-a-just-world &amp; welfare state (Bénabou &amp; Tirole 2006)</h2>
-<h3 id="environment">Environment</h3>
+<li>Good-news signals are largely <strong>remembered.</strong>
 <ul>
-<li>Rich ((_r)) vs.&nbsp;poor ((_p)), share (&lt;½).<br>
-</li>
-<li>Success prob.: ((1-θ)_g + θe).<br>
-</li>
-<li>Anticipatory weight (), present-bias (), memory cost (m).<br>
-</li>
-<li>Majority votes tax ().</li>
-</ul>
-<h3 id="effort-choice">Effort choice</h3>
-<p>[ e^*(θ,)=(1-)θ. ]</p>
-<h3 id="poor-majority-tax-preference">Poor-majority tax preference</h3>
-<p>[ ^*(θ)=1-. ]</p>
-<p>Higher optimism → lower tax.</p>
-</section>
-<section class="slide level2">
-
-<h3 id="memory-equilibria-with-endogenous-taxes">Memory equilibria with endogenous taxes</h3>
-<ul>
-<li><strong>Realism</strong>: remember bad news ⇒ pessimistic belief ( θ_b) ⇒ high tax ⇒ low return to effort ⇒ no incentive to distort.<br>
-</li>
-<li><strong>Just-world</strong>: suppress bad news ⇒ optimistic ( θ_0) ⇒ low tax ⇒ high return to effort ⇒ incentive to keep optimism.</li>
-</ul>
-<p>Overlap region (both equilibria) exists when</p>
-<p>[ 1-;≥; 2(1-q) () ]</p>
-<p>Empirically: countries with <em>strong “work pays” beliefs</em> spend <strong>less</strong> on social protection (figure).</p>
-
-<img data-src="figures/JustWorldBeliefs.png" style="width:74.0%" class="r-stretch"></section>
-<section id="groupthink-model" class="slide level2">
-<h2>4.2 Groupthink model</h2>
-<ul>
-<li>Large (N) agents; project payoff (∈{+π,,-π}).<br>
-</li>
-<li>Public, perfectly informative signal (s).<br>
-</li>
-<li>Each can <em>erase</em> bad memory at cost (m).<br>
-</li>
-<li>Complementarity of own effort ().</li>
-</ul>
-<h3 id="effort-rule">Effort rule</h3>
-<p>[ θ . ]</p>
-<h3 id="existence-conditions">Existence conditions</h3>
-<ul>
-<li><p><strong>Realism</strong> equilibrium (act on truth) if<br>
-[ . ]</p></li>
-<li><p><strong>Collective delusion</strong> equilibrium if<br>
-[ . ]</p></li>
-<li><p>Both sustainable when (1-≥ 2(1-q)): small individual responsibility, moderately precise signal.</p></li>
-</ul>
-</section>
-<section class="slide level2">
-
-</section></section>
-<section id="key-take-aways" class="title-slide slide level1 center">
-<h1>5 Key take-aways</h1>
-<div class="no-bullets">
-<ol type="1">
-<li class="fragment"><strong>Beliefs are consumables.</strong><br>
-Utility may rise with self-esteem or hope and fall with dread.<br>
-</li>
-<li class="fragment"><strong>Information avoidance &amp; memory suppression</strong> are rational once beliefs enter utility.<br>
-</li>
-<li class="fragment"><strong>Present-bias</strong> gives a motive to <em>engineer optimism</em> (expectation management).<br>
-</li>
-<li class="fragment">Equilibria:
-<ul>
-<li class="fragment">Perfect memory (realism)<br>
-</li>
-<li class="fragment">Ignorance / delusion (self-deception)<br>
-</li>
-<li class="fragment">Both may coexist; coordination or institutions pick one.<br>
-</li>
+<li>This points to asymmetric memory.</li>
 </ul></li>
-<li class="fragment">Policy levers: lower memory-distortion cost (m), raise stakes, or increase personal responsibility () to shift society toward realism.</li>
-</ol>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="wishful-thinking">Wishful thinking</h3>
+<p><em>Engelmann, Lebreton, Salem-Garcia, Schwardmann, van der Weele (AER, 2024)</em></p>
+<div class="no-bullets">
+<ul>
+<li class="fragment">They ask: If people receive news they find scary, are they more likely to ignore it?</li>
+<li class="fragment">In particular, participants in the experiment may receive an electrical shock. They receive information about whether they will receive it or not. Do people ignore information that they will receive a shock?</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="gabor-task">Gabor task</h3>
+<p>ELSSW use a <strong>Gabor task</strong> to measure belief updating.</p>
+<p>A figure appears for 150ms on the screen. Participants guess whether it tilts left or right.</p>
+<div class="fragment">
+<p><img data-src="figures/gabor.png" style="width:40.0%"></p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="treatment-manipulation">Treatment manipulation</h3>
+<div class="no-bullets">
+<ul>
+<li class="fragment">The treatments vary:
+<ul>
+<li class="fragment">Whether participants can receive an electrical shock after a left-tilt or a right-tilt.</li>
+<li class="fragment">How tilted the shapes are. Intuitively, the task is easy is tilt is strong and difficult if tilt is weak.</li>
+</ul></li>
+<li class="fragment">This allows them to identify:
+<ol type="1">
+<li class="fragment">Whether participants are <strong>less accurate</strong> at identifying tilts that may entail an electrical shock. If they do, they engage in <em>wishful thinking.</em></li>
+<li class="fragment">Whether wishful thinking depends on the task complexity.</li>
+</ol></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="results-1">Results</h3>
+
+<img data-src="figures/AnticipatoryAnxiety.png" style="width:40.0%" class="r-stretch"><ul>
+<li>Participants are less accurate when identifying <span style="color: var(--my-red);">shock patterns</span> than when identifying neutral patterns.</li>
+<li>Especially if the tilt is low (i.e., the task is difficult).</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="takeaways">Takeaways</h3>
+<div class="no-bullets">
+<ul>
+<li class="fragment">Belief-based motives such as striving for <em>self-esteem</em> or the avoidance of <em>dread</em> influence belief formation.</li>
+<li class="fragment">But human beliefs are not infinitely flexible:
+<ul>
+<li class="fragment">In Zimmermann (2020), participants forget bad news after one month, but they incorporate these news when asked immediately.</li>
+<li class="fragment">In ELSSW (2024), wishful thinking is higher when information is ambiguous than when it is precise.</li>
+</ul></li>
+<li class="fragment">This suggests that <em>self-serving beliefs</em> are more likely to occur in ambiguous information environments.
+<ul>
+<li class="fragment">But many economic environments are ambiguous.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="extensions-i">Extensions I</h3>
+<div class="no-bullets">
+<ul>
+<li class="fragment">Belief based utility and information management have many economic applications:
+<ul>
+<li class="fragment">Bénabou (ReStud, 2013): Groups are prone to motivated beliefs because such beliefs are often complements.</li>
+<li class="fragment">E.g., if others ignore climate change, there may be no point of being realistic about it as: (i) Realism brings dread, (ii) fighting climate change requires a <em>critical mass</em> not ignoring it.</li>
+<li class="fragment">“Realist” and “Delusionary” equilibria often coexist, so sudden shifts from Delusion to Realism are possible.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="extensions-ii">Extensions II</h3>
+<div class="no-bullets">
+<ul>
+<li class="fragment">Motivated beliefs as a means of <em>self control:</em>
+<ul>
+<li class="fragment">Bénabou &amp; Tirole (QJE, 2003): Present-biased individuals may delude themselves into thinking that hard work pays off because such a belief helps them stop procrastinate.</li>
+<li class="fragment">Bönisch et al.&nbsp;(WP, 2024) provide consistent evidence: Shortly before the micro exam, students believe that learning is more useful than long before or right after the exam.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="section-9" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<h3 id="extensions-ii-1">Extensions II</h3>
+<div class="no-bullets">
+<ul>
+<li class="fragment">Bénabou and Tirole (QJE, 2006) use the self-control channel to explain US-Europe difference in the tax and transfer system:
+<ul>
+<li class="fragment">Americans delude themselves into thinking that hard work pays off → They think they can reach anything by working hard → Hence, they vote for lower taxes and transfers → This makes the delusion that working hard pays off even more attractive…</li>
+<li class="fragment">“Lock-in” effect, where the American Dream and a slim state reinforce each other.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="section-10" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<h3 id="extensions-ii-2">Extensions II</h3>
+<div class="no-bullets">
+<ul>
+<li>Bénabou and Tirole (QJE, 2006) use the self-control channel to explain US-Europe difference in the tax and transfer system:
+<ul>
+<li>Europeans delude themselves by thinking that effort does not matter for success → They expect that social structures predetermine everything → Hence, they vote for redistribution from <em>“undeserving rich”</em> to others → This makes it even more attractive to think that working hard does not pay off…</li>
+<li>“Lock-in” effect, where belief in a rigged system and a large state reinforce each other.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="section-11" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<h3 id="the-big-picture">The Big Picture</h3>
+<div class="no-bullets">
+<ul>
+<li class="fragment"><strong>The classical view:</strong> Individuals acquire information to inform themselves, they wish to have accurate beliefs about the world to improve their decisions.
+<ul>
+<li class="fragment">The fundamentals of the economy determine beliefs.</li>
+</ul></li>
+<li class="fragment"><strong>The modern view:</strong> Individuals trade off accuracy with desires such as <em>self-esteem, ego utility, dread, self-control.</em>
+<ul>
+<li class="fragment">People may vote on changes to the tax-and-transfer system to support their delusions, they may seek out teams with diffused responsibilities that support “delusionary” optimistic beliefs.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="section-12" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<h3 id="the-big-picture-1">The Big Picture</h3>
+<div class="no-bullets">
+<ul>
+<li><strong>The modern view:</strong> Individuals trade off accuracy with desires such as <em>self-esteem, ego utility, dread, self-control.</em>
+<ul>
+<li>People may vote on changes to the tax-and-transfer system to support their delusions, they may seek out teams with diffused responsibilities that support “delusionary” optimistic beliefs.</li>
+<li><strong>Beliefs as a collective action problem:</strong> Incentives for realism vs.&nbsp;delusions depend on the structure of society: Hence, beliefs can be <em>socially determined</em> and changing them may require social coordination.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="final-takeaways">Final Takeaways</h3>
+<div>
+<ul>
+<li class="fragment">Standard theory assumes people seek accurate beliefs, but real-world behavior often deviates from this.</li>
+<li class="fragment">Behavioral models explain why people avoid information or distort their beliefs: psychological motives like self-esteem, hope, or dread matter.</li>
+<li class="fragment">Empirical evidence shows selective memory and wishful thinking are common, especially when information is ambiguous or emotionally charged.</li>
+<li class="fragment">This opens up space to a whole different economics.</li>
+</ul>
 </div>
 
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
