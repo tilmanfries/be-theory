@@ -252,11 +252,11 @@ A strategy profile and belief system are a Perfect Bayesian Equilibrium if:
 ### Equilibrium Existence
 
 :::{.proposition}
-**Full Realism Equilibrium.** There is a $\hat{c} \in(0,1)$ such that a full realism equilibrium exists if and only if $c \leq \hat{c}.$
+**Full Realism Equilibrium.** A full realism equilibrium exists if and only if $c \leq \tilde{\theta}_1(s=\varnothing).$
 :::
 
 :::{.proposition}
-**Delusionary Equilibrium.** There are two thresholds $\hat{c}_L\in (0,1)$ and $\hat{c}_H \in(\hat{c}_L, 1)$ such that a delusionary equilibrium exists if (i) either $c \leq \hat{c}_L$ or (ii) $c \geq \hat{c}_H.$
+**Delusional Equilibrium.** A delusional equilibrium exists if (i) either $c \leq \tilde{\theta}_1(s=b)$ or (ii) $c \geq \theta_0.$
 :::
 
 (Proof on board)
@@ -289,7 +289,7 @@ A strategy profile and belief system are a Perfect Bayesian Equilibrium if:
 
 :::{.no-bullets}
 - The model describes a tradeoff between deluding oneself to boost ego-utility and holding realistic beliefs to make a better investment decision:
-  - The model also suggests that *delusion* is economically inefficient. A delusionary entrepreneur sometimes does not invest when they should. 
+  - The model also suggests that *delusion* is economically inefficient. A delusional entrepreneur sometimes does not invest when they should. 
   - Intuitively, an investor remembering $m=\varnothing$ cannot be sure whether they deluded themselves or really did not observe bad news. Therefore, investors are overly skeptical after remembering nothing and cautious to invest.
 :::
 
@@ -399,7 +399,7 @@ A figure appears for 150ms on the screen. Participants guess whether it tilts le
 - Belief based utility and information management have many economic applications:
   - Bénabou (ReStud, 2013): Groups are prone to motivated beliefs because such beliefs are often complements. 
   - E.g., if others ignore climate change, there may be no point of being realistic about it as: (i) Realism brings dread, (ii) fighting climate change requires a *critical mass* not ignoring it. 
-  - "Realist" and "Delusionary" equilibria often coexist, so sudden shifts from Delusion to Realism are possible.
+  - "Realist" and "Delusional" equilibria often coexist, so sudden shifts from Delusion to Realism are possible.
 :::
 
 ---
@@ -443,7 +443,7 @@ A figure appears for 150ms on the screen. Participants guess whether it tilts le
 - **The classical view:** Individuals acquire information to inform themselves, they wish to have accurate beliefs about the world to improve their decisions. 
   - The fundamentals of the economy determine beliefs. 
 - **The modern view:** Individuals trade off accuracy with desires such as *self-esteem, ego utility, dread, self-control.* 
-  - People may vote on changes to the tax-and-transfer system to support their delusions, they may seek out teams with diffused responsibilities that support "delusionary" optimistic beliefs. 
+  - People may vote on changes to the tax-and-transfer system to support their delusions, they may seek out teams with diffused responsibilities that support "delusional" optimistic beliefs. 
 :::
 
 ---
@@ -453,7 +453,7 @@ A figure appears for 150ms on the screen. Participants guess whether it tilts le
 
 ::: {.no-bullets}
 - **The modern view:** Individuals trade off accuracy with desires such as *self-esteem, ego utility, dread, self-control.* 
-  - People may vote on changes to the tax-and-transfer system to support their delusions, they may seek out teams with diffused responsibilities that support "delusionary" optimistic beliefs. 
+  - People may vote on changes to the tax-and-transfer system to support their delusions, they may seek out teams with diffused responsibilities that support "delusional" optimistic beliefs. 
   - **Beliefs as a collective action problem:** Incentives for realism vs. delusions depend on the structure of society: Hence, beliefs can be *socially determined* and changing them may require social coordination.
 :::
 
@@ -465,5 +465,5 @@ A figure appears for 150ms on the screen. Participants guess whether it tilts le
 - Standard theory assumes people seek accurate beliefs, but real-world behavior often deviates from this.
 - Behavioral models explain why people avoid information or distort their beliefs: psychological motives like self-esteem, hope, or dread matter.
 - Empirical evidence shows selective memory and wishful thinking are common, especially when information is ambiguous or emotionally charged.
-- This opens up space to a whole different economics.
+- New view on economics where beliefs and preferences are intertwined.
 ::: 
