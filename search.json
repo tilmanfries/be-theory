@@ -1,0 +1,282 @@
+[
+  {
+    "objectID": "intro.html#about",
+    "href": "intro.html#about",
+    "title": "Behavioral Economic Theory",
+    "section": "About",
+    "text": "About\n\n\nMy name: Tilman Fries\nBehavioral economist, between theory and experiments.\nYou can call me by my first name.\n\nAlso when we speak in German.\nJust please no Prof., Professor, Dr., etc."
+  },
+  {
+    "objectID": "big-ideas.html#section",
+    "href": "big-ideas.html#section",
+    "title": "Four Big Ideas",
+    "section": "",
+    "text": "Preferences, utility, expectations, and equilibrium are big terms.\nThey are also controversial.\nWe’ll clarify what they mean to us.\n(Really, I am going to tell you what they mean to me.)"
+  },
+  {
+    "objectID": "big-ideas.html#section-1",
+    "href": "big-ideas.html#section-1",
+    "title": "Four Big Ideas",
+    "section": "",
+    "text": "Preferences are just binary relations over sets PLUS:\n\nRationality\nA preference relation \\(\\succeq\\) is called rational if it satisfies:\nCompleteness: For all \\(x,y \\in \\mathcal{Z}\\), either \\(x \\succeq y\\) or \\(y \\succeq x\\).\nTransitivity: For all \\(x,y,z \\in \\mathcal{Z}\\), if \\(x \\succeq y\\) and \\(y \\succeq z\\), then \\(x \\succeq z\\).\n\n\n\nCompleteness means that for every pair of outcomes, the preference describes a relation between them.\nThere are no two things the agent cannot compare."
+  },
+  {
+    "objectID": "big-ideas.html#section-2",
+    "href": "big-ideas.html#section-2",
+    "title": "Four Big Ideas",
+    "section": "",
+    "text": "Preferences are just binary relations over sets PLUS:\n\nRationality\nA preference relation \\(\\succeq\\) is called rational if it satisfies:\nCompleteness: For all \\(x,y \\in \\mathcal{Z}\\), either \\(x \\succeq y\\) or \\(y \\succeq x\\).\nTransitivity: For all \\(x,y,z \\in \\mathcal{Z}\\), if \\(x \\succeq y\\) and \\(y \\succeq z\\), then \\(x \\succeq z\\).\n\n\n\nTransitivity is a consistency condition.\nIf you prefer books to bagels and bagels to beer, you should also prefer books to beer."
+  },
+  {
+    "objectID": "big-ideas.html#section-3",
+    "href": "big-ideas.html#section-3",
+    "title": "Four Big Ideas",
+    "section": "",
+    "text": "Preferences are just binary relations over sets PLUS:\n\nRationality\nA preference relation \\(\\succeq\\) is called rational if it satisfies:\nCompleteness: For all \\(x,y \\in \\mathcal{Z}\\), either \\(x \\succeq y\\) or \\(y \\succeq x\\).\nTransitivity: For all \\(x,y,z \\in \\mathcal{Z}\\), if \\(x \\succeq y\\) and \\(y \\succeq z\\), then \\(x \\succeq z\\).\n\n\n\nBehavioral economics almost exclusively assumes that preferences are rational."
+  },
+  {
+    "objectID": "big-ideas.html#sorry-pop-science",
+    "href": "big-ideas.html#sorry-pop-science",
+    "title": "Four Big Ideas",
+    "section": "Sorry pop science",
+    "text": "Sorry pop science\n\n\n\n\n\nThe text on the left is almost completely wrong.\nThe text on the right is OK.\nWe will do the stuff on the right still using math."
+  },
+  {
+    "objectID": "big-ideas.html#are-rational-preferences-selfish",
+    "href": "big-ideas.html#are-rational-preferences-selfish",
+    "title": "Four Big Ideas",
+    "section": "Are Rational Preferences Selfish?",
+    "text": "Are Rational Preferences Selfish?\n\n\nRationality says nothing about the content of preferences.\nMany people conflate “rational” with “selfish,” but these are separate assumptions. Economists often assume both rationality and selfishness.\nIf you want a catchall term, you can say standard economics considers the homo oeconomicus.\n\n\n\nWe can still apply the standard economic framework without assuming selfishness"
+  },
+  {
+    "objectID": "big-ideas.html#why-assume-selfishness",
+    "href": "big-ideas.html#why-assume-selfishness",
+    "title": "Four Big Ideas",
+    "section": "Why assume selfishness?",
+    "text": "Why assume selfishness?\n\n“It is not from the benevolence of the butcher, the brewer, or the baker, that we expect our dinner, but from their regard to their own interest.”\n— Adam Smith, Wealth of Nations\n\nHistorically, selfishness has been justified pragmatically (worst-case assumption, easy to apply in many cases)."
+  },
+  {
+    "objectID": "big-ideas.html#why-assume-selfishness-1",
+    "href": "big-ideas.html#why-assume-selfishness-1",
+    "title": "Four Big Ideas",
+    "section": "Why assume selfishness?",
+    "text": "Why assume selfishness?\n\n“It is not from the benevolence of the butcher, the brewer, or the baker, that we expect our dinner, but from their regard to their own interest.”\n— Adam Smith, Wealth of Nations\n\n\n“Happy families are all alike; every unhappy family is unhappy in its own way.” — Leo Tolstoy, Anna Karenina\n\nHistorically, selfishness has been justified pragmatically (worst-case assumption, easy to apply in many cases)."
+  },
+  {
+    "objectID": "big-ideas.html#preferences-summary",
+    "href": "big-ideas.html#preferences-summary",
+    "title": "Four Big Ideas",
+    "section": "Preferences: Summary",
+    "text": "Preferences: Summary\n\n\nPreferences are binary relations over an outcome set \\(\\mathcal{Z}\\).\nRational preferences satisfy completeness and transitivity.\nRationality says nothing about selfishness: preferences can be prosocial, spiteful, or anything else.\nThe assumption of selfishness is often justified pragmatically, but it is not a necessary part of the standard economic framework."
+  },
+  {
+    "objectID": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences",
+    "href": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences",
+    "title": "Four Big Ideas",
+    "section": "Example: Selfish vs. Prosocial vs. Crazy Preferences",
+    "text": "Example: Selfish vs. Prosocial vs. Crazy Preferences\nAn agent choosing from \\(\\mathcal{Z} = \\{\\text{keep }10€,\\text{donate }10€,\\text{burn }10€\\}\\) could have:\n\nLuca (Selfish): \\(\\text{keep }10€ \\succ \\text{donate }10€ \\sim \\text{burn }10€\\).\n\nRepresented by \\(u(\\text{keep})=2, u(\\text{donate})=1, u(\\text{burn})=1\\)."
+  },
+  {
+    "objectID": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences-1",
+    "href": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences-1",
+    "title": "Four Big Ideas",
+    "section": "Example: Selfish vs. Prosocial vs. Crazy Preferences",
+    "text": "Example: Selfish vs. Prosocial vs. Crazy Preferences\nAn agent choosing from \\(\\mathcal{Z} = \\{\\text{keep }10€,\\text{donate }10€,\\text{burn }10€\\}\\) could have:\n\nJules (Prosocial): \\(\\text{donate }10€ \\succ \\text{keep }10€ \\succ \\text{burn }10€\\).\n\nRepresented by \\(u(\\text{donate})=3, u(\\text{keep})=2, u(\\text{burn})=1\\)."
+  },
+  {
+    "objectID": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences-2",
+    "href": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences-2",
+    "title": "Four Big Ideas",
+    "section": "Example: Selfish vs. Prosocial vs. Crazy Preferences",
+    "text": "Example: Selfish vs. Prosocial vs. Crazy Preferences\nAn agent choosing from \\(\\mathcal{Z} = \\{\\text{keep }10€,\\text{donate }10€,\\text{burn }10€\\}\\) could have:\n\nKim (Crazy): \\(\\text{burn }10€ \\succ \\text{keep }10€ \\succ \\text{donate }10€\\).\n\nRepresented by \\(u(\\text{burn})=3, u(\\text{keep})=2, u(\\text{donate})=1\\)."
+  },
+  {
+    "objectID": "big-ideas.html#takeaways",
+    "href": "big-ideas.html#takeaways",
+    "title": "Four Big Ideas",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nUtility is just a number we use to rank outcomes.\nA higher number means “more preferred”.\nWe can use the utility approach if we assume that preferences are rational."
+  },
+  {
+    "objectID": "big-ideas.html#example-dynamic-supply-and-demand",
+    "href": "big-ideas.html#example-dynamic-supply-and-demand",
+    "title": "Four Big Ideas",
+    "section": "Example: Dynamic supply and demand",
+    "text": "Example: Dynamic supply and demand\n\\[\nD_1 = \\alpha -\\beta p_1 \\text{(Demand)}, \\\\\nS_1 = \\gamma p_1^e + u_1 \\text{(Supply)}, \\\\\nD_1 = S_1 \\text{(Equilibrium)}.\n\\]\n\nFirm produces in \\(t=0\\). Has to calculate the expected price in \\(t=1\\).\n\\(u_1\\) is a supply shock with \\(\\mathrm{E}[u_1] = 0\\) that the firm does not know in \\(t=0\\) (hence, uncertainty)."
+  },
+  {
+    "objectID": "big-ideas.html#example-dynamic-supply-and-demand-1",
+    "href": "big-ideas.html#example-dynamic-supply-and-demand-1",
+    "title": "Four Big Ideas",
+    "section": "Example: Dynamic supply and demand",
+    "text": "Example: Dynamic supply and demand\n\nHow to solve this? First, plug in the equilibrium condition… \\[\n\\alpha - \\beta p_1 = \\gamma p_1^e + u_1 \\rightarrow p_1 = \\frac{\\alpha - \\gamma p_1^e - u_1}{\\beta}.\n\\]\nAssume rational expectations. This adds the constraint that expectations are correct on average: \\(p_1^e = \\mathrm{E}[p_1]\\)."
+  },
+  {
+    "objectID": "big-ideas.html#example-dynamic-supply-and-demand-2",
+    "href": "big-ideas.html#example-dynamic-supply-and-demand-2",
+    "title": "Four Big Ideas",
+    "section": "Example: Dynamic supply and demand",
+    "text": "Example: Dynamic supply and demand\n\nAssume rational expectations. This adds the constraint that expectations are correct on average: \\(p_1^e = \\mathrm{E}[p_1]\\).\nHence, in \\(t=0\\) the firm expects: \\[\n\\mathrm{E}[p_1] = \\frac{\\alpha - \\gamma \\mathrm{E}[p_1] - \\mathrm{E}[u_1]}{\\beta} \\Rightarrow \\mathrm{E}[p_1] = \\frac{\\alpha - \\mathrm{E}[u_1]}{\\beta + \\gamma}.\n\\]\nSince \\(\\mathrm{E}[u_1] = 0\\), the expected price is \\(\\mathrm{E}[p_1] = \\frac{\\alpha}{\\beta + \\gamma}\\)."
+  },
+  {
+    "objectID": "big-ideas.html#the-long-shadow",
+    "href": "big-ideas.html#the-long-shadow",
+    "title": "Four Big Ideas",
+    "section": "The long shadow",
+    "text": "The long shadow\n\n\nWe just rushed through the traditional approach to expectations (we’ll be more detailed later).\nIn our model, price expectations were key to determining the equilibrium.\nBy assuming they are rational, they become endogenous."
+  },
+  {
+    "objectID": "big-ideas.html#the-long-shadow-1",
+    "href": "big-ideas.html#the-long-shadow-1",
+    "title": "Four Big Ideas",
+    "section": "The long shadow",
+    "text": "The long shadow\n\n\nBy assuming they are rational, they become endogenous.\nNote how this is different from a parameter, like the price elasticity.\n\nA price elasticity parameter is exogenous to the model. We have to estimate it it using data.\nA rational expectation is endogenous to the model. It is not a free parameter that can be estimated.\n\n\n\n\n\nThis is the reason why economists traditionally do not care about expectations data."
+  },
+  {
+    "objectID": "big-ideas.html#section-4",
+    "href": "big-ideas.html#section-4",
+    "title": "Four Big Ideas",
+    "section": "",
+    "text": "“Like utility, expectations are not observed, and surveys cannot be used to test the rational expectations hypothesis.” — Prescott (1977)\n\n\n\n“Once we depart from the full‑information rational‑expectations benchmark, we find ourselves in a wilderness of bounded rationality, with far too many ways to be slightly irrational” — Sargent (1993)\n\n\n\n\n“Happy families are all alike; every unhappy family is unhappy in its own way.” — Leo Tolstoy, Anna Karenina"
+  },
+  {
+    "objectID": "big-ideas.html#section-5",
+    "href": "big-ideas.html#section-5",
+    "title": "Four Big Ideas",
+    "section": "",
+    "text": "“Happy families are all alike; every unhappy family is unhappy in its own way.” — Leo Tolstoy, Anna Karenina\n\n\n\nThe caution of classical economists has some merit. We want models not only to be realistic but also versatile.\n\n\n\n\nWe are looking for maps of the world, not to recreate every detail.\nBut: Behavioral economics developed methods and theories to identify and work with deviations from classical assumptions.\nWe will learn about these methods and theories in this course."
+  },
+  {
+    "objectID": "big-ideas.html#example-continued",
+    "href": "big-ideas.html#example-continued",
+    "title": "Four Big Ideas",
+    "section": "Example, continued",
+    "text": "Example, continued\n\nExample: Public Goods Game. Two agents choose efforts \\(e_1,e_2\\) to produce an output. Utility: \\(u(e_i, e_{-i}) = e_i + e_{-i} - c(e_i)\\), with \\(c(e_i)=\\tfrac12 e_i^2\\).\n\n\nNash Equilibrium\nA strategy profile \\((e_1^*, e_2^*)\\) is a Nash Equilibrium if, for each player \\(i\\), \\(e_i^*\\) is a best response to \\(e_{-i}^*\\). In symbols: \\[\nu(e_i^*, e_{-i}^*) \\ge u(e_i, e_{-i}^*) \\quad \\forall e_i \\in \\mathbb{R_+}.\n\\]"
+  },
+  {
+    "objectID": "big-ideas.html#example-continued-1",
+    "href": "big-ideas.html#example-continued-1",
+    "title": "Four Big Ideas",
+    "section": "Example, continued",
+    "text": "Example, continued\n\nExample: Public Goods Game. Two agents choose efforts \\(e_1,e_2\\) to produce an output. Utility: \\(u(e_i, e_{-i}) = e_i + e_{-i} - c(e_i)\\), with \\(c(e_i)=\\tfrac12 e_i^2\\).\n\n\n\nHere, the Nash Equilibrium is \\(e_1^* = e_2^* = 1\\).\nThe social optimum is \\(e_1^O=e_2^O = 2\\). Since \\(e_i^O &gt; e_i^*\\), the NE allocation is inefficient."
+  },
+  {
+    "objectID": "big-ideas.html#example-continued-2",
+    "href": "big-ideas.html#example-continued-2",
+    "title": "Four Big Ideas",
+    "section": "Example, continued",
+    "text": "Example, continued\n\nExample: Public Goods Game. Two agents choose efforts \\(e_1,e_2\\) to produce an output. Utility: \\(u(e_i, e_{-i}) = e_i + e_{-i} - c(e_i)\\), with \\(c(e_i)=\\tfrac12 e_i^2\\).\n\n\n\nThat \\(e_i^O &gt; e_i^*\\) illustrates the Tragedy of the Commons.\nIt is commonly attributed to selfish preferences.\nBut this is incorrect: The tragedy of the commons is really driven by the joint assumption of (i) selfish preferences and (ii) Nash Equilibrium."
+  },
+  {
+    "objectID": "big-ideas.html#alternatives-to-nash",
+    "href": "big-ideas.html#alternatives-to-nash",
+    "title": "Four Big Ideas",
+    "section": "Alternatives to Nash?",
+    "text": "Alternatives to Nash?"
+  },
+  {
+    "objectID": "big-ideas.html#consider-this",
+    "href": "big-ideas.html#consider-this",
+    "title": "Four Big Ideas",
+    "section": "Consider this",
+    "text": "Consider this\n\n\n\n“Act only according to that maxim whereby you can at the same time will that it should become universal law.” — Immanuel Kant"
+  },
+  {
+    "objectID": "big-ideas.html#kantian-equilibrium",
+    "href": "big-ideas.html#kantian-equilibrium",
+    "title": "Four Big Ideas",
+    "section": "Kantian Equilibrium",
+    "text": "Kantian Equilibrium\n\nKantian Equilibrium (Roemer 2010, SJE) A strategy profile \\((e_1^K,e_2^K)\\) is a Kantian Equilibrium if, for each player \\(i\\), \\[\n\\arg\\max_{\\alpha \\in \\mathbb{R_+}} u(\\alpha e_i^K,\\alpha e_{-i}^K) = 1.\n\\]"
+  },
+  {
+    "objectID": "big-ideas.html#kantian-equilibrium-1",
+    "href": "big-ideas.html#kantian-equilibrium-1",
+    "title": "Four Big Ideas",
+    "section": "Kantian Equilibrium",
+    "text": "Kantian Equilibrium\n\n\nFormalizes a Kantian equilibrium condition:\n\nIf agent \\(i\\) considers deviating, \\(i\\) asks “If everyone deviates in the same way that I do, would I be better off?”\n\nDifferent from Nash:\n\nIf agent \\(i\\) considers deviating, \\(i\\) asks “If I deviate and no one else does, would I be better off?”"
+  },
+  {
+    "objectID": "big-ideas.html#kantian-equilibrium-2",
+    "href": "big-ideas.html#kantian-equilibrium-2",
+    "title": "Four Big Ideas",
+    "section": "Kantian Equilibrium",
+    "text": "Kantian Equilibrium\n\n\nFormalizes a Kantian equilibrium condition:\n\nIf agent \\(i\\) considers deviating, \\(i\\) asks “If everyone deviates in the same way that I do, would I be better off?”\n\nDifferent from Nash:\n\nIf agent \\(i\\) considers deviating, \\(i\\) asks “If I deviate and no one else does, would I be better off?”"
+  },
+  {
+    "objectID": "big-ideas.html#kantian-equilibrium-3",
+    "href": "big-ideas.html#kantian-equilibrium-3",
+    "title": "Four Big Ideas",
+    "section": "Kantian Equilibrium",
+    "text": "Kantian Equilibrium\n\nSelfish preferences + Kantian Equilibrium \\(\\rightarrow\\) No tragedy of the commons.\nTo see this, derive \\[\\arg\\max_{\\alpha} u(\\alpha e_i^K, \\alpha e_{-i}^K) \\]\nFirst-order condition: \\[e_i^K + e_{-i}^K - \\alpha e_i^{K2} = 0.\\]"
+  },
+  {
+    "objectID": "big-ideas.html#kantian-equilibrium-4",
+    "href": "big-ideas.html#kantian-equilibrium-4",
+    "title": "Four Big Ideas",
+    "section": "Kantian Equilibrium",
+    "text": "Kantian Equilibrium\n\nTo see this, derive \\[\\arg\\max_{\\alpha} u(\\alpha e_i^K, \\alpha e_{-i}^K) \\]\nFirst-order condition: \\[e_i^K + e_{-i}^K - \\alpha e_i^{K2} = 0.\\]\nIn a symmetric equilibrium, \\(e_i^K = e_{-i}^K\\): \\[2e_i^K - \\alpha e_i^{K2} = 0.\\] —"
+  },
+  {
+    "objectID": "big-ideas.html#kantian-equilibrium-5",
+    "href": "big-ideas.html#kantian-equilibrium-5",
+    "title": "Four Big Ideas",
+    "section": "Kantian Equilibrium",
+    "text": "Kantian Equilibrium\n\nFirst-order condition: \\[e_i^K + e_{-i}^K - \\alpha e_i^{K2} = 0.\\]\nIn a symmetric equilibrium, \\(e_i^K = e_{-i}^K\\). Simplifying: \\[2e_i^K - \\alpha e_i^{K2} = 0.\\]\nIf \\(e_i^K = 2\\), \\(\\alpha = 1\\).\n\n\n\nThe social optimum is a Kantian Equilibrium, even with selfish preferences."
+  },
+  {
+    "objectID": "big-ideas.html#taking-stock-1",
+    "href": "big-ideas.html#taking-stock-1",
+    "title": "Four Big Ideas",
+    "section": "Taking Stock",
+    "text": "Taking Stock\n\n\nHistorically, arguments in favor of selfish + rational + Nash often made on pragmatic or normative grounds.\n\n\n\n\nGoal of behavioral economics:\n\nFind a set of assumptions on preferences, equilibrium, expectations that has a solid empirical foundations.\nWith some pragmatism still involved (e.g., rationality assumption)."
+  },
+  {
+    "objectID": "big-ideas.html#this-course",
+    "href": "big-ideas.html#this-course",
+    "title": "Four Big Ideas",
+    "section": "This course",
+    "text": "This course\n\n\nWe will learn about alternative models of preferences and beliefs, and alternative equilibrium concepts.\nWe will also talk about the empirical evidence for these models."
+  },
+  {
+    "objectID": "big-ideas.html#outline",
+    "href": "big-ideas.html#outline",
+    "title": "Four Big Ideas",
+    "section": "Outline",
+    "text": "Outline\n\nExpected utility & its critiques\nReference-dependent preferences\nTime preferences\nBeliefs\nMisspecified models and learning\nExpectation management and belief-based utility"
+  },
+  {
+    "objectID": "big-ideas.html#challenges",
+    "href": "big-ideas.html#challenges",
+    "title": "Four Big Ideas",
+    "section": "Challenges",
+    "text": "Challenges\n\nBehavioral economics studies deviations from the standard model.\n\nSo, behavioral economists typically know the standard model extremely well.\nWe will do have to learn quite a bit about the standard model as well."
+  },
+  {
+    "objectID": "big-ideas.html#challenges-1",
+    "href": "big-ideas.html#challenges-1",
+    "title": "Four Big Ideas",
+    "section": "Challenges",
+    "text": "Challenges\n\nBehavioral economics aims to be empirically informed.\n\nWe will need to talk about empirics even though this is a theory class.\nIn this course, we will talk about empirics on the fly when they become relevant."
+  },
+  {
+    "objectID": "big-ideas.html#challenges-2",
+    "href": "big-ideas.html#challenges-2",
+    "title": "Four Big Ideas",
+    "section": "Challenges",
+    "text": "Challenges\n\nBehavioral economics presents no single alternative model.\n\nA heavy dose of pragmatism remains: “All models are wrong, some are useful.”\nWe hope to add a few more useful models to our list."
+  },
+  {
+    "objectID": "big-ideas.html#challenges-3",
+    "href": "big-ideas.html#challenges-3",
+    "title": "Four Big Ideas",
+    "section": "Challenges",
+    "text": "Challenges\n\nThis is not a policy course.\n\nYou will learn about fundamentals of human behavior.\nThis leaves a lot of the transfer to practical applications to you.\nI encourage you to observe and introspect:\n\nIn your daily life, which models can you use to make sense?\nSame when reading the news.\n\nBring examples to class, ask, discuss, criticise…"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Behavioral Economic Theory Slides",
+    "section": "",
+    "text": "Welcome to the course slides. Choose a deck below:\n\nIntroduction\nBig Ideas"
+  }
+]
