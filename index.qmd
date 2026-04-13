@@ -1,0 +1,8 @@
+---
+title: "Behavioral Economic Theory Slides"
+---
+
+Welcome to the course slides. Choose a deck below:
+
+- [Introduction](intro.html)
+- [Big Ideas](big-ideas.html)

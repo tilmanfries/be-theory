@@ -181,8 +181,6 @@ Historically, selfishness has been justified  pragmatically (worst-case assumpti
 - The assumption of selfishness is often justified pragmatically, but it is not a necessary part of the standard economic framework.
 :::
 
----
-
 # Utility
 
 We rarely work with preferences directly. Instead, we typically use **utility functions**, which assign a real number to each outcome. Higher numbers indicate a more preferred outcome.
@@ -390,7 +388,7 @@ $$
 
 ---
 
-## Example, continued {auto-animate=true}
+## Example, continued
 
 :::{.example}
 **Example**: Public Goods Game. Two agents choose efforts $e_1,e_2$ to produce an output. Utility: $u(e_i, e_{-i}) = e_i + e_{-i} - c(e_i)$, with $c(e_i)=\tfrac12 e_i^2$. 
@@ -499,8 +497,6 @@ $$2e_i^K - \alpha e_i^{K2} = 0.$$
 - The social optimum is a Kantian Equilibrium, even with selfish preferences.
 :::
 
----
-
 # Taking Stock {auto-animate=True}
 :::{.no-bullets .incremental}
 - Standard economic results are driven by joint assumptions about preferences and the equilibrium definition. 
@@ -576,5 +572,3 @@ $$2e_i^K - \alpha e_i^{K2} = 0.$$
     - In your daily life, which models can you use to make sense? 
     - Same when reading the news.
   - Bring examples to class, ask, discuss, criticise...
-
----
