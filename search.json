@@ -7,6 +7,468 @@
     "text": "About\n\n\nMy name: Tilman Fries\nBehavioral economist, between theory and experiments.\nYou can call me by my first name.\n\nAlso when we speak in German.\nJust please no Prof., Professor, Dr., etc."
   },
   {
+    "objectID": "eu-critique.html#terminology",
+    "href": "eu-critique.html#terminology",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Terminology",
+    "text": "Terminology\n\nIn economics, we distinguish between decisions under risk and decisions under uncertainty.\nRisk has known probabilities, it is a known unknown:\n\nThe probability of a die roll of four.\nWinning at roulette.\n\nYou do not know uncertain probabilities, they are an unknown unknown.\n\nWhether stocks will go up or down.\nThe climate impact of your lunch."
+  },
+  {
+    "objectID": "eu-critique.html#plan",
+    "href": "eu-critique.html#plan",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Plan",
+    "text": "Plan\n\n\nTwo central economic theories exist to describe how individuals behave under risk and uncertainty.\n\nRisk: Expected Utility Theory\nUncertainty: Subjective Expected Utility Theory\n\nThey are central to economic modeling.\nWe will learn about them now.\nThen we will learn about behavioral economic critiques."
+  },
+  {
+    "objectID": "eu-critique.html#expected-utility-theory-eut",
+    "href": "eu-critique.html#expected-utility-theory-eut",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Expected Utility Theory (EUT)",
+    "text": "Expected Utility Theory (EUT)\n\n\nAn agent chooses between lotteries \\(p\\,\\in\\,\\mathcal{P}(\\mathcal{Z})\\) that map outcomes \\(z\\in\\mathcal{Z}\\) to probabilities.\n\nExample of a lottery: Flip a coin. If heads, 5€. If tails, 0€.\nWe will denote this lottery as \\((5, 0.5; 0, 0.5)\\).\n\nThe agent has preferences \\(\\succeq\\) over lotteries.\n\nExample of a preference: \\((2, 1)\\succeq (5, 0.5; 0, 0.5)\\).\nThe preferences follow certain axioms (next slide)."
+  },
+  {
+    "objectID": "eu-critique.html#axioms-of-eut",
+    "href": "eu-critique.html#axioms-of-eut",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Axioms of EUT",
+    "text": "Axioms of EUT\n\nRationality. — the usual completeness & transitivity.\n\n\nIndependence. If \\(p \\succ q\\) then for any lottery \\(r\\) and \\(\\alpha\\in(0,1]\\) \\[\\alpha p+(1-\\alpha)r \\;\\succ\\; \\alpha q+(1-\\alpha)r.\\]"
+  },
+  {
+    "objectID": "eu-critique.html#axioms-of-eut-1",
+    "href": "eu-critique.html#axioms-of-eut-1",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Axioms of EUT",
+    "text": "Axioms of EUT\n\nIndependence. If \\(p \\succ q\\) then for any lottery \\(r\\) and \\(\\alpha\\in(0,1]\\) \\[\\alpha p+(1-\\alpha)r \\;\\succ\\; \\alpha q+(1-\\alpha)r.\\]\n\n\n\n\\(\\alpha p+(1-\\alpha)r\\) is a compound lottery.\nE.g., \\(p\\) is lottery “win 5€ if heads” and \\(r\\) is lottery “win 10€ if die is odd”.\n\\(\\alpha\\) is a probability, e.g., 40%."
+  },
+  {
+    "objectID": "eu-critique.html#axioms-of-eut-2",
+    "href": "eu-critique.html#axioms-of-eut-2",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Axioms of EUT",
+    "text": "Axioms of EUT\n\nIndependence. If \\(p \\succ q\\) then for any lottery \\(r\\) and \\(\\alpha\\in(0,1]\\) \\[\\alpha p+(1-\\alpha)r \\;\\succ\\; \\alpha q+(1-\\alpha)r.\\]\n\n\n\nE.g., p is lottery “win 5€ if heads” and r is lottery “win 10€ if die is odd”.\n\\(\\alpha\\) is a probability, e.g., 40%.\nThen, this reads as “With 40%, toss coin and win 5€ if heads. With 60%, roll die and win 10€ if odd.”"
+  },
+  {
+    "objectID": "eu-critique.html#axioms-of-eut-3",
+    "href": "eu-critique.html#axioms-of-eut-3",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Axioms of EUT",
+    "text": "Axioms of EUT\n\nIndependence. If \\(p \\succ q\\) then for any lottery \\(r\\) and \\(\\alpha\\in(0,1]\\) \\[\\alpha p+(1-\\alpha)r \\;\\succ\\; \\alpha q+(1-\\alpha)r.\\]\n\n\n\nIndependence basically says that the agent focuses on the things that are different when comparing lotteries.\n\nBoth lotteries contain \\((1-\\alpha)r\\).\nTherefore, decide only based on comparing \\(p\\) and \\(q\\) because they are different."
+  },
+  {
+    "objectID": "eu-critique.html#axioms-of-eut-4",
+    "href": "eu-critique.html#axioms-of-eut-4",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Axioms of EUT",
+    "text": "Axioms of EUT\n\nContinuity. If \\(p\\succeq q\\succeq r\\) and \\(p\\succ r\\) then there is an \\(\\alpha\\in[0,1]\\) with \\[q\\;\\sim\\; \\alpha p + (1-\\alpha)r.\\]\n\n\n\nThe agent takes their most and least preferred lottery and can mix them such that agent is indifferent between the mix and any other lottery."
+  },
+  {
+    "objectID": "eu-critique.html#axioms-of-eut-5",
+    "href": "eu-critique.html#axioms-of-eut-5",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Axioms of EUT",
+    "text": "Axioms of EUT\n\nContinuity. If \\(p\\succeq q\\succeq r\\) and \\(p\\succ r\\) then there is an \\(\\alpha\\in[0,1]\\) with \\[q\\;\\sim\\; \\alpha p + (1-\\alpha)r.\\]\n\n\n\nSounds intuitive, but consider, e.g., your least preferred lottery being “death with probability 1”. Would you mix that with anything?"
+  },
+  {
+    "objectID": "eu-critique.html#expected-utility-representation",
+    "href": "eu-critique.html#expected-utility-representation",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Expected Utility Representation",
+    "text": "Expected Utility Representation\n\nProposition. If \\(\\succeq\\) satisfies rationality, independence, and continuity, then there exists a utility function \\(u:\\mathcal{Z}\\to\\mathbb{R}\\) such that \\[\np\\succeq q \\quad\\Longleftrightarrow\\quad \\sum_{z\\in\\mathcal{Z}} p(z)\\,u(z)\\;\\ge\\; \\sum_{z\\in\\mathcal{Z}} q(z)\\,u(z).\n\\]\n\n\n\nIn the EU representation, utility of an outcome scales linearly in its probability.\nE.g., The EU of lottery \\((5, \\frac{1}{6}; 0, \\frac{5}{6})\\) is \\(\\frac{1}{6} u(5) + \\frac{5}{6} u(0).\\)"
+  },
+  {
+    "objectID": "eu-critique.html#proof-sketch-eu-representation",
+    "href": "eu-critique.html#proof-sketch-eu-representation",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Proof Sketch: EU Representation",
+    "text": "Proof Sketch: EU Representation\n\n\nThat EU is linear in probability is the consequence of the independence and continuity axioms.\nIndependence implies the following lemma:\n\n\n\n\nLemma. If \\(p\\succ q\\) and \\(0\\leq \\alpha &lt; \\beta \\leq 1\\), then \\(\\beta p + (1-\\beta)q\\succ \\alpha p + (1-\\alpha)q\\).\n\nProof on board."
+  },
+  {
+    "objectID": "eu-critique.html#proof-sketch-eu-representation-1",
+    "href": "eu-critique.html#proof-sketch-eu-representation-1",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Proof Sketch: EU Representation",
+    "text": "Proof Sketch: EU Representation\n\n\nNow take the worst possible outcome and the best possible outcome and put them on a utility scale (e.g., \\(U(\\text{Worst}) = 0\\), \\(U(\\text{best}) = 1\\))."
+  },
+  {
+    "objectID": "eu-critique.html#proof-sketch-eu-representation-2",
+    "href": "eu-critique.html#proof-sketch-eu-representation-2",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Proof Sketch: EU Representation",
+    "text": "Proof Sketch: EU Representation\n\n\nNow take the worst possible outcome and the best possible outcome and put them on a utility scale (e.g., \\(U(\\text{Worst}) = 0\\), \\(U(\\text{best}) = 1\\)).\nBy continuity there is a probability \\(f(p)\\) such that \\[\np \\sim f(p)\\text{Best} + (1-f(p))\\text{Worst}.\n\\]"
+  },
+  {
+    "objectID": "eu-critique.html#proof-sketch-eu-representation-3",
+    "href": "eu-critique.html#proof-sketch-eu-representation-3",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Proof Sketch: EU Representation",
+    "text": "Proof Sketch: EU Representation\n\n\nNow take the worst possible outcome and the best possible outcome and put them on a utility scale (e.g., \\(U(\\text{Worst}) = 0\\), \\(U(\\text{best}) = 1\\)).\nBy continuity there is a probability \\(f(p)\\) such that \\[\np \\sim f(p)\\text{Best} + (1-f(p))\\text{Worst}.\n\\]\nBy the lemma, if \\(p\\succ q\\), then \\(f(p) &gt; f(q)\\)."
+  },
+  {
+    "objectID": "eu-critique.html#proof-sketch-eu-representation-4",
+    "href": "eu-critique.html#proof-sketch-eu-representation-4",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Proof Sketch: EU Representation",
+    "text": "Proof Sketch: EU Representation\n\n\nBy continuity there is a probability \\(f(p)\\) such that \\[\np \\sim f(p)\\text{Best} + (1-f(p))\\text{Worst}.\n\\]\nBy the lemma, if \\(p\\succ q\\), then \\(f(p) &gt; f(q)\\).\n\n\n\n\n\n\n\nThe full proof shows that \\(f(p)\\) is affine, which implies that EU is linear in probability (not shown here)."
+  },
+  {
+    "objectID": "eu-critique.html#subjective-expected-utility-seu",
+    "href": "eu-critique.html#subjective-expected-utility-seu",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Subjective Expected Utility (SEU)",
+    "text": "Subjective Expected Utility (SEU)\n\n\nSEU extends EU to situations with uncertainty.\nStates of the world \\(\\omega\\in\\Omega\\)\n\nE.g., \\(\\Omega = \\{\\text{rain tomorrow, no rain tomorrow}\\}\\).\n\nActs \\(a:\\Omega\\to\\Delta\\mathcal{Z}\\).\n\nE.g., an act might be “take an umbrella”.\nThis ensures the outcome “stay dry” in both states of the world.\n\nActs take on the role of lotteries in EU.\nThe agent has preferences over acts."
+  },
+  {
+    "objectID": "eu-critique.html#subjective-expected-utility-seu-1",
+    "href": "eu-critique.html#subjective-expected-utility-seu-1",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Subjective Expected Utility (SEU)",
+    "text": "Subjective Expected Utility (SEU)\n\n\nBack to acts. These are functions \\(a:\\Omega\\to\\Delta\\mathcal{Z}\\).\n\n\\(a\\) is a function from the state of the world (that the agent is uncertain about) to a probability distribution over oucomes.\nE.g., if my umbrella only works half of the time, then I am not sure whether I will stay dry if I take an umbrella and it rains.\nWe write \\(a(\\omega)(z)\\) to denote “The probability of outcome \\(z\\) under \\(a\\) if the state of the world is \\(\\omega\\)”."
+  },
+  {
+    "objectID": "eu-critique.html#seu-representation",
+    "href": "eu-critique.html#seu-representation",
+    "title": "Expected Utility & Its Critiques",
+    "section": "SEU Representation",
+    "text": "SEU Representation\n\nProposition. If \\(\\succeq\\) satisfies rationality, independence, continuity plus a number of additional axioms that aren’t that interesting then there exists \\(u\\) and a probability measure \\(\\mu \\in\\Delta(\\Omega)\\) such that \\[\na\\succeq b \\quad\\Longleftrightarrow\\quad\n\\] \\[\n\\sum_{\\omega\\in\\Omega} \\mu(\\omega)\\, \\sum_{z\\in\\mathcal{Z}} a(\\omega)(z)\\,u(z)\n\\;\\ge\\; \\sum_{\\omega\\in\\Omega} \\mu(\\omega)\\, \\sum_{z\\in\\mathcal{Z}} b(\\omega)(z)\\,u(z).\n\\]"
+  },
+  {
+    "objectID": "eu-critique.html#seu-implications",
+    "href": "eu-critique.html#seu-implications",
+    "title": "Expected Utility & Its Critiques",
+    "section": "SEU Implications",
+    "text": "SEU Implications\n\n\nRisk: EU tells us that rationality, independence & continuity imply a utility function \\(u\\).\nUncertainty: SEU tells us that rationality, independence & continuity imply a utility function \\(u\\) and a subjective belief \\(\\mu\\) that is a probability measure on \\(\\Omega\\).\nThat is, even under uncertainty, agent acts as if they can quantify uncertainty according to some function \\(\\mu(\\omega)\\).\n\nAgent has a precise estimate of the probability of “rain tomorrow” (\\(\\mu(\\omega=\\text{rain tomorrow})\\)), and of all other possible events"
+  },
+  {
+    "objectID": "eu-critique.html#seu-implications-1",
+    "href": "eu-critique.html#seu-implications-1",
+    "title": "Expected Utility & Its Critiques",
+    "section": "SEU Implications",
+    "text": "SEU Implications\n\n\nUncertainty: SEU tells us that rationality, independence & continuity imply a utility function \\(u\\) and a subjective belief \\(\\mu\\) that is a probability measure on \\(\\Omega\\).\nThat is, even under uncertainty, agents act as if they can quantify uncertainty according to some function \\(\\mu(\\omega)\\).\n\nThey have a precise estimate of the probability of “rain tomorrow” (\\(\\mu(\\omega=\\text{rain tomorrow})\\)), and of all other possible events\nThe subjective belief follows the laws of probability (e.g., \\(\\sum_{\\omega\\in\\Omega}\\mu(\\omega) = 1\\))."
+  },
+  {
+    "objectID": "eu-critique.html#seu-legacy",
+    "href": "eu-critique.html#seu-legacy",
+    "title": "Expected Utility & Its Critiques",
+    "section": "SEU Legacy",
+    "text": "SEU Legacy\n\n\nSEU representation is widely celebrated as THE achievement of classical decision theory.\nSo many important (and convenient) implications:\n\nWe can model behavior using utility even under uncertainty.\nUtility is linear in (subjective) probability.\nIndividual beliefs follow the laws of probability; they are accurate on average, react well to new information, etc. (more on this later this semester)."
+  },
+  {
+    "objectID": "eu-critique.html#a-plan-for-attack",
+    "href": "eu-critique.html#a-plan-for-attack",
+    "title": "Expected Utility & Its Critiques",
+    "section": "A plan for attack",
+    "text": "A plan for attack\nSEU and EU are also important for behavioral economics, because they indicate how to challenge the classical theory.\n\n\nWe can ask:\n\nIs utility really linear in probability?\nDo people adhere to continuity and independence?\nDo beliefs follow the laws of probability?"
+  },
+  {
+    "objectID": "eu-critique.html#a-plan-for-attack-1",
+    "href": "eu-critique.html#a-plan-for-attack-1",
+    "title": "Expected Utility & Its Critiques",
+    "section": "A plan for attack",
+    "text": "A plan for attack\nSEU and EU are also important for behavioral economics, because they indicate how to challenge the classical theory.\n\n\nWe can ask:\n\nIs utility really linear in probability?\nDo people adhere to continuity and independence?\nDo beliefs follow the laws of probability?\n\n\n\nThis lecture"
+  },
+  {
+    "objectID": "eu-critique.html#a-plan-for-attack-2",
+    "href": "eu-critique.html#a-plan-for-attack-2",
+    "title": "Expected Utility & Its Critiques",
+    "section": "A plan for attack",
+    "text": "A plan for attack\nSEU and EU are also important for behavioral economics, because they indicate how to challenge the classical theory.\n\n\nWe can ask:\n\nIs utility really linear in probability?\nDo people adhere to continuity and independence?\nDo beliefs follow the laws of probability?\n\n\n\nThis lecture\nLater this semester"
+  },
+  {
+    "objectID": "eu-critique.html#risk-preferences-in-eu-and-seu",
+    "href": "eu-critique.html#risk-preferences-in-eu-and-seu",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Risk preferences in EU and SEU",
+    "text": "Risk preferences in EU and SEU\n\nEU and SEU are linear in probability.\nIf we additionally assume that \\(u\\) is linear in money, we obtain seeming paradoxes.\n\n\nSt. Petersburg paradox. Toss a coin sequentially until you toss tails. Denote the number tosses before tossing tails by \\(k\\). You will receive \\(2^{k-1}\\) gold coins. How much would you pay for this lottery?"
+  },
+  {
+    "objectID": "eu-critique.html#st.-petersburg-paradox",
+    "href": "eu-critique.html#st.-petersburg-paradox",
+    "title": "Expected Utility & Its Critiques",
+    "section": "St. Petersburg Paradox",
+    "text": "St. Petersburg Paradox\n\nSt. Petersburg paradox. Toss a coin sequentially until you toss tails. Denote the number tosses before tossing tails by \\(k\\). You will receive \\(2^{k-1}\\) gold coins. How much would you pay for this lottery?\n\nThis lottery has an expected value of \\[\\small\n    \\sum_{k=1}^{\\infty}\\left(\\frac{1}{2}\\right)^k 2^{k-1} = \\frac{1}{2}\\times 1 + \\frac{1}{4}\\times 2 + \\frac{1}{8}\\times 4 + \\ldots\n    = \\frac{1}{2} + \\frac{1}{2} + \\ldots = \\infty.\n\\]\n\nClearly, this is not a good estimate of the value of this lottery."
+  },
+  {
+    "objectID": "eu-critique.html#st.-petersburg-paradox-history",
+    "href": "eu-critique.html#st.-petersburg-paradox-history",
+    "title": "Expected Utility & Its Critiques",
+    "section": "St. Petersburg Paradox: History",
+    "text": "St. Petersburg Paradox: History\n\n\n1713: Bernoulli writes a letter explaining the gamble\n\n“Dear friend, consider this…” — Nicolaus Bernoulli in 1713 (paraphrasing)"
+  },
+  {
+    "objectID": "eu-critique.html#st.-petersburg-paradox-history-1",
+    "href": "eu-critique.html#st.-petersburg-paradox-history-1",
+    "title": "Expected Utility & Its Critiques",
+    "section": "St. Petersburg Paradox: History",
+    "text": "St. Petersburg Paradox: History\n\n\n1713: Montmort replies\n\n“It’s really easy to calculate the value, just use the EV calculation techniques that your uncle invented…” — Pierre Montmort in 1713 (paraphrasing)"
+  },
+  {
+    "objectID": "eu-critique.html#st.-petersburg-paradox-history-2",
+    "href": "eu-critique.html#st.-petersburg-paradox-history-2",
+    "title": "Expected Utility & Its Critiques",
+    "section": "St. Petersburg Paradox: History",
+    "text": "St. Petersburg Paradox: History\n\n\n1713: Bernoulli answers\n\n“Yeah, I know how to solve this. But you should have tried yourself. The solution doesn’t make any sense.” — Nicolaus Bernoulli in 1713 (paraphrasing)"
+  },
+  {
+    "objectID": "eu-critique.html#st.-petersburg-paradox-history-3",
+    "href": "eu-critique.html#st.-petersburg-paradox-history-3",
+    "title": "Expected Utility & Its Critiques",
+    "section": "St. Petersburg Paradox: History",
+    "text": "St. Petersburg Paradox: History\n\n\n1738: Daniel Bernoulli resolves the paradox\n\n“Just assume \\(u'' &lt; 0\\).” — Daniel Bernoulli in 1738 (paraphrasing)"
+  },
+  {
+    "objectID": "eu-critique.html#daniels-solution",
+    "href": "eu-critique.html#daniels-solution",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Daniel’s solution",
+    "text": "Daniel’s solution\n\n\nAssuming that the utility function is concave in money, we can resolve the paradox.\nE.g., assume that \\(u(z) = \\ln(z)\\): \\[\\small\n    \\sum_{k=1}^{\\infty}\\left(\\frac{1}{2}\\right)^k ln(2^{k-1}) = \\sum_{k=1}^{\\infty}\\left(\\frac{1}{2}\\right)^k (k-1)ln(2) = ln(2)\\sum_{k=1}^{\\infty}\\frac{k-1}{2^k}.\n\\]\nFocus on the geometrical series: \\[\\small\n  \\sum_{k=1}^{\\infty}\\frac{k-1}{2^k} = \\sum_{k=1}^{\\infty}\\frac{k}{2^k} - \\sum_{k=1}^{\\infty}\\frac{1}{2^k}.\n\\]"
+  },
+  {
+    "objectID": "eu-critique.html#daniels-solution-1",
+    "href": "eu-critique.html#daniels-solution-1",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Daniel’s solution",
+    "text": "Daniel’s solution\n\n\nFocus on the geometrical series: \\[\\small\n  \\sum_{k=1}^{\\infty}\\frac{k-1}{2^k} = \\sum_{k=1}^{\\infty}\\frac{k}{2^k} - \\sum_{k=1}^{\\infty}\\frac{1}{2^k} = a - b\n\\]\nThe term \\(b\\) is: \\[\\small\n  b = \\sum_{k=1}^{\\infty}\\frac{1}{2^k} = \\frac{1}{2}\\sum_{k=1}^{\\infty}\\frac{1}{2^{k-1}} = \\frac{1}{2}\\left(1 + \\frac{1}{2} + \\frac{1}{4} + \\ldots \\right) \\\\\n  = \\frac{1}{2}\\left(1 + b\\right) \\Rightarrow b = \\frac{1}{2}(1+b) \\Rightarrow b = 1\n\\]"
+  },
+  {
+    "objectID": "eu-critique.html#daniels-solution-2",
+    "href": "eu-critique.html#daniels-solution-2",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Daniel’s solution",
+    "text": "Daniel’s solution\n\n\nFocus on the geometrical series: \\[\\small\n  \\sum_{k=1}^{\\infty}\\frac{k-1}{2^k} = \\sum_{k=1}^{\\infty}\\frac{k}{2^k} - \\sum_{k=1}^{\\infty}\\frac{1}{2^k} = a - b\n\\]\nThe term \\(a\\) is: \\[\\small\n  a = \\sum_{k=1}^{\\infty}\\frac{k}{2^k} = \\frac{1}{2}\\sum_{k=1}^{\\infty}\\frac{k}{2^{k-1}} =\n  \\frac{1}{2}\\left(1 + 2\\times \\frac{1}{2} + 3 \\times \\frac{1}{4} + \\ldots \\right) \\\\\n  = \\frac{1}{2}\\left(1 + \\frac{1}{2} + 2\\times\\frac{1}{4} + 3\\times \\frac{1}{8} + \\ldots + \\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + \\ldots\\right)\n\\]"
+  },
+  {
+    "objectID": "eu-critique.html#daniels-solution-3",
+    "href": "eu-critique.html#daniels-solution-3",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Daniel’s solution",
+    "text": "Daniel’s solution\n\n\nFocus on the geometrical series: \\[\\small\n  \\sum_{k=1}^{\\infty}\\frac{k-1}{2^k} = \\sum_{k=1}^{\\infty}\\frac{k}{2^k} - \\sum_{k=1}^{\\infty}\\frac{1}{2^k} = a - b\n\\]\nThe term \\(a\\) is: \\[\\small\n  a\n  = \\frac{1}{2}\\left(1 + a + b\\right) \\Rightarrow a = \\frac{1}{2}(2 + a) \\Rightarrow a = 2.\n\\]\nSo the overall lottery value becomes: \\[\\small\n\\ln(2)\\times(a - b) = \\ln(2).\n\\]"
+  },
+  {
+    "objectID": "eu-critique.html#utility-over-money",
+    "href": "eu-critique.html#utility-over-money",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Utility Over Money",
+    "text": "Utility Over Money\n\n\nSince the St. Petersburg paradox, conventional wisdom that utility is concave in money.\nThis completes classical theory, which is: \\[\n\\text{EU / SEU} + \\text{concave utility in money.}\n\\]\nIn the classical theory, agents are risk-averse because of the way their utility function is shaped."
+  },
+  {
+    "objectID": "eu-critique.html#empirical-challenges",
+    "href": "eu-critique.html#empirical-challenges",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Empirical Challenges",
+    "text": "Empirical Challenges\n\nDaniel Kahneman & Amos Tversky made a career out of empirically testing predictions of the classical theory.\nKahneman later won a nobel prize for this work.\nTversky would have won it as well, but he passed away prematurely."
+  },
+  {
+    "objectID": "eu-critique.html#generalizing-from-examples",
+    "href": "eu-critique.html#generalizing-from-examples",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Generalizing from examples",
+    "text": "Generalizing from examples\n\n\nThese examples all come from Kahneman and Tversky (ECTA, 1979).\nKahneman and Tversky develop an alternative theory to accommodate findings that, relative to EU:\n\nIndividuals prefer certain prospects to uncertain prospects,\nthey overweight small probabilities,\nare more sensitive to large than small absolute differences in probability."
+  },
+  {
+    "objectID": "eu-critique.html#probability-weighting",
+    "href": "eu-critique.html#probability-weighting",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Probability weighting",
+    "text": "Probability weighting\n\n\nK&T propose a theory of probability weighting.\nRemember that EU weighting is linear: \\(EU = \\sum_z p(z)u(z),\\) where \\(p(z)\\) is probability of \\(z.\\)\nK&T propose: \\(\\sum_z\\pi(p(z))u(z),\\) where \\(\\pi(p)\\) is nonlinear."
+  },
+  {
+    "objectID": "eu-critique.html#probability-weighting-1",
+    "href": "eu-critique.html#probability-weighting-1",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Probability weighting",
+    "text": "Probability weighting\n\n\nK&T propose: \\(\\sum_z\\pi(p(z))u(z),\\) where \\(\\pi(p)\\) is nonlinear.\n\n\n\n\n\n\n\nRegularity: \\(\\scriptstyle \\pi(0) = 0,\\,\\pi(1) = 1\\)\nOverweighting of small \\(p\\): \\(\\pi(p)&gt;p\\) if \\(p &lt; \\hat{p}\\)\nSubcertainty: \\(\\scriptstyle \\pi(p) + \\pi(1-p) &lt; 1\\)\nSubproportionality: \\(\\scriptstyle\\frac{\\pi(pq)}{\\pi(p)} \\leq \\frac{\\pi(pqr)}{\\pi(pr)}\\) for \\(\\scriptstyle p,q,r\\in(0,1)\\)"
+  },
+  {
+    "objectID": "eu-critique.html#section",
+    "href": "eu-critique.html#section",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Probability weigthing: Implications\n\n\nProbability weighting fits the data better than EU/SEU linear weighting.\nDifferent from classical theory, probability weighting can explain risk attitudes through probability perceptions:\n\nOverweighting of small prob: Risk-seeking for small \\(p\\).\nUnderweigthing of large prob: Risk-aversion for large \\(p\\)."
+  },
+  {
+    "objectID": "eu-critique.html#section-1",
+    "href": "eu-critique.html#section-1",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Probability weigthing: Implications\n\n\nProbability weighting fits the data better than EU/SEU linear weighting.\nProbability weigthing is descriptive, not prescriptive.\n\nDifferent from classical theory, which derives behavior from normatively desirable axioms.\n\n\n\n\n\nThis raises the question of whether probability weighting is deliberate or a mistake.\nSome modern debate about this (next)."
+  },
+  {
+    "objectID": "eu-critique.html#measuring-probability-weighting",
+    "href": "eu-critique.html#measuring-probability-weighting",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Measuring probability weighting",
+    "text": "Measuring probability weighting\n\n\nStandard method of eliciting risk attitudes in experimental econ: Use a multiple price list (MPL) to measure a certainty equivalent.\n\n\n\n\n\n\nHere, CE of lottery is between $17 and $18."
+  },
+  {
+    "objectID": "eu-critique.html#measuring-probability-weighting-1",
+    "href": "eu-critique.html#measuring-probability-weighting-1",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Measuring probability weighting",
+    "text": "Measuring probability weighting\n\n\nWith binary lotteries, which pay X€ with \\(p\\) and nothing with \\(1-p\\), we can identify risk attitudes from CE:\n\nRisk neutral if \\(CE = p X.\\)\nRisk averse if \\(CE &lt; p X.\\)\nRisk seeking if \\(CE &gt; p X.\\)\n\nOften, we use normalized CEs, which are \\(\\widetilde{CE} = \\frac{CE}{X}.\\)\n\nRisk neutral if \\(\\widetilde{CE} = p.\\)\nRisk averse if \\(\\widetilde{CE} &lt; p.\\)\nRisk seeking if \\(\\widetilde{CE} &gt; p.\\)"
+  },
+  {
+    "objectID": "eu-critique.html#measuring-probability-weighting-2",
+    "href": "eu-critique.html#measuring-probability-weighting-2",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Measuring probability weighting",
+    "text": "Measuring probability weighting\n\n\nAssuming utility is linear in money, we can use CEs to back out \\(\\pi(p)\\): \\[\n\\pi(1)u(CE) = \\pi(p)u(X) \\\\\n\\Rightarrow \\pi(1)(a + b\\cdot CE) = \\pi(p)(a + b\\cdot X) \\\\\n\\text{assume }a=0 \\text{ w/o loss and }\\pi(1) = 1\\\\\n\\Rightarrow\n\\pi(p) = \\frac{CE}{X} \\Rightarrow \\pi(p)  = \\widetilde{CE}.\n\\]\nThus, assuming linear utilities allows to back out nonlinear \\(\\pi(p)\\)."
+  },
+  {
+    "objectID": "eu-critique.html#section-2",
+    "href": "eu-critique.html#section-2",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Misunderstandings in Oprea (AER, 2024)\n\n\nOprea asked participants comprehension questions about the instructions.\nBanki et al (WP, 2025) show that participants who did not make comprehension mistakes show differences between lotteries and mirrors."
+  },
+  {
+    "objectID": "eu-critique.html#section-3",
+    "href": "eu-critique.html#section-3",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Misunderstandings in Oprea (AER, 2024)\n\n\nBanki et al (WP, 2025) show that participants who did not make comprehension mistakes show differences between lotteries and mirrors."
+  },
+  {
+    "objectID": "eu-critique.html#section-4",
+    "href": "eu-critique.html#section-4",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Misunderstandings in Oprea (AER, 2024)\n\n\nBanki et al (WP, 2025) show that participants who did not make comprehension mistakes show differences between lotteries and mirrors."
+  },
+  {
+    "objectID": "eu-critique.html#takeaways",
+    "href": "eu-critique.html#takeaways",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nDecisions under risk are special.\n\nIndividuals overweight small probabilities and underweight large ones.\n\nThis is not only driven by calculation complexity.\n\nBut complexity is part of the story.\n\nThe other part seems to reflect genuine preferences or risk attitudes.\n\n\nIs probability weighting a mistake?\n\nIf you find the EU axioms desirable, then yes."
+  },
+  {
+    "objectID": "eu-critique.html#fixing-a-flaw-in-pw",
+    "href": "eu-critique.html#fixing-a-flaw-in-pw",
+    "title": "Expected Utility & Its Critiques",
+    "section": "“Fixing” a “flaw” in PW",
+    "text": "“Fixing” a “flaw” in PW\n\n\nWhile descriptively valid, PW can make strange predictions.\nConsider \\(L_A = (x, 0.1;x, 0.1;x, 0.1;x, 0.1; 0, 0.6),\\)\n\\(L_B = (x, 0.4; 0, 0.6).\\)\nBoth lotteries generate the same outcomes, but PW may predict strict preference for \\(L_A\\); if \\(\\pi(0.1) &gt; 0.1\\) and \\(\\pi(0.4)\\approx 0.4\\), then \\[\n4\\pi(0.1)u(x) + \\pi(0.6)u(0) &gt; \\pi(0.4)u(x) + \\pi(0.6)u(0).\n\\]"
+  },
+  {
+    "objectID": "eu-critique.html#section-5",
+    "href": "eu-critique.html#section-5",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "“Fixing” a “flaw” in PW\n\n\nAs an implication, PW may violate dominance.\n\n\n\nDominance. If one lottery always provides an outcome at least as good as another lottery in every state of the world, and is strictly better in at least one state, then this lottery should be preferred."
+  },
+  {
+    "objectID": "eu-critique.html#section-6",
+    "href": "eu-critique.html#section-6",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "“Fixing” a “flaw” in PW\n\nDominance. If one lottery always provides an outcome at least as good as another lottery in every state of the world, and is strictly better in at least one state, then this lottery should be preferred.\n\nE.g., consider \\(L_A = (x, p; 0, 1-p)\\) and \\(L_B = (x, p/2; x - \\varepsilon, p/2; 0, 1-p),\\) where \\(\\varepsilon &gt; 0\\). Clearly, \\(L_A\\) dominates \\(L_B\\)."
+  },
+  {
+    "objectID": "eu-critique.html#section-7",
+    "href": "eu-critique.html#section-7",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "“Fixing” a “flaw” in PW\nBecause \\(\\pi(p)\\) is flat for intermediate values of \\(p,\\) dominated lotteries may be preferred."
+  },
+  {
+    "objectID": "eu-critique.html#section-8",
+    "href": "eu-critique.html#section-8",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Fixing with rank-dependency\n\n\nTversky and Kahneman (JRU, 1992) propose rank-dependent (or cumulative) probability weights to avoid dominance violations.\nConsider a lottery \\(L = (X, p; Y, q; Z, 1-p-q),\\) where \\(X&gt;Y&gt;Z\\) and an alternative lottery \\(L' = (Z,1) + (Y-Z, p + q) + (X-Y,p).\\)\nAn EU agent is indifferent between \\(L\\) and \\(L':\\) \\[\nEU(L) = p u(X) + q u(Y) + (1-p-q)u(Z) = \\\\\nu(Z) + (p+q)[u(Y) - u(Z)] + p[u(X) - u(Z)] = EU(L').\n\\]"
+  },
+  {
+    "objectID": "eu-critique.html#section-9",
+    "href": "eu-critique.html#section-9",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Fixing with rank-dependency\n\n\nAn EU agent is indifferent between \\(L\\) and \\(L':\\) \\[\nEU(L) = p u(X) + q u(Y) + (1-p-q)u(Z) =  \\\\\nu(Z) + (p+q)[u(Y) - u(Z)] + p[u(X) - u(Z)] = EU(L').\n\\]\nWith rank dependent weights, we assume that the agent always mentally transforms \\(L\\) to \\(L'\\) before calculating probability weights: \\[\nEU_\\pi(L) = \\boldsymbol{\\pi(1)}u(Z) + \\boldsymbol{[\\pi(p) + \\pi(q)]}[u(Y) - u(Z)] +\n\\\\ \\boldsymbol{\\pi(p)}[u(X) - u(Z)].\n\\]"
+  },
+  {
+    "objectID": "eu-critique.html#section-10",
+    "href": "eu-critique.html#section-10",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Fixing with rank-dependency\n\n\nWith rank dependent weights, rewrite lotteries in the \\(L'\\) way. Then, add weights: \\[\nEU_\\pi(L) = \\boldsymbol{\\pi(1)}u(Z) + \\boldsymbol{[\\pi(p) + \\pi(q)]}[u(Y) - u(Z)] +\n\\\\ \\boldsymbol{\\pi(p)}[u(X) - u(Z)].\n\\]\nMore commonly this is (equivalently) written as \\[\nEU_\\pi(L) = \\pi(p)u(X) + [\\pi(p+q) - \\pi(p)]u(Y) +\n\\\\ [\\pi(1) - \\pi(p + q)]u(Z).\n\\]"
+  },
+  {
+    "objectID": "eu-critique.html#section-11",
+    "href": "eu-critique.html#section-11",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Rank-dependent weights fix the dominance problem\n\n\nWe considered: \\[\n\\scriptsize\nL_A = (x, p; 0, 1-p),\\, L_B = (x, p/2; x - \\varepsilon, p/2; 0, 1-p), \\varepsilon &gt; 0\n\\]\nWith rank-dependence: \\[\n\\scriptsize\nEU_\\pi(L_A) = \\pi(p)u(x) + [\\pi(1)-\\pi(p)]u(0), \\\\\n\\scriptsize\nEU_\\pi(L_B) = \\pi(p/2)u(x) + [\\pi(p) - \\pi(p/2)]u(x - \\varepsilon) + [\\pi(1) - \\pi(p)]u(0)\n\\]\nTherefore, \\(\\scriptsize EU_\\pi(L_A) &gt; EU_\\pi(L_B) \\Rightarrow u(x) &gt; u(x-\\varepsilon).\\)"
+  },
+  {
+    "objectID": "eu-critique.html#section-12",
+    "href": "eu-critique.html#section-12",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Rank-dependent weights predict that \\[\n\\scriptsize\nEU_\\pi(\\bar{L}) = \\pi(p)u(\\bar{X}) + [\\pi(p+q) - \\pi(p)]u(Y) + [\\pi(1) - \\pi(p+q)]u(Z), \\\\\n\\scriptsize\nEU_\\pi(\\underline{L}) = \\pi(q)u(Y) + [\\pi(p+q) - \\pi(p)]u(\\underline{X}) + [\\pi(1) - \\pi(p+q)]u(Z).\n\\]"
+  },
+  {
+    "objectID": "eu-critique.html#section-13",
+    "href": "eu-critique.html#section-13",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Rank-dependent weights predict that \\[\n\\scriptsize\nEU_\\pi(\\bar{L}) = \\boldsymbol{\\pi(p)}u(\\bar{X}) + \\boldsymbol{[\\pi(p+q) - \\pi(p)]}u(Y) + [\\pi(1) - \\pi(p+q)]u(Z), \\\\\n\\scriptsize\nEU_\\pi(\\underline{L}) = \\boldsymbol{\\pi(q)}u(Y) + \\boldsymbol{[\\pi(p+q) - \\pi(p)]}u(\\underline{X}) + [\\pi(1) - \\pi(p+q)]u(Z).\n\\]\nBy comparing lotteries such as \\(\\bar{L}\\) and \\(\\underline{L},\\) we can test for rank-dependent weights.\nBut the problem is that we do not observe \\(\\pi(p)\\). Thus, we need to find ways of approximating it."
+  },
+  {
+    "objectID": "eu-critique.html#section-14",
+    "href": "eu-critique.html#section-14",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Bernheim and Sprenger (ECTA, 2020): Testing for rank-dependence\n\n\nBernheim and Sprenger show that changes in probability weights can be approximated by changes in “equivalent variations”. Participants observe lotteries \\[\nL = (X, p; Y, q; Z, 1-p-q), \\\\\nL_e = (X, p; Y + \\boldsymbol{m}, q; Z-\\boldsymbol{k},1-p-q)\n\\]\nParticipants observe \\(m\\) and choose \\(k\\) so that \\(L\\sim L_e\\). I.e., they decide how much of \\(Z\\) they are willing to give up if \\(Y\\) increases by \\(m.\\)"
+  },
+  {
+    "objectID": "eu-critique.html#section-15",
+    "href": "eu-critique.html#section-15",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Participants observe \\(m\\) and choose \\(k\\) so that \\(L\\sim L_e\\). I.e., they decide how much of \\(Z\\) they are willing to give up if \\(Y\\) increases by \\(m.\\)\nWhy: The equivalent variation \\(k\\) measures how much I value a marginal increase in \\(Y\\). This valuation depends on the probability weight I put on the chance of \\(Y\\) realizing. Therefore, I can learn about the weight by eliciting \\(k\\).\nIdea: Elicit \\(\\bar{k}\\) and \\(\\underline{k}\\) in lotteries \\[\n\\bar{L}_e = (\\bar{X}, p; Y + m, q; Z-\\bar{k},1-p-q), \\\\\n\\underline{L}_e = (\\underline{X}, p; Y + m, q; Z-\\underline{k},1-p-q).\n\\]"
+  },
+  {
+    "objectID": "eu-critique.html#section-16",
+    "href": "eu-critique.html#section-16",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Equivalent variations proxy for weights\n\nProposition. As \\(m\\to 0,\\) the percentage change in \\(k\\) when increasing \\(X\\) from \\(\\underline{X} &lt; Y\\) to \\(\\bar{X} &gt; Y\\) is equivalent to the percentage change in the probability weight put on \\(Y\\) relative to \\(Z.\\)\n\n\nSuppose that the agent values lotteries \\(\\bar{L}\\) and \\(\\underline{L}\\) as \\[\n\\small\nEU(\\bar{L}) = \\bar{w}_X u(X) + \\bar{w}_Y u(Y) + \\bar{w}_Z u(Z),\\, \\\\\n\\small\nEU(\\underline{L}) = \\underline{w}_X u(X) + \\underline{w}_Y u(Y) + \\underline{w}_Z u(Z).\n\\]"
+  },
+  {
+    "objectID": "eu-critique.html#section-17",
+    "href": "eu-critique.html#section-17",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Equivalent variations proxy for weights\n\nProposition. As \\(m\\to 0,\\) the percentage change in \\(k\\) when increasing \\(X\\) from \\(\\underline{X} &lt; Y\\) to \\(\\bar{X} &gt; Y\\) is equivalent to the percentage change in the probability weight put on \\(Y\\) relative to \\(Z.\\)\n\nThe proposition suggests that: \\[\n\\small \\underset{m\\to 0}{\\text{lim}} \\ln(\\bar{k}) - \\ln(\\underline{k}) = \\ln\\left(\\frac{\\bar{w}_Y}{\\bar{w}_z}\\right) - \\ln\\left(\\frac{\\underline{w}_Y}{\\underline{w}_z}\\right).\n\\]\n(Proof on board)"
+  },
+  {
+    "objectID": "eu-critique.html#section-18",
+    "href": "eu-critique.html#section-18",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Equivalent variations allow tests for rank-dependence\n\n\n\n\n\nEU predicts that weights are independent of \\(X\\)\nTherefore, it predicts that \\(k\\) remains constant between \\(\\bar{L}\\) and \\(\\underline{L}\\)"
+  },
+  {
+    "objectID": "eu-critique.html#section-19",
+    "href": "eu-critique.html#section-19",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Equivalent variations allow tests for rank-dependence\n\n\n\n\n\nStandard prob. weighting predicts that weights are independent of \\(X\\)\nTherefore, it predicts that \\(k\\) remains constant between \\(\\bar{L}\\) and \\(\\underline{L}\\)"
+  },
+  {
+    "objectID": "eu-critique.html#section-20",
+    "href": "eu-critique.html#section-20",
+    "title": "Expected Utility & Its Critiques",
+    "section": "",
+    "text": "Equivalent variations allow tests for rank-dependence\n\n\n\n\n\nRank-dependent prob. weighting predicts that weights are dependent on \\(X\\)\nTherefore, it predicts that \\(k\\) changes between \\(\\bar{L}\\) and \\(\\underline{L}\\)"
+  },
+  {
+    "objectID": "eu-critique.html#wrapping-up",
+    "href": "eu-critique.html#wrapping-up",
+    "title": "Expected Utility & Its Critiques",
+    "section": "Wrapping up",
+    "text": "Wrapping up\n\nClassical theory: \\(\\text{EU / SEU + concave utility}\\)\nPeople deviate from the linear probability weighting prediction of EU / SEU\nProbability weighting is better captured by \\(\\pi(p).\\)\nRisk attitudes: part preference, part a reaction to choice complexity.\nNon-linear prob. weighting leads to dominance violations, a theoretical solution exists but there is no empirical support for it."
+  },
+  {
     "objectID": "big-ideas.html#section",
     "href": "big-ideas.html#section",
     "title": "Four Big Ideas",
@@ -277,6 +739,6 @@
     "href": "index.html",
     "title": "Behavioral Economic Theory Slides",
     "section": "",
-    "text": "Welcome to the course slides. Choose a deck below:\n\nIntroduction\nBig Ideas"
+    "text": "Welcome to the course slides. Choose a deck below:\n\nIntroduction\nBig Ideas\nExpected Utility & It’s Critiques"
   }
 ]
