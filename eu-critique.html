@@ -1162,7 +1162,7 @@ u(2400) &gt; 0.33 u(2500) + 0.66 u(2400) \Rightarrow 0.34u(2400) &gt; 0.33u(2500
 <li class="fragment">Consider a lottery <span class="math inline">\(L = (X, p; Y, q; Z, 1-p-q),\)</span> where <span class="math inline">\(X&gt;Y&gt;Z\)</span> and an alternative lottery <span class="math inline">\(L' = (Z,1) + (Y-Z, p + q) + (X-Y,p).\)</span></li>
 <li class="fragment">An EU agent is indifferent between <span class="math inline">\(L\)</span> and <span class="math inline">\(L':\)</span> <span class="math display">\[
 EU(L) = p u(X) + q u(Y) + (1-p-q)u(Z) = \\
-u(Z) + (p+q)[u(Y) - u(Z)] + p[u(X) - u(Z)] = EU(L').
+u(Z) + (p+q)[u(Y) - u(Z)] + p[u(X) - u(Y)] = EU(L').
 \]</span></li>
 </ul>
 </div>
@@ -1174,11 +1174,11 @@ u(Z) + (p+q)[u(Y) - u(Z)] + p[u(X) - u(Z)] = EU(L').
 <ul>
 <li class="fragment">An EU agent is indifferent between <span class="math inline">\(L\)</span> and <span class="math inline">\(L':\)</span> <span class="math display">\[
 EU(L) = p u(X) + q u(Y) + (1-p-q)u(Z) =  \\
-u(Z) + (p+q)[u(Y) - u(Z)] + p[u(X) - u(Z)] = EU(L').
+u(Z) + (p+q)[u(Y) - u(Z)] + p[u(X) - u(Y)] = EU(L').
 \]</span></li>
 <li class="fragment">With rank dependent weights, we assume that the agent always mentally transforms <span class="math inline">\(L\)</span> to <span class="math inline">\(L'\)</span> before calculating probability weights: <span class="math display">\[
-EU_\pi(L) = \boldsymbol{\pi(1)}u(Z) + \boldsymbol{[\pi(p) + \pi(q)]}[u(Y) - u(Z)] +
-\\ \boldsymbol{\pi(p)}[u(X) - u(Z)].
+EU_\pi(L) = \boldsymbol{\pi(1)}u(Z) + \boldsymbol{\pi(p+q)}[u(Y) - u(Z)] +
+\\ \boldsymbol{\pi(p)}[u(X) - u(Y)].
 \]</span></li>
 </ul>
 </div>
@@ -1189,8 +1189,8 @@ EU_\pi(L) = \boldsymbol{\pi(1)}u(Z) + \boldsymbol{[\pi(p) + \pi(q)]}[u(Y) - u(Z)
 <div class="no-bullets">
 <ul>
 <li>With rank dependent weights, rewrite lotteries in the <span class="math inline">\(L'\)</span> way. Then, add weights: <span class="math display">\[
-EU_\pi(L) = \boldsymbol{\pi(1)}u(Z) + \boldsymbol{[\pi(p) + \pi(q)]}[u(Y) - u(Z)] +
-\\ \boldsymbol{\pi(p)}[u(X) - u(Z)].
+EU_\pi(L) = \boldsymbol{\pi(1)}u(Z) + \boldsymbol{\pi(p+q)}[u(Y) - u(Z)] +
+\\ \boldsymbol{\pi(p)}[u(X) - u(Y)].
 \]</span></li>
 <li>More commonly this is (equivalently) written as <span class="math display">\[
 EU_\pi(L) = \pi(p)u(X) + [\pi(p+q) - \pi(p)]u(Y) +
@@ -1280,7 +1280,7 @@ EU_\pi(\underline{L}) = \boldsymbol{\pi(q)}u(Y) + \boldsymbol{[\pi(p+q) - \pi(p)
 L = (X, p; Y, q; Z, 1-p-q), \\
 L_e = (X, p; Y + \boldsymbol{m}, q; Z-\boldsymbol{k},1-p-q)
 \]</span></li>
-<li class="fragment">Participants observe <span class="math inline">\(m\)</span> and choose <span class="math inline">\(k\)</span> so that <span class="math inline">\(L\sim L_e\)</span>. I.e., they decide how much of <span class="math inline">\(Z\)</span> they are willing to give up if <span class="math inline">\(Y\)</span> increases by <span class="math inline">\(m.\)</span></li>
+<li class="fragment">Participants observe <span class="math inline">\(m\)</span> and choose <span class="math inline">\(k\)</span> so that <span class="math inline">\(L\sim L_e.\)</span></li>
 </ul>
 </div>
 </section>
@@ -1319,7 +1319,7 @@ EU(\underline{L}) = \underline{w}_X u(X) + \underline{w}_Y u(Y) + \underline{w}_
 <p><strong>Proposition.</strong> As <span class="math inline">\(m\to 0,\)</span> the percentage change in <span class="math inline">\(k\)</span> when increasing <span class="math inline">\(X\)</span> from <span class="math inline">\(\underline{X} &lt; Y\)</span> to <span class="math inline">\(\bar{X} &gt; Y\)</span> is equivalent to the percentage change in the probability weight put on <span class="math inline">\(Y\)</span> relative to <span class="math inline">\(Z.\)</span></p>
 </div>
 <p>The proposition suggests that: <span class="math display">\[
-\small \underset{m\to 0}{\text{lim}} \ln(\bar{k}) - \ln(\underline{k}) = \ln\left(\frac{\bar{w}_Y}{\bar{w}_z}\right) - \ln\left(\frac{\underline{w}_Y}{\underline{w}_z}\right).
+\small \underset{m\to 0}{\text{lim}} \frac{\bar{k} - \underline{k}}{\underline{k}} = \frac{\bar{w}_Y/\bar{w}_Z - \underline{w}_Y/\underline{w}_Z}{\underline{w}_Y/\underline{w}_Z}.
 \]</span></p>
 <p>(Proof on board)</p>
 </section>

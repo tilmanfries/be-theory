@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tilmanfries.github.io/be-theory/intro.html</loc>
-    <lastmod>2026-04-13T17:37:21.246Z</lastmod>
+    <loc>https://tilmanfries.github.io/be-theory/reference-dependence.html</loc>
+    <lastmod>2026-04-27T14:53:34.727Z</lastmod>
   </url>
   <url>
-    <loc>https://tilmanfries.github.io/be-theory/eu-critique.html</loc>
-    <lastmod>2026-04-20T08:38:57.250Z</lastmod>
+    <loc>https://tilmanfries.github.io/be-theory/index.html</loc>
+    <lastmod>2026-04-27T14:52:34.042Z</lastmod>
   </url>
   <url>
     <loc>https://tilmanfries.github.io/be-theory/big-ideas.html</loc>
     <lastmod>2026-04-13T17:59:09.185Z</lastmod>
   </url>
   <url>
-    <loc>https://tilmanfries.github.io/be-theory/index.html</loc>
-    <lastmod>2026-04-20T08:44:56.020Z</lastmod>
+    <loc>https://tilmanfries.github.io/be-theory/eu-critique.html</loc>
+    <lastmod>2026-04-27T14:13:45.917Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tilmanfries.github.io/be-theory/intro.html</loc>
+    <lastmod>2026-04-13T17:37:21.246Z</lastmod>
   </url>
 </urlset>
