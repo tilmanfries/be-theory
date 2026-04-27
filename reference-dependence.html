@@ -303,20 +303,14 @@ Tilman&nbsp;Fries
 <div class="no-bullets">
 <ul>
 <li class="fragment"><p>In Problem 9, K&amp;T find the modal choices: <span class="math display">\[
-\begin{aligned}
-&amp;(4000,.25;2000,.25;0,.5) \quad &amp;\succ&amp; \quad (6000,.25;0,.75), \\
-&amp;(-6000,.25;0,.75) \quad &amp;\succ&amp; \quad (-4000,.25;-2000,.25;0,.5)
-\end{aligned}
+(4000,.25;2000,.25;0,.5) \quad \succ \quad (6000,.25;0,.75), \\
+(-6000,.25;0,.75) \quad \succ \quad (-4000,.25;-2000,.25;0,.5)
 \]</span></p></li>
 <li class="fragment"><p>Gains: <span class="math inline">\(\small\pi(.25)[v(4k) + v(2k)] &gt; \pi(.25)v(6k) \Rightarrow  v(4k) + v(2k) &gt; v(6k)\)</span></p>
 <ul>
 <li class="fragment"><span class="math inline">\(v\)</span> needs to be concave in gains to accomodate this.</li>
 </ul></li>
-<li class="fragment"><p>Losses: <span class="math inline">\(\small\pi(.25)[v(-4k) + v(-2k)] &lt; \pi(.25)v(-6k)\)</span></p></li>
-<li class="fragment"><p><span class="math inline">\(\Rightarrow  v(-4k) + v(-2k) &lt; v(-6k)\)</span></p>
-<ul>
-<li class="fragment"><span class="math inline">\(v\)</span> needs to be convex in losses to accomodate this.</li>
-</ul></li>
+<li class="fragment"><p>Losses: <span class="math inline">\(\small\pi(.25)[v(-4k) + v(-2k)] &lt; \pi(.25)v(-6k)\)</span> <span class="math inline">\(\small\Rightarrow  v(-4k) + v(-2k) &lt; v(-6k)\)</span> Convex in losses!</p></li>
 </ul>
 </div>
 </section>
@@ -1055,6 +1049,7 @@ p \geq \frac{1+\eta}{1+\lambda\eta}.
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
+'pdfMaxPagesPerSlide': 1,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'smaller': false,
  
