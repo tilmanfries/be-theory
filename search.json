@@ -1,500 +1,115 @@
 [
   {
-    "objectID": "reference-dependence.html#section",
-    "href": "reference-dependence.html#section",
-    "title": "Reference-dependent preferences",
+    "objectID": "time-preferences.html#formalizing-choice-over-time",
+    "href": "time-preferences.html#formalizing-choice-over-time",
+    "title": "Time Preferences",
+    "section": "Formalizing choice over time",
+    "text": "Formalizing choice over time\n\n\nConsider an agent with preferences over outcomes \\(\\mathbf z.\\)\nWe have discrete time periods \\(t=0,\\dots,T.\\)\nIn every \\(t,\\) the agent receives instantaneous utility \\(u_t = u(z_t).\\)\n\nThis results in an overall utility stream \\(\\mathbf u=(u_0,\\dots,u_T).\\)\n\nPreferences at time \\(t\\): \\(\\succ_t\\)"
+  },
+  {
+    "objectID": "time-preferences.html#section",
+    "href": "time-preferences.html#section",
+    "title": "Time Preferences",
     "section": "",
-    "text": "Reference-dependence in Kahneman & Tversky (ECTA, 1979)\n\nA disease threatens 600 people.\n\n\n\n\n\n\n\nQ1\nQ2\n\n\n\n\n(A)  Save 200 for sure\n(C)  400 will die\n\n\n(B)  ⅓ chance save 600⅔ chance save 0\n(D)  ⅓ chance none die⅔ chance 600 die\n\n\n\n\n\n\n73 % choose A over B and 78 % choose D over C."
+    "text": "Time discounting\n\n\nWe assume that utility is time-separable. This implies that we can write utility from the vantage point of \\(t\\) as \\[\n\\small\nU_t(u) = \\sum_{k=0}^{T-t}D(k)u_{t+k} = D(0) + D(1)u_{t+1}+\\dots + D(T-t)u_T.\n\\]\n\n\n\nAbove, \\(D(k)\\) is a discount factor."
   },
   {
-    "objectID": "reference-dependence.html#section-1",
-    "href": "reference-dependence.html#section-1",
-    "title": "Reference-dependent preferences",
+    "objectID": "time-preferences.html#section-1",
+    "href": "time-preferences.html#section-1",
+    "title": "Time Preferences",
     "section": "",
-    "text": "Reference-dependence in Kahneman & Tversky (ECTA, 1979)\n\nA disease threatens 600 people.\n\n\n\n\n\n\n\nQ1\nQ2\n\n\n\n\n(A)  Save 200 for sure\n(C)  400 will die\n\n\n(B)  ⅓ chance save 600⅔ chance save 0\n(D)  ⅓ chance none die⅔ chance 600 die\n\n\n\n\n\n\nA and C lead to the same outcome and so do B and D. The example violates the invariance assumption of classical theory."
+    "text": "Time discounting\n\n\\[\n\\small\nU_t(u) = \\sum_{k=0}^{T-t}D(k)u_{t+k} = D(0) + D(1)u_{t+1}+\\dots + D(T-t)u_T.\n\\]\n\n\nAbove, \\(D(k)\\) is a discount factor.\n\n\nDefinition. The discount factor is exponential if \\(D(k) = \\delta^k,\\) where \\(\\delta\\in(0,1]\\). If \\(\\delta &lt; 1,\\) this means that the agent weights the future less strongly than the present."
   },
   {
-    "objectID": "reference-dependence.html#section-2",
-    "href": "reference-dependence.html#section-2",
-    "title": "Reference-dependent preferences",
+    "objectID": "time-preferences.html#section-2",
+    "href": "time-preferences.html#section-2",
+    "title": "Time Preferences",
     "section": "",
-    "text": "More systematic evidence (K&T 1979)\n\n\n\n\nSwitching from gains to losses flips the modal lottery choice."
+    "text": "Definition. The discount factor is exponential if \\(D(k) = \\delta^k,\\) where \\(\\delta\\in(0,1]\\). If \\(\\delta &lt; 1,\\) this means that the agent weights the future less strongly than the present.\n\n\n\nStandard economic models use exponential discounting. An arbitrary choice?\n\n\n“It is completely arbitrary to assume that the individual behaves as to maximize an integral envisaged in [the exponential discounting model]” — Paul Samuelson (1937), in the article introducing the concept."
   },
   {
-    "objectID": "reference-dependence.html#section-3",
-    "href": "reference-dependence.html#section-3",
-    "title": "Reference-dependent preferences",
+    "objectID": "time-preferences.html#section-3",
+    "href": "time-preferences.html#section-3",
+    "title": "Time Preferences",
     "section": "",
-    "text": "More systematic evidence (K&T 1979)\n\n\n\n\nWhen \\(p\\) is high, individuals are risk averse in the gain domain but risk seeking in the loss domain.\nThis consistent with the life saving example."
+    "text": "A better (?) reason for exponential discounting\n\n\nSuppose we believe that human behavior is time-consistent. By this, we mean that individuals carry through with their plans.\n\n\n\nDefinition. For all \\(t\\) and \\(\\tau\\!&gt;\\!t\\) an agent is time-consistent if\n\\(\\boldsymbol{z} \\succ_t \\boldsymbol{z}' \\iff \\boldsymbol{z} \\succ_\\tau \\boldsymbol{z}'\\)\nwhenever \\(\\boldsymbol{z}_t=\\boldsymbol{z}_t'\\) for \\(t&lt;\\tau\\)."
   },
   {
-    "objectID": "reference-dependence.html#section-4",
-    "href": "reference-dependence.html#section-4",
-    "title": "Reference-dependent preferences",
+    "objectID": "time-preferences.html#section-4",
+    "href": "time-preferences.html#section-4",
+    "title": "Time Preferences",
     "section": "",
-    "text": "Value function and loss aversion\n\n\n\n\nK&T make a persuasive argument that individuals treat losses differently from gains.\n\nTheir results can be captured by a value function that is concave in gains and convex in losses."
+    "text": "Time-consistency: Example\n\nFor all \\(t\\) and \\(\\tau\\!&gt;\\!t\\) an agent is time-consistent if\n\\(\\boldsymbol{z} \\succ_t \\boldsymbol{z}' \\iff \\boldsymbol{z} \\succ_\\tau \\boldsymbol{z}'\\)\nwhenever \\(\\boldsymbol{z}_t=\\boldsymbol{z}_t'\\) for \\(t&lt;\\tau\\).\n\n\n\nConsider the outcome vectors \\(\\boldsymbol{z} = (\\text{relax, gym})\\) and \\(\\boldsymbol{z}' = (\\text{relax, relax}).\\)\nTime consistency says that if\n\ntoday, I prefer going to the gym tomorrow (\\(\\boldsymbol{z} \\succ_0 \\boldsymbol{z}'\\)),\nthen, tomorrow, I will still prefer going to the gym (\\(\\boldsymbol{z} \\succ_1 \\boldsymbol{z}'\\))"
   },
   {
-    "objectID": "reference-dependence.html#section-5",
-    "href": "reference-dependence.html#section-5",
-    "title": "Reference-dependent preferences",
+    "objectID": "time-preferences.html#section-5",
+    "href": "time-preferences.html#section-5",
+    "title": "Time Preferences",
     "section": "",
-    "text": "Value function and loss aversion\n\n\n\n\nIn addition, they assume loss aversion: \\(v\\) is steeper for losses than for gains.\nEven though they don’t need loss aversion to explain the data and they provide no evidence for it, loss aversion perhaps is the most influential idea coming out of K&T."
+    "text": "Stationarity vs. Present Bias\nModern tests of time discounting often test for stationarity. Denote an option generating outcome \\(z\\) in \\(t\\) as \\((z,t)\\). Then:\n\nStationarity: \\(\\succ\\) depends only on delay difference, not on calendar date\n\\[\n\\small\n(z,t{+}\\Delta_1)\\sim_t(z',t{+}\\Delta_2)\n\\;\\;\\Longrightarrow\\;\\;\n(z,t'{+}\\Delta_1)\\sim_{t'}(z',t'{+}\\Delta_2),\n\\] for \\(\\Delta_1, \\Delta_2 &gt; 0.\\)\n\n\nED ⇒ stationarity."
   },
   {
-    "objectID": "reference-dependence.html#prospect-theory",
-    "href": "reference-dependence.html#prospect-theory",
-    "title": "Reference-dependent preferences",
-    "section": "Prospect Theory",
-    "text": "Prospect Theory\nCombining probability weighting ✚ loss‑averse value function, we have Prospect Theory.\n\nThe fourfold risk‑attitude pattern is PT’s most celebrated prediction.\n\n\n\n\nProbability\nGains\nLosses\n\n\n\n\nLow\nRisk‑seeking\nRisk‑averse\n\n\nHigh\nRisk‑averse\nRisk‑seeking\n\n\n\n\nCan explain why the same people seek-out insurance and gamble.\n- Insurance: Low probability loss; gambling: Low probability gain."
-  },
-  {
-    "objectID": "reference-dependence.html#section-6",
-    "href": "reference-dependence.html#section-6",
-    "title": "Reference-dependent preferences",
+    "objectID": "time-preferences.html#section-6",
+    "href": "time-preferences.html#section-6",
+    "title": "Time Preferences",
     "section": "",
-    "text": "Endowment effect\nThaler (JEBO, 1980) tells the following story.\n\nStory. Mr R bought wine at $5/bottle in 1958. A merchant later offers $100 per bottle; he refuses, though he never pays more than $35 for a bottle.\n\n\n\nThis example is hard to rationalize with EU:\n\nNot selling at wealth \\(y\\) for $100 implies \\(\\small u(\\text{1 wine}, \\$y) &gt; u(\\text{0 wine}, \\$100 + \\$y).\\)\nNot buying for $35 implies \\(\\small u(\\text{1 wine}, \\$y - \\$35) &lt; u(\\text{0 wine}, \\$y).\\)"
+    "text": "Stationarity vs. Present Bias\n\nStationarity: \\(\\succ\\) depends only on delay difference, not on calendar date\n\\[\n\\small\n(z,t{+}\\Delta_1)\\sim_t(z',t{+}\\Delta_2)\n\\;\\;\\Longrightarrow\\;\\;\n(z,t'{+}\\Delta_1)\\sim_{t'}(z',t'{+}\\Delta_2),\n\\] for \\(\\Delta_1, \\Delta_2 &gt; 0.\\)\n\n\nPresent bias breaks stationarity: “X€ now vs. Y€ in a week” ≠ “X€ tomorrow vs. Y€ in eight days”."
   },
   {
-    "objectID": "reference-dependence.html#section-7",
-    "href": "reference-dependence.html#section-7",
-    "title": "Reference-dependent preferences",
+    "objectID": "time-preferences.html#section-7",
+    "href": "time-preferences.html#section-7",
+    "title": "Time Preferences",
     "section": "",
-    "text": "Endowment effect\nThaler (JEBO, 1980) tells the following story.\n\nStory. Mr R bought wine at $5/bottle in 1958. A merchant later offers $100 per bottle; he refuses, though he never pays more than $35 for a bottle.\n\n\n\nAssuming that \\(u\\) increases in money, the choices imply: \\(\\scriptsize u(\\text{1 wine}, \\$y) &gt; u(\\text{0 wine}, \\$100 + \\$y) &gt; u(\\text{0 wine}, \\$y) &gt; u(\\text{1 wine}, \\$y - \\$35)\\)\n\nThis would only be possible were \\(u\\) extremely concave around \\(\\$y\\)."
+    "text": "Andreoni and Sprenger (AER, 2012): Convex Time-Budget (CTB) experiment\n\n\nA&S provide a comprehensive empirical description of choice over time.\nParticipants have to allocate a budget of 100 tokens between two dates (e.g., today or in 10 weeks).\n\nThese tokens will be converted to dollars and paid out (incentives).\nThe exchange rates may differ between two dates → trace demand curves."
   },
   {
-    "objectID": "reference-dependence.html#section-8",
-    "href": "reference-dependence.html#section-8",
-    "title": "Reference-dependent preferences",
+    "objectID": "time-preferences.html#section-8",
+    "href": "time-preferences.html#section-8",
+    "title": "Time Preferences",
     "section": "",
-    "text": "Endowment effect\nThaler (JEBO, 1980) tells the following story.\n\nStory. Mr R bought wine at $5/bottle in 1958. A merchant later offers $100 per bottle; he refuses, though he never pays more than $35 for a bottle.\n\n\n\nUsing loss aversion: \\(\\small v(-\\text{1 wine}) + v(\\$100) &lt; v(0),\\,v(\\text{1 wine}) + v(-\\$35) &lt; v(0)\\) \\(\\small\\Rightarrow v(\\$100) &lt; -v(-\\text{1 wine}),\\,v(\\text{1 wine})&lt; -v(-\\$35).\\)"
+    "text": "Andreoni and Sprenger (AER, 2012): Convex Time-Budget (CTB) experiment\n\n\nThey include a host of measures to convince participants that:\n\nThey will be paid at the specified date.\nThere are no hassle costs involved with delayed payments.\n\nPayments are delivered by a mailed check, even today’s."
   },
   {
-    "objectID": "reference-dependence.html#section-9",
-    "href": "reference-dependence.html#section-9",
-    "title": "Reference-dependent preferences",
+    "objectID": "time-preferences.html#section-9",
+    "href": "time-preferences.html#section-9",
+    "title": "Time Preferences",
     "section": "",
-    "text": "Adding loss aversion\n\n\nSuppose now that cab drivers are loss averse. \\[\nu_\\lambda(h) = \\underbrace{wh + \\ell(T-h)}_{\\text{Standard}} + \\underbrace{g(wh - r).}_{\\text{Gain-loss } u}\n\\]\nIdea: Cab drivers have a daily reference income \\(r.\\) If they earn less, they experience a loss. If they earn more, they experience a gain."
+    "text": "Example: Smoking\n\n\nConsider an agent who considers whether to smoke or not. The agent is present biased (\\(\\beta &lt; 1\\)). For simplicity, assume that \\(\\delta = 1.\\)\nSmoking gives the agent an immediate consumption joy \\(j\\) but carries some cost \\(c\\) in a future time period.\nSuppose that \\(c &gt; j &gt; \\beta c.\\)\n\nThe agent prefers smoking right now over not smoking (\\(j&gt;\\beta c\\)).\nBut the agent prefers to quit smoking later (\\(c &gt; j\\))."
   },
   {
-    "objectID": "reference-dependence.html#section-10",
-    "href": "reference-dependence.html#section-10",
-    "title": "Reference-dependent preferences",
+    "objectID": "time-preferences.html#section-10",
+    "href": "time-preferences.html#section-10",
+    "title": "Time Preferences",
     "section": "",
-    "text": "Adding loss aversion\n\n\nSuppose now that cab drivers are loss averse. \\[\nu_\\lambda(h) = \\underbrace{wh + \\ell(T-h)}_{\\text{Standard}} + \\underbrace{g(wh - r).}_{\\text{Gain-loss } u}\n\\]\nGain-loss utility is a function: \\[\ng(wh - r) = \\begin{cases}\n\\eta(wh-r),\\, wh\\geq r, \\\\\n\\lambda\\eta(wh-r),\\, wh &lt; r.\n\\end{cases}\n\\]\nAbove, \\(\\lambda &gt; 1\\) is the loss aversion parameter and \\(\\eta&gt;0\\) is a utility weight."
+    "text": "Example: Smoking\n\n\nSuppose that \\(c &gt; j &gt; \\beta c.\\)\n\nThe agent prefers smoking right now over not smoking (\\(j&gt;\\beta c\\)).\nBut the agent prefers to quit smoking later (\\(c &gt; j\\)).\n\nIf the agent is aware of their bias, they might try to stop themselves from smoking later: go to rehab, do not buy tobacco, etc.\nIf the agent is unaware, they will naively expect to quit smoking.\n\nBecause of this, they underinvest in mitigation."
   },
   {
-    "objectID": "reference-dependence.html#section-11",
-    "href": "reference-dependence.html#section-11",
-    "title": "Reference-dependent preferences",
+    "objectID": "time-preferences.html#section-11",
+    "href": "time-preferences.html#section-11",
+    "title": "Time Preferences",
     "section": "",
-    "text": "Consequences\n\n\n\nThe left panel plots the solution w/o loss aversion.\nThe right panel plots the solution w/ loss aversion."
+    "text": "Sophistication in the \\(\\beta-\\delta\\) model\n\n\nThe example illustrates how sophistication about present bias plays a key role for the welfare implications of the \\(\\beta-\\delta\\) model.\nIf individuals are aware of their bias, they might get proactive to stop them from being short-sighted:\n\nAvoid restaurants with “tempting” menu options.\nInstall screen time blockers on their phone.\n…"
   },
   {
-    "objectID": "reference-dependence.html#section-12",
-    "href": "reference-dependence.html#section-12",
-    "title": "Reference-dependent preferences",
+    "objectID": "time-preferences.html#section-12",
+    "href": "time-preferences.html#section-12",
+    "title": "Time Preferences",
     "section": "",
-    "text": "Consequences\n\n\n\nThe marginal benefit of working more jumps at \\(\\hat{h} =\\frac{r}{w}.\\)\nThis is where working more turns losses into gains.\nConsequently, the optimal solution may be to work exactly \\(\\hat{h}\\) hours. If so, hours decrease in \\(w.\\)"
+    "text": "Sophistication in the \\(\\beta-\\delta\\) model\n\n\nThe example illustrates how sophistication about present bias plays a key role for the welfare implications of the \\(\\beta-\\delta\\) model.\nIf they fully or partially neglect their bias, private initiative will not be enough.\n\nThis then motivates various corrective taxes on alcohol, soda, cigarettes, etc.\nIt calls for regulation of “addictive” social media algorithms.\nPublic programs to improve sleep hygiene."
   },
   {
-    "objectID": "reference-dependence.html#expectationsbased-loss-aversion-ebla",
-    "href": "reference-dependence.html#expectationsbased-loss-aversion-ebla",
-    "title": "Reference-dependent preferences",
-    "section": "Expectations‑Based Loss Aversion (EBLA)",
-    "text": "Expectations‑Based Loss Aversion (EBLA)\n(Kőszegi & Rabin QJE 2006)\n\n\nK&R propose a theory of endogenous reference points that are governed by rational expectations.\nThis should sound familiar to you.\nLA problem: We have a free model parameter \\(r\\).\nK&R solution: Say \\(r\\) is an expectation → assume expectations are rational → \\(r\\) is no longer a free parameter, but part of the model solution."
-  },
-  {
-    "objectID": "reference-dependence.html#section-13",
-    "href": "reference-dependence.html#section-13",
-    "title": "Reference-dependent preferences",
+    "objectID": "time-preferences.html#section-13",
+    "href": "time-preferences.html#section-13",
+    "title": "Time Preferences",
     "section": "",
-    "text": "EBLA Model Setup\n\n\nConsider an agent with utility consisting of a material and a reference-dependent part: \\[\n\\small u_{KR}(c|r) = m(c) + n(c|r).\n\\]\n\\(c = (c_1,\\ldots,c_K)\\) is a \\(K\\)-dimensional consumption vector and \\(r = (r_1,\\ldots,r_K)\\) is a \\(K\\)-dimensional reference vector.\nUtility is seperable accross dimensions: \\[\n\\small m(c) = \\sum_{k=1}^K m_k(c_k),\\, n(c|r) = \\sum_{k=1}^K n_k(c_k|r_k).\n\\]"
+    "text": "Takeaways\n\n\nIn dynamic decisions, humans disproportionately prefer the right now to the later.\n\nThis causes dynamic inconsistency.\nA model combining exponential discounting with a present bias factor describes this behavior.\n\nBut only if the “now” period in the model means “right now”, not “today” or “this week”.\n\n\nThe \\(\\beta-\\delta\\) model raises questions about sophistication.\n\nHumans are only partially sophisticated."
   },
   {
-    "objectID": "reference-dependence.html#section-14",
-    "href": "reference-dependence.html#section-14",
-    "title": "Reference-dependent preferences",
-    "section": "",
-    "text": "Utility is seperable accross dimensions: \\[\n\\small m(c) = \\sum_{k=1}^K m_k(c_k),\\, n(c|r) = \\sum_{k=1}^K n_k(c_k|r_k).\n\\]\nGain-loss utility is piecewise linear: \\[\n\\small\nn_k(c_k|r_k) = \\begin{cases}\n\\eta (m_k(c_k) - m_k(r_k)), m_k(c_k) \\geq m_k(r_k) \\\\\n\\lambda\\eta (m_k(c_k) - m_k(r_k)), m_k(c_k) &lt; m_k(r_k).\n\\end{cases}\n\\]\nHere, \\(\\lambda &gt; 1\\) measures loss aversion and \\(\\eta&gt;0\\) is a utility weight."
-  },
-  {
-    "objectID": "reference-dependence.html#section-15",
-    "href": "reference-dependence.html#section-15",
-    "title": "Reference-dependent preferences",
-    "section": "",
-    "text": "Why this may help\n\n\nThe stochastic reference point allows us to make the reference point endogenous to choices.\nSuppose the agent chooses lottery \\(L=(100,p;0,1-p)\\). They may plausibly perceive winning \\(100\\) more like a gain and winning \\(0\\) more like a loss.\nWe can now formalize this by assuming that \\(r=L:\\) \\[\n\\begin{align*}\n\\small U_{KR}(L|L) = p[p u(100|100) + (1-p)u(0|100)] + \\\\\n\\small (1-p)[p u(100|0) + (1-p) u(0|0)].\n\\end{align*}\n\\]"
-  },
-  {
-    "objectID": "reference-dependence.html#section-16",
-    "href": "reference-dependence.html#section-16",
-    "title": "Reference-dependent preferences",
-    "section": "",
-    "text": "Buying shoes\n\n\nSuppose our agent goes shopping for shoes. Set \\(K=2,\\) with \\(c_1\\in\\{0,1\\}\\) denoting whether they bought shoes and \\(c_2\\in\\mathbb{R}\\) denoting money. We assume that everything is linear: \\[\nu_{KR}(c|r) = c_1 + c_2 + \\mu(c_1|r_1) + \\mu(c_2|r_2).\n\\]\nBuying shoes costs \\(p.\\) There are two possible outcomes. Either A buys so that \\(c = (c_1 = 1, c_2 = -p)\\) or A doesn’t buy; \\(c = (c_1 = 0, c_2 = 0).\\)"
-  },
-  {
-    "objectID": "reference-dependence.html#section-17",
-    "href": "reference-dependence.html#section-17",
-    "title": "Reference-dependent preferences",
-    "section": "",
-    "text": "Buying shoes costs \\(p.\\) There are two possible outcomes. Either A buys so that \\(c = (c_1 = 1, c_2 = -p)\\) or A doesn’t buy; \\(c = (c_1 = 0, c_2 = 0).\\)\nBuying is an equilibrium if \\[\nu_{KR}((1,-p)|(1,-p)) \\geq u_{KR}((0,0)|(1,-p)).\n\\]\n\n\n\nWhy? If I expect to buy, my expectation is that I will end up with more shoes and less money. For this expectation to be justified, I must not have an incentive to violate my expectations and not buy."
-  },
-  {
-    "objectID": "reference-dependence.html#section-18",
-    "href": "reference-dependence.html#section-18",
-    "title": "Reference-dependent preferences",
-    "section": "",
-    "text": "Buying is an equilibrium if \\[\nu_{KR}((1,-p)|(1,-p)) \\geq u_{KR}((0,0)|(1,-p)).\n\\]\nIf A buys expecting to buy, A’s expectations are fulfilled; A neither experiences gain or loss. Hence, utility is equal to material utility: \\[\nu_{KR}((1,-p)|(1,-p)) = 1 - p.\n\\]"
-  },
-  {
-    "objectID": "reference-dependence.html#section-19",
-    "href": "reference-dependence.html#section-19",
-    "title": "Reference-dependent preferences",
-    "section": "",
-    "text": "Buying is an equilibrium if \\[\nu_{KR}((1,-p)|(1,-p)) \\geq u_{KR}((0,0)|(1,-p)).\n\\]\nIf A does not buy expecting to buy, two things happen.\n\nA experiences a loss in the shoe domain (expected \\(1\\) but received \\(0\\)).\nA experiences a gain in the money domain (expected \\(-p\\) loss but spent \\(0\\)). \\[\nu_{KR}((0,0)|(1,-p)) = \\lambda\\eta(0 - 1) + \\eta(0-(-p))\n\\]"
-  },
-  {
-    "objectID": "reference-dependence.html#section-20",
-    "href": "reference-dependence.html#section-20",
-    "title": "Reference-dependent preferences",
-    "section": "",
-    "text": "Buying is an equilibrium if \\[\nu_{KR}((1,-p)|(1,-p)) \\geq u_{KR}((0,0)|(1,-p)).\n\\]\nPlugging in what we found, buying is an equilibrium if: \\[\n1 - p \\geq \\lambda\\eta(0-1) + \\eta (0 - (-p)) \\Rightarrow\np \\leq \\frac{1 + \\eta\\lambda}{1 + \\eta}.\n\\]\n\n\n\nAnalogous calculations show that not buying is an equilibrium if \\[\np \\geq \\frac{1+\\eta}{1+\\lambda\\eta}.\n\\]"
-  },
-  {
-    "objectID": "reference-dependence.html#section-21",
-    "href": "reference-dependence.html#section-21",
-    "title": "Reference-dependent preferences",
-    "section": "",
-    "text": "Shopping equilibrium\nWe can combine what we’ve learned to derive A’s demand function.\n\n\n\n(Both buying and not buying are an equilibrium in the overlapping middle region.)\n\n\nThis differs in two ways from classical demand:\n\nUnder classical demand, A buys whenever \\(p\\leq\\text{material utility}.\\) Here, if \\(p\\leq 1.\\)\nUnder classical demand, A either buys or doesn’t buy, with no multiple equilibria."
-  },
-  {
-    "objectID": "reference-dependence.html#section-22",
-    "href": "reference-dependence.html#section-22",
-    "title": "Reference-dependent preferences",
-    "section": "",
-    "text": "This differs in two ways from classical demand:\n\nUnder classical demand, A buys whenever \\(p\\leq\\text{material utility}.\\) Here, if \\(p\\leq 1.\\)\nUnder classical demand, A either buys or doesn’t buy, with no multiple equilibria.\n\nThis is due to a complementarity between demand decision and gain-loss utility:\n\nA plans to buy → would feel a shoe loss from not buying → increased WTP.\nA plans not to buy → would feel a money loss from buying → decreased WTP."
-  },
-  {
-    "objectID": "reference-dependence.html#testing-ebla",
-    "href": "reference-dependence.html#testing-ebla",
-    "title": "Reference-dependent preferences",
-    "section": "Testing EBLA",
-    "text": "Testing EBLA\n\n\n\n\nEBLA is an elegant, parsimonious way to deal with the reference point, but is it empirically valid?\nAbeler, Falk, Goette, and Huffman (AER, 2011) experimentally test whether reference points are sensitive to expectations.\n\n\n\n\n\n\n\n\nParticipants can earn money by counting zeroes. Q: Does their counting effort depend on their expectations?"
-  },
-  {
-    "objectID": "reference-dependence.html#afgh-2011-design",
-    "href": "reference-dependence.html#afgh-2011-design",
-    "title": "Reference-dependent preferences",
-    "section": "AFGH (2011) Design",
-    "text": "AFGH (2011) Design\n\n\nParticipants can count up to one hour. At the end, they receive a payment:\n\nWith 50%, receive 20 cents per table.\nWith 50%, receive either 7€ (HI treatment) or 3€ (LO treatment)\n\nEBLA prediction: Participants in HI expect more than those in LO. Thus, they experience potentially higher losses. They should work harder."
-  },
-  {
-    "objectID": "reference-dependence.html#afgh-2011-results",
-    "href": "reference-dependence.html#afgh-2011-results",
-    "title": "Reference-dependent preferences",
-    "section": "AFGH (2011) Results",
-    "text": "AFGH (2011) Results\nParticipants in HI count on average more tables than in LO. This is in line with EBLA."
-  },
-  {
-    "objectID": "reference-dependence.html#so-ebla-is-a-resounding-success",
-    "href": "reference-dependence.html#so-ebla-is-a-resounding-success",
-    "title": "Reference-dependent preferences",
-    "section": "So EBLA is a resounding success?",
-    "text": "So EBLA is a resounding success?\n\n\nSome pushback comes from Gneezy, Goette, Sprenger, Zimmermann (JEEA, 2017). They use the AFGH design but explore a larger parameter space.\nSame task, but participants either receive a high payment \\(H\\) with probability \\(p\\), a low payment \\(L\\) with probability \\(q\\), or are paid a piece rate for their effort with \\(1-p-q.\\)\nTreatments vary values of \\(H,p,L,q\\)."
-  },
-  {
-    "objectID": "reference-dependence.html#section-23",
-    "href": "reference-dependence.html#section-23",
-    "title": "Reference-dependent preferences",
-    "section": "",
-    "text": "GGSZ results\n\n\n\nThe left panel, middle two dots replicate, and confirm, AFGH experiment results. Far left and far right observation test even higher and lower fixed payment."
-  },
-  {
-    "objectID": "reference-dependence.html#section-24",
-    "href": "reference-dependence.html#section-24",
-    "title": "Reference-dependent preferences",
-    "section": "",
-    "text": "GGSZ results\n\n\n\nWe would expect increasing effort. Why not? One possible reason is that, e.g., 14 is simply far too high to have any behavioral effect."
-  },
-  {
-    "objectID": "reference-dependence.html#section-25",
-    "href": "reference-dependence.html#section-25",
-    "title": "Reference-dependent preferences",
-    "section": "",
-    "text": "GGSZ results\n\n\n\nThe right panel varies the probability of receiving a \\(H\\) fixed payment instead of \\(L\\). Here, EBLA predicts a monotonous increase."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Behavioral Economic Theory Slides",
-    "section": "",
-    "text": "Welcome to the course slides. Choose a deck below:\n\nIntroduction\nBig Ideas\nExpected Utility & Its Critiques\nReference Dependence"
-  },
-  {
-    "objectID": "big-ideas.html#section",
-    "href": "big-ideas.html#section",
-    "title": "Four Big Ideas",
-    "section": "",
-    "text": "Preferences, utility, expectations, and equilibrium are big terms.\nThey are also controversial.\nWe’ll clarify what they mean to us.\n(Really, I am going to tell you what they mean to me.)"
-  },
-  {
-    "objectID": "big-ideas.html#section-1",
-    "href": "big-ideas.html#section-1",
-    "title": "Four Big Ideas",
-    "section": "",
-    "text": "Preferences are just binary relations over sets PLUS:\n\nRationality\nA preference relation \\(\\succeq\\) is called rational if it satisfies:\nCompleteness: For all \\(x,y \\in \\mathcal{Z}\\), either \\(x \\succeq y\\) or \\(y \\succeq x\\).\nTransitivity: For all \\(x,y,z \\in \\mathcal{Z}\\), if \\(x \\succeq y\\) and \\(y \\succeq z\\), then \\(x \\succeq z\\).\n\n\n\nCompleteness means that for every pair of outcomes, the preference describes a relation between them.\nThere are no two things the agent cannot compare."
-  },
-  {
-    "objectID": "big-ideas.html#section-2",
-    "href": "big-ideas.html#section-2",
-    "title": "Four Big Ideas",
-    "section": "",
-    "text": "Preferences are just binary relations over sets PLUS:\n\nRationality\nA preference relation \\(\\succeq\\) is called rational if it satisfies:\nCompleteness: For all \\(x,y \\in \\mathcal{Z}\\), either \\(x \\succeq y\\) or \\(y \\succeq x\\).\nTransitivity: For all \\(x,y,z \\in \\mathcal{Z}\\), if \\(x \\succeq y\\) and \\(y \\succeq z\\), then \\(x \\succeq z\\).\n\n\n\nTransitivity is a consistency condition.\nIf you prefer books to bagels and bagels to beer, you should also prefer books to beer."
-  },
-  {
-    "objectID": "big-ideas.html#section-3",
-    "href": "big-ideas.html#section-3",
-    "title": "Four Big Ideas",
-    "section": "",
-    "text": "Preferences are just binary relations over sets PLUS:\n\nRationality\nA preference relation \\(\\succeq\\) is called rational if it satisfies:\nCompleteness: For all \\(x,y \\in \\mathcal{Z}\\), either \\(x \\succeq y\\) or \\(y \\succeq x\\).\nTransitivity: For all \\(x,y,z \\in \\mathcal{Z}\\), if \\(x \\succeq y\\) and \\(y \\succeq z\\), then \\(x \\succeq z\\).\n\n\n\nBehavioral economics almost exclusively assumes that preferences are rational."
-  },
-  {
-    "objectID": "big-ideas.html#sorry-pop-science",
-    "href": "big-ideas.html#sorry-pop-science",
-    "title": "Four Big Ideas",
-    "section": "Sorry pop science",
-    "text": "Sorry pop science\n\n\n\n\n\nThe text on the left is almost completely wrong.\nThe text on the right is OK.\nWe will do the stuff on the right still using math."
-  },
-  {
-    "objectID": "big-ideas.html#are-rational-preferences-selfish",
-    "href": "big-ideas.html#are-rational-preferences-selfish",
-    "title": "Four Big Ideas",
-    "section": "Are Rational Preferences Selfish?",
-    "text": "Are Rational Preferences Selfish?\n\n\nRationality says nothing about the content of preferences.\nMany people conflate “rational” with “selfish,” but these are separate assumptions. Economists often assume both rationality and selfishness.\nIf you want a catchall term, you can say standard economics considers the homo oeconomicus.\n\n\n\nWe can still apply the standard economic framework without assuming selfishness"
-  },
-  {
-    "objectID": "big-ideas.html#why-assume-selfishness",
-    "href": "big-ideas.html#why-assume-selfishness",
-    "title": "Four Big Ideas",
-    "section": "Why assume selfishness?",
-    "text": "Why assume selfishness?\n\n“It is not from the benevolence of the butcher, the brewer, or the baker, that we expect our dinner, but from their regard to their own interest.”\n— Adam Smith, Wealth of Nations\n\nHistorically, selfishness has been justified pragmatically (worst-case assumption, easy to apply in many cases)."
-  },
-  {
-    "objectID": "big-ideas.html#why-assume-selfishness-1",
-    "href": "big-ideas.html#why-assume-selfishness-1",
-    "title": "Four Big Ideas",
-    "section": "Why assume selfishness?",
-    "text": "Why assume selfishness?\n\n“It is not from the benevolence of the butcher, the brewer, or the baker, that we expect our dinner, but from their regard to their own interest.”\n— Adam Smith, Wealth of Nations\n\n\n“Happy families are all alike; every unhappy family is unhappy in its own way.” — Leo Tolstoy, Anna Karenina\n\nHistorically, selfishness has been justified pragmatically (worst-case assumption, easy to apply in many cases)."
-  },
-  {
-    "objectID": "big-ideas.html#preferences-summary",
-    "href": "big-ideas.html#preferences-summary",
-    "title": "Four Big Ideas",
-    "section": "Preferences: Summary",
-    "text": "Preferences: Summary\n\n\nPreferences are binary relations over an outcome set \\(\\mathcal{Z}\\).\nRational preferences satisfy completeness and transitivity.\nRationality says nothing about selfishness: preferences can be prosocial, spiteful, or anything else.\nThe assumption of selfishness is often justified pragmatically, but it is not a necessary part of the standard economic framework."
-  },
-  {
-    "objectID": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences",
-    "href": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences",
-    "title": "Four Big Ideas",
-    "section": "Example: Selfish vs. Prosocial vs. Crazy Preferences",
-    "text": "Example: Selfish vs. Prosocial vs. Crazy Preferences\nAn agent choosing from \\(\\mathcal{Z} = \\{\\text{keep }10€,\\text{donate }10€,\\text{burn }10€\\}\\) could have:\n\nLuca (Selfish): \\(\\text{keep }10€ \\succ \\text{donate }10€ \\sim \\text{burn }10€\\).\n\nRepresented by \\(u(\\text{keep})=2, u(\\text{donate})=1, u(\\text{burn})=1\\)."
-  },
-  {
-    "objectID": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences-1",
-    "href": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences-1",
-    "title": "Four Big Ideas",
-    "section": "Example: Selfish vs. Prosocial vs. Crazy Preferences",
-    "text": "Example: Selfish vs. Prosocial vs. Crazy Preferences\nAn agent choosing from \\(\\mathcal{Z} = \\{\\text{keep }10€,\\text{donate }10€,\\text{burn }10€\\}\\) could have:\n\nJules (Prosocial): \\(\\text{donate }10€ \\succ \\text{keep }10€ \\succ \\text{burn }10€\\).\n\nRepresented by \\(u(\\text{donate})=3, u(\\text{keep})=2, u(\\text{burn})=1\\)."
-  },
-  {
-    "objectID": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences-2",
-    "href": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences-2",
-    "title": "Four Big Ideas",
-    "section": "Example: Selfish vs. Prosocial vs. Crazy Preferences",
-    "text": "Example: Selfish vs. Prosocial vs. Crazy Preferences\nAn agent choosing from \\(\\mathcal{Z} = \\{\\text{keep }10€,\\text{donate }10€,\\text{burn }10€\\}\\) could have:\n\nKim (Crazy): \\(\\text{burn }10€ \\succ \\text{keep }10€ \\succ \\text{donate }10€\\).\n\nRepresented by \\(u(\\text{burn})=3, u(\\text{keep})=2, u(\\text{donate})=1\\)."
-  },
-  {
-    "objectID": "big-ideas.html#takeaways",
-    "href": "big-ideas.html#takeaways",
-    "title": "Four Big Ideas",
-    "section": "Takeaways",
-    "text": "Takeaways\n\nUtility is just a number we use to rank outcomes.\nA higher number means “more preferred”.\nWe can use the utility approach if we assume that preferences are rational."
-  },
-  {
-    "objectID": "big-ideas.html#example-dynamic-supply-and-demand",
-    "href": "big-ideas.html#example-dynamic-supply-and-demand",
-    "title": "Four Big Ideas",
-    "section": "Example: Dynamic supply and demand",
-    "text": "Example: Dynamic supply and demand\n\\[\nD_1 = \\alpha -\\beta p_1 \\text{(Demand)}, \\\\\nS_1 = \\gamma p_1^e + u_1 \\text{(Supply)}, \\\\\nD_1 = S_1 \\text{(Equilibrium)}.\n\\]\n\nFirm produces in \\(t=0\\). Has to calculate the expected price in \\(t=1\\).\n\\(u_1\\) is a supply shock with \\(\\mathrm{E}[u_1] = 0\\) that the firm does not know in \\(t=0\\) (hence, uncertainty)."
-  },
-  {
-    "objectID": "big-ideas.html#example-dynamic-supply-and-demand-1",
-    "href": "big-ideas.html#example-dynamic-supply-and-demand-1",
-    "title": "Four Big Ideas",
-    "section": "Example: Dynamic supply and demand",
-    "text": "Example: Dynamic supply and demand\n\nHow to solve this? First, plug in the equilibrium condition… \\[\n\\alpha - \\beta p_1 = \\gamma p_1^e + u_1 \\rightarrow p_1 = \\frac{\\alpha - \\gamma p_1^e - u_1}{\\beta}.\n\\]\nAssume rational expectations. This adds the constraint that expectations are correct on average: \\(p_1^e = \\mathrm{E}[p_1]\\)."
-  },
-  {
-    "objectID": "big-ideas.html#example-dynamic-supply-and-demand-2",
-    "href": "big-ideas.html#example-dynamic-supply-and-demand-2",
-    "title": "Four Big Ideas",
-    "section": "Example: Dynamic supply and demand",
-    "text": "Example: Dynamic supply and demand\n\nAssume rational expectations. This adds the constraint that expectations are correct on average: \\(p_1^e = \\mathrm{E}[p_1]\\).\nHence, in \\(t=0\\) the firm expects: \\[\n\\mathrm{E}[p_1] = \\frac{\\alpha - \\gamma \\mathrm{E}[p_1] - \\mathrm{E}[u_1]}{\\beta} \\Rightarrow \\mathrm{E}[p_1] = \\frac{\\alpha - \\mathrm{E}[u_1]}{\\beta + \\gamma}.\n\\]\nSince \\(\\mathrm{E}[u_1] = 0\\), the expected price is \\(\\mathrm{E}[p_1] = \\frac{\\alpha}{\\beta + \\gamma}\\)."
-  },
-  {
-    "objectID": "big-ideas.html#the-long-shadow",
-    "href": "big-ideas.html#the-long-shadow",
-    "title": "Four Big Ideas",
-    "section": "The long shadow",
-    "text": "The long shadow\n\n\nWe just rushed through the traditional approach to expectations (we’ll be more detailed later).\nIn our model, price expectations were key to determining the equilibrium.\nBy assuming they are rational, they become endogenous."
-  },
-  {
-    "objectID": "big-ideas.html#the-long-shadow-1",
-    "href": "big-ideas.html#the-long-shadow-1",
-    "title": "Four Big Ideas",
-    "section": "The long shadow",
-    "text": "The long shadow\n\n\nBy assuming they are rational, they become endogenous.\nNote how this is different from a parameter, like the price elasticity.\n\nA price elasticity parameter is exogenous to the model. We have to estimate it it using data.\nA rational expectation is endogenous to the model. It is not a free parameter that can be estimated.\n\n\n\n\n\nThis is the reason why economists traditionally do not care about expectations data."
-  },
-  {
-    "objectID": "big-ideas.html#section-4",
-    "href": "big-ideas.html#section-4",
-    "title": "Four Big Ideas",
-    "section": "",
-    "text": "“Like utility, expectations are not observed, and surveys cannot be used to test the rational expectations hypothesis.” — Prescott (1977)\n\n\n\n“Once we depart from the full‑information rational‑expectations benchmark, we find ourselves in a wilderness of bounded rationality, with far too many ways to be slightly irrational” — Sargent (1993)\n\n\n\n\n“Happy families are all alike; every unhappy family is unhappy in its own way.” — Leo Tolstoy, Anna Karenina"
-  },
-  {
-    "objectID": "big-ideas.html#section-5",
-    "href": "big-ideas.html#section-5",
-    "title": "Four Big Ideas",
-    "section": "",
-    "text": "“Happy families are all alike; every unhappy family is unhappy in its own way.” — Leo Tolstoy, Anna Karenina\n\n\n\nThe caution of classical economists has some merit. We want models not only to be realistic but also versatile.\n\n\n\n\nWe are looking for maps of the world, not to recreate every detail.\nBut: Behavioral economics developed methods and theories to identify and work with deviations from classical assumptions.\nWe will learn about these methods and theories in this course."
-  },
-  {
-    "objectID": "big-ideas.html#example-continued",
-    "href": "big-ideas.html#example-continued",
-    "title": "Four Big Ideas",
-    "section": "Example, continued",
-    "text": "Example, continued\n\nExample: Public Goods Game. Two agents choose efforts \\(e_1,e_2\\) to produce an output. Utility: \\(u(e_i, e_{-i}) = e_i + e_{-i} - c(e_i)\\), with \\(c(e_i)=\\tfrac12 e_i^2\\).\n\n\nNash Equilibrium\nA strategy profile \\((e_1^*, e_2^*)\\) is a Nash Equilibrium if, for each player \\(i\\), \\(e_i^*\\) is a best response to \\(e_{-i}^*\\). In symbols: \\[\nu(e_i^*, e_{-i}^*) \\ge u(e_i, e_{-i}^*) \\quad \\forall e_i \\in \\mathbb{R_+}.\n\\]"
-  },
-  {
-    "objectID": "big-ideas.html#example-continued-1",
-    "href": "big-ideas.html#example-continued-1",
-    "title": "Four Big Ideas",
-    "section": "Example, continued",
-    "text": "Example, continued\n\nExample: Public Goods Game. Two agents choose efforts \\(e_1,e_2\\) to produce an output. Utility: \\(u(e_i, e_{-i}) = e_i + e_{-i} - c(e_i)\\), with \\(c(e_i)=\\tfrac12 e_i^2\\).\n\n\n\nHere, the Nash Equilibrium is \\(e_1^* = e_2^* = 1\\).\nThe social optimum is \\(e_1^O=e_2^O = 2\\). Since \\(e_i^O &gt; e_i^*\\), the NE allocation is inefficient."
-  },
-  {
-    "objectID": "big-ideas.html#example-continued-2",
-    "href": "big-ideas.html#example-continued-2",
-    "title": "Four Big Ideas",
-    "section": "Example, continued",
-    "text": "Example, continued\n\nExample: Public Goods Game. Two agents choose efforts \\(e_1,e_2\\) to produce an output. Utility: \\(u(e_i, e_{-i}) = e_i + e_{-i} - c(e_i)\\), with \\(c(e_i)=\\tfrac12 e_i^2\\).\n\n\n\nThat \\(e_i^O &gt; e_i^*\\) illustrates the Tragedy of the Commons.\nIt is commonly attributed to selfish preferences.\nBut this is incorrect: The tragedy of the commons is really driven by the joint assumption of (i) selfish preferences and (ii) Nash Equilibrium."
-  },
-  {
-    "objectID": "big-ideas.html#alternatives-to-nash",
-    "href": "big-ideas.html#alternatives-to-nash",
-    "title": "Four Big Ideas",
-    "section": "Alternatives to Nash?",
-    "text": "Alternatives to Nash?"
-  },
-  {
-    "objectID": "big-ideas.html#consider-this",
-    "href": "big-ideas.html#consider-this",
-    "title": "Four Big Ideas",
-    "section": "Consider this",
-    "text": "Consider this\n\n\n\n“Act only according to that maxim whereby you can at the same time will that it should become universal law.” — Immanuel Kant"
-  },
-  {
-    "objectID": "big-ideas.html#kantian-equilibrium",
-    "href": "big-ideas.html#kantian-equilibrium",
-    "title": "Four Big Ideas",
-    "section": "Kantian Equilibrium",
-    "text": "Kantian Equilibrium\n\nKantian Equilibrium (Roemer 2010, SJE) A strategy profile \\((e_1^K,e_2^K)\\) is a Kantian Equilibrium if, for each player \\(i\\), \\[\n\\arg\\max_{\\alpha \\in \\mathbb{R_+}} u(\\alpha e_i^K,\\alpha e_{-i}^K) = 1.\n\\]"
-  },
-  {
-    "objectID": "big-ideas.html#kantian-equilibrium-1",
-    "href": "big-ideas.html#kantian-equilibrium-1",
-    "title": "Four Big Ideas",
-    "section": "Kantian Equilibrium",
-    "text": "Kantian Equilibrium\n\n\nFormalizes a Kantian equilibrium condition:\n\nIf agent \\(i\\) considers deviating, \\(i\\) asks “If everyone deviates in the same way that I do, would I be better off?”\n\nDifferent from Nash:\n\nIf agent \\(i\\) considers deviating, \\(i\\) asks “If I deviate and no one else does, would I be better off?”"
-  },
-  {
-    "objectID": "big-ideas.html#kantian-equilibrium-2",
-    "href": "big-ideas.html#kantian-equilibrium-2",
-    "title": "Four Big Ideas",
-    "section": "Kantian Equilibrium",
-    "text": "Kantian Equilibrium\n\n\nFormalizes a Kantian equilibrium condition:\n\nIf agent \\(i\\) considers deviating, \\(i\\) asks “If everyone deviates in the same way that I do, would I be better off?”\n\nDifferent from Nash:\n\nIf agent \\(i\\) considers deviating, \\(i\\) asks “If I deviate and no one else does, would I be better off?”"
-  },
-  {
-    "objectID": "big-ideas.html#kantian-equilibrium-3",
-    "href": "big-ideas.html#kantian-equilibrium-3",
-    "title": "Four Big Ideas",
-    "section": "Kantian Equilibrium",
-    "text": "Kantian Equilibrium\n\nSelfish preferences + Kantian Equilibrium \\(\\rightarrow\\) No tragedy of the commons.\nTo see this, derive \\[\\arg\\max_{\\alpha} u(\\alpha e_i^K, \\alpha e_{-i}^K) \\]\nFirst-order condition: \\[e_i^K + e_{-i}^K - \\alpha e_i^{K2} = 0.\\]"
-  },
-  {
-    "objectID": "big-ideas.html#kantian-equilibrium-4",
-    "href": "big-ideas.html#kantian-equilibrium-4",
-    "title": "Four Big Ideas",
-    "section": "Kantian Equilibrium",
-    "text": "Kantian Equilibrium\n\nTo see this, derive \\[\\arg\\max_{\\alpha} u(\\alpha e_i^K, \\alpha e_{-i}^K) \\]\nFirst-order condition: \\[e_i^K + e_{-i}^K - \\alpha e_i^{K2} = 0.\\]\nIn a symmetric equilibrium, \\(e_i^K = e_{-i}^K\\): \\[2e_i^K - \\alpha e_i^{K2} = 0.\\] —"
-  },
-  {
-    "objectID": "big-ideas.html#kantian-equilibrium-5",
-    "href": "big-ideas.html#kantian-equilibrium-5",
-    "title": "Four Big Ideas",
-    "section": "Kantian Equilibrium",
-    "text": "Kantian Equilibrium\n\nFirst-order condition: \\[e_i^K + e_{-i}^K - \\alpha e_i^{K2} = 0.\\]\nIn a symmetric equilibrium, \\(e_i^K = e_{-i}^K\\). Simplifying: \\[2e_i^K - \\alpha e_i^{K2} = 0.\\]\nIf \\(e_i^K = 2\\), \\(\\alpha = 1\\).\n\n\n\nThe social optimum is a Kantian Equilibrium, even with selfish preferences."
-  },
-  {
-    "objectID": "big-ideas.html#taking-stock-1",
-    "href": "big-ideas.html#taking-stock-1",
-    "title": "Four Big Ideas",
-    "section": "Taking Stock",
-    "text": "Taking Stock\n\n\nHistorically, arguments in favor of selfish + rational + Nash often made on pragmatic or normative grounds.\n\n\n\n\nGoal of behavioral economics:\n\nFind a set of assumptions on preferences, equilibrium, expectations that has a solid empirical foundations.\nWith some pragmatism still involved (e.g., rationality assumption)."
-  },
-  {
-    "objectID": "big-ideas.html#this-course",
-    "href": "big-ideas.html#this-course",
-    "title": "Four Big Ideas",
-    "section": "This course",
-    "text": "This course\n\n\nWe will learn about alternative models of preferences and beliefs, and alternative equilibrium concepts.\nWe will also talk about the empirical evidence for these models."
-  },
-  {
-    "objectID": "big-ideas.html#outline",
-    "href": "big-ideas.html#outline",
-    "title": "Four Big Ideas",
-    "section": "Outline",
-    "text": "Outline\n\nExpected utility & its critiques\nReference-dependent preferences\nTime preferences\nBeliefs\nMisspecified models and learning\nExpectation management and belief-based utility"
-  },
-  {
-    "objectID": "big-ideas.html#challenges",
-    "href": "big-ideas.html#challenges",
-    "title": "Four Big Ideas",
-    "section": "Challenges",
-    "text": "Challenges\n\nBehavioral economics studies deviations from the standard model.\n\nSo, behavioral economists typically know the standard model extremely well.\nWe will do have to learn quite a bit about the standard model as well."
-  },
-  {
-    "objectID": "big-ideas.html#challenges-1",
-    "href": "big-ideas.html#challenges-1",
-    "title": "Four Big Ideas",
-    "section": "Challenges",
-    "text": "Challenges\n\nBehavioral economics aims to be empirically informed.\n\nWe will need to talk about empirics even though this is a theory class.\nIn this course, we will talk about empirics on the fly when they become relevant."
-  },
-  {
-    "objectID": "big-ideas.html#challenges-2",
-    "href": "big-ideas.html#challenges-2",
-    "title": "Four Big Ideas",
-    "section": "Challenges",
-    "text": "Challenges\n\nBehavioral economics presents no single alternative model.\n\nA heavy dose of pragmatism remains: “All models are wrong, some are useful.”\nWe hope to add a few more useful models to our list."
-  },
-  {
-    "objectID": "big-ideas.html#challenges-3",
-    "href": "big-ideas.html#challenges-3",
-    "title": "Four Big Ideas",
-    "section": "Challenges",
-    "text": "Challenges\n\nThis is not a policy course.\n\nYou will learn about fundamentals of human behavior.\nThis leaves a lot of the transfer to practical applications to you.\nI encourage you to observe and introspect:\n\nIn your daily life, which models can you use to make sense?\nSame when reading the news.\n\nBring examples to class, ask, discuss, criticise…"
+    "objectID": "intro.html#about",
+    "href": "intro.html#about",
+    "title": "Behavioral Economic Theory",
+    "section": "About",
+    "text": "About\n\n\nMy name: Tilman Fries\nBehavioral economist, between theory and experiments.\nYou can call me by my first name.\n\nAlso when we speak in German.\nJust please no Prof., Professor, Dr., etc."
   },
   {
     "objectID": "eu-critique.html#terminology",
@@ -959,10 +574,500 @@
     "text": "Wrapping up\n\nClassical theory: \\(\\text{EU / SEU + concave utility}\\)\nPeople deviate from the linear probability weighting prediction of EU / SEU\nProbability weighting is better captured by \\(\\pi(p).\\)\nRisk attitudes: part preference, part a reaction to choice complexity.\nNon-linear prob. weighting leads to dominance violations, a theoretical solution exists but there is no empirical support for it."
   },
   {
-    "objectID": "intro.html#about",
-    "href": "intro.html#about",
-    "title": "Behavioral Economic Theory",
-    "section": "About",
-    "text": "About\n\n\nMy name: Tilman Fries\nBehavioral economist, between theory and experiments.\nYou can call me by my first name.\n\nAlso when we speak in German.\nJust please no Prof., Professor, Dr., etc."
+    "objectID": "big-ideas.html#section",
+    "href": "big-ideas.html#section",
+    "title": "Four Big Ideas",
+    "section": "",
+    "text": "Preferences, utility, expectations, and equilibrium are big terms.\nThey are also controversial.\nWe’ll clarify what they mean to us.\n(Really, I am going to tell you what they mean to me.)"
+  },
+  {
+    "objectID": "big-ideas.html#section-1",
+    "href": "big-ideas.html#section-1",
+    "title": "Four Big Ideas",
+    "section": "",
+    "text": "Preferences are just binary relations over sets PLUS:\n\nRationality\nA preference relation \\(\\succeq\\) is called rational if it satisfies:\nCompleteness: For all \\(x,y \\in \\mathcal{Z}\\), either \\(x \\succeq y\\) or \\(y \\succeq x\\).\nTransitivity: For all \\(x,y,z \\in \\mathcal{Z}\\), if \\(x \\succeq y\\) and \\(y \\succeq z\\), then \\(x \\succeq z\\).\n\n\n\nCompleteness means that for every pair of outcomes, the preference describes a relation between them.\nThere are no two things the agent cannot compare."
+  },
+  {
+    "objectID": "big-ideas.html#section-2",
+    "href": "big-ideas.html#section-2",
+    "title": "Four Big Ideas",
+    "section": "",
+    "text": "Preferences are just binary relations over sets PLUS:\n\nRationality\nA preference relation \\(\\succeq\\) is called rational if it satisfies:\nCompleteness: For all \\(x,y \\in \\mathcal{Z}\\), either \\(x \\succeq y\\) or \\(y \\succeq x\\).\nTransitivity: For all \\(x,y,z \\in \\mathcal{Z}\\), if \\(x \\succeq y\\) and \\(y \\succeq z\\), then \\(x \\succeq z\\).\n\n\n\nTransitivity is a consistency condition.\nIf you prefer books to bagels and bagels to beer, you should also prefer books to beer."
+  },
+  {
+    "objectID": "big-ideas.html#section-3",
+    "href": "big-ideas.html#section-3",
+    "title": "Four Big Ideas",
+    "section": "",
+    "text": "Preferences are just binary relations over sets PLUS:\n\nRationality\nA preference relation \\(\\succeq\\) is called rational if it satisfies:\nCompleteness: For all \\(x,y \\in \\mathcal{Z}\\), either \\(x \\succeq y\\) or \\(y \\succeq x\\).\nTransitivity: For all \\(x,y,z \\in \\mathcal{Z}\\), if \\(x \\succeq y\\) and \\(y \\succeq z\\), then \\(x \\succeq z\\).\n\n\n\nBehavioral economics almost exclusively assumes that preferences are rational."
+  },
+  {
+    "objectID": "big-ideas.html#sorry-pop-science",
+    "href": "big-ideas.html#sorry-pop-science",
+    "title": "Four Big Ideas",
+    "section": "Sorry pop science",
+    "text": "Sorry pop science\n\n\n\n\n\nThe text on the left is almost completely wrong.\nThe text on the right is OK.\nWe will do the stuff on the right still using math."
+  },
+  {
+    "objectID": "big-ideas.html#are-rational-preferences-selfish",
+    "href": "big-ideas.html#are-rational-preferences-selfish",
+    "title": "Four Big Ideas",
+    "section": "Are Rational Preferences Selfish?",
+    "text": "Are Rational Preferences Selfish?\n\n\nRationality says nothing about the content of preferences.\nMany people conflate “rational” with “selfish,” but these are separate assumptions. Economists often assume both rationality and selfishness.\nIf you want a catchall term, you can say standard economics considers the homo oeconomicus.\n\n\n\nWe can still apply the standard economic framework without assuming selfishness"
+  },
+  {
+    "objectID": "big-ideas.html#why-assume-selfishness",
+    "href": "big-ideas.html#why-assume-selfishness",
+    "title": "Four Big Ideas",
+    "section": "Why assume selfishness?",
+    "text": "Why assume selfishness?\n\n“It is not from the benevolence of the butcher, the brewer, or the baker, that we expect our dinner, but from their regard to their own interest.”\n— Adam Smith, Wealth of Nations\n\nHistorically, selfishness has been justified pragmatically (worst-case assumption, easy to apply in many cases)."
+  },
+  {
+    "objectID": "big-ideas.html#why-assume-selfishness-1",
+    "href": "big-ideas.html#why-assume-selfishness-1",
+    "title": "Four Big Ideas",
+    "section": "Why assume selfishness?",
+    "text": "Why assume selfishness?\n\n“It is not from the benevolence of the butcher, the brewer, or the baker, that we expect our dinner, but from their regard to their own interest.”\n— Adam Smith, Wealth of Nations\n\n\n“Happy families are all alike; every unhappy family is unhappy in its own way.” — Leo Tolstoy, Anna Karenina\n\nHistorically, selfishness has been justified pragmatically (worst-case assumption, easy to apply in many cases)."
+  },
+  {
+    "objectID": "big-ideas.html#preferences-summary",
+    "href": "big-ideas.html#preferences-summary",
+    "title": "Four Big Ideas",
+    "section": "Preferences: Summary",
+    "text": "Preferences: Summary\n\n\nPreferences are binary relations over an outcome set \\(\\mathcal{Z}\\).\nRational preferences satisfy completeness and transitivity.\nRationality says nothing about selfishness: preferences can be prosocial, spiteful, or anything else.\nThe assumption of selfishness is often justified pragmatically, but it is not a necessary part of the standard economic framework."
+  },
+  {
+    "objectID": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences",
+    "href": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences",
+    "title": "Four Big Ideas",
+    "section": "Example: Selfish vs. Prosocial vs. Crazy Preferences",
+    "text": "Example: Selfish vs. Prosocial vs. Crazy Preferences\nAn agent choosing from \\(\\mathcal{Z} = \\{\\text{keep }10€,\\text{donate }10€,\\text{burn }10€\\}\\) could have:\n\nLuca (Selfish): \\(\\text{keep }10€ \\succ \\text{donate }10€ \\sim \\text{burn }10€\\).\n\nRepresented by \\(u(\\text{keep})=2, u(\\text{donate})=1, u(\\text{burn})=1\\)."
+  },
+  {
+    "objectID": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences-1",
+    "href": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences-1",
+    "title": "Four Big Ideas",
+    "section": "Example: Selfish vs. Prosocial vs. Crazy Preferences",
+    "text": "Example: Selfish vs. Prosocial vs. Crazy Preferences\nAn agent choosing from \\(\\mathcal{Z} = \\{\\text{keep }10€,\\text{donate }10€,\\text{burn }10€\\}\\) could have:\n\nJules (Prosocial): \\(\\text{donate }10€ \\succ \\text{keep }10€ \\succ \\text{burn }10€\\).\n\nRepresented by \\(u(\\text{donate})=3, u(\\text{keep})=2, u(\\text{burn})=1\\)."
+  },
+  {
+    "objectID": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences-2",
+    "href": "big-ideas.html#example-selfish-vs.-prosocial-vs.-crazy-preferences-2",
+    "title": "Four Big Ideas",
+    "section": "Example: Selfish vs. Prosocial vs. Crazy Preferences",
+    "text": "Example: Selfish vs. Prosocial vs. Crazy Preferences\nAn agent choosing from \\(\\mathcal{Z} = \\{\\text{keep }10€,\\text{donate }10€,\\text{burn }10€\\}\\) could have:\n\nKim (Crazy): \\(\\text{burn }10€ \\succ \\text{keep }10€ \\succ \\text{donate }10€\\).\n\nRepresented by \\(u(\\text{burn})=3, u(\\text{keep})=2, u(\\text{donate})=1\\)."
+  },
+  {
+    "objectID": "big-ideas.html#takeaways",
+    "href": "big-ideas.html#takeaways",
+    "title": "Four Big Ideas",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nUtility is just a number we use to rank outcomes.\nA higher number means “more preferred”.\nWe can use the utility approach if we assume that preferences are rational."
+  },
+  {
+    "objectID": "big-ideas.html#example-dynamic-supply-and-demand",
+    "href": "big-ideas.html#example-dynamic-supply-and-demand",
+    "title": "Four Big Ideas",
+    "section": "Example: Dynamic supply and demand",
+    "text": "Example: Dynamic supply and demand\n\\[\nD_1 = \\alpha -\\beta p_1 \\text{(Demand)}, \\\\\nS_1 = \\gamma p_1^e + u_1 \\text{(Supply)}, \\\\\nD_1 = S_1 \\text{(Equilibrium)}.\n\\]\n\nFirm produces in \\(t=0\\). Has to calculate the expected price in \\(t=1\\).\n\\(u_1\\) is a supply shock with \\(\\mathrm{E}[u_1] = 0\\) that the firm does not know in \\(t=0\\) (hence, uncertainty)."
+  },
+  {
+    "objectID": "big-ideas.html#example-dynamic-supply-and-demand-1",
+    "href": "big-ideas.html#example-dynamic-supply-and-demand-1",
+    "title": "Four Big Ideas",
+    "section": "Example: Dynamic supply and demand",
+    "text": "Example: Dynamic supply and demand\n\nHow to solve this? First, plug in the equilibrium condition… \\[\n\\alpha - \\beta p_1 = \\gamma p_1^e + u_1 \\rightarrow p_1 = \\frac{\\alpha - \\gamma p_1^e - u_1}{\\beta}.\n\\]\nAssume rational expectations. This adds the constraint that expectations are correct on average: \\(p_1^e = \\mathrm{E}[p_1]\\)."
+  },
+  {
+    "objectID": "big-ideas.html#example-dynamic-supply-and-demand-2",
+    "href": "big-ideas.html#example-dynamic-supply-and-demand-2",
+    "title": "Four Big Ideas",
+    "section": "Example: Dynamic supply and demand",
+    "text": "Example: Dynamic supply and demand\n\nAssume rational expectations. This adds the constraint that expectations are correct on average: \\(p_1^e = \\mathrm{E}[p_1]\\).\nHence, in \\(t=0\\) the firm expects: \\[\n\\mathrm{E}[p_1] = \\frac{\\alpha - \\gamma \\mathrm{E}[p_1] - \\mathrm{E}[u_1]}{\\beta} \\Rightarrow \\mathrm{E}[p_1] = \\frac{\\alpha - \\mathrm{E}[u_1]}{\\beta + \\gamma}.\n\\]\nSince \\(\\mathrm{E}[u_1] = 0\\), the expected price is \\(\\mathrm{E}[p_1] = \\frac{\\alpha}{\\beta + \\gamma}\\)."
+  },
+  {
+    "objectID": "big-ideas.html#the-long-shadow",
+    "href": "big-ideas.html#the-long-shadow",
+    "title": "Four Big Ideas",
+    "section": "The long shadow",
+    "text": "The long shadow\n\n\nWe just rushed through the traditional approach to expectations (we’ll be more detailed later).\nIn our model, price expectations were key to determining the equilibrium.\nBy assuming they are rational, they become endogenous."
+  },
+  {
+    "objectID": "big-ideas.html#the-long-shadow-1",
+    "href": "big-ideas.html#the-long-shadow-1",
+    "title": "Four Big Ideas",
+    "section": "The long shadow",
+    "text": "The long shadow\n\n\nBy assuming they are rational, they become endogenous.\nNote how this is different from a parameter, like the price elasticity.\n\nA price elasticity parameter is exogenous to the model. We have to estimate it it using data.\nA rational expectation is endogenous to the model. It is not a free parameter that can be estimated.\n\n\n\n\n\nThis is the reason why economists traditionally do not care about expectations data."
+  },
+  {
+    "objectID": "big-ideas.html#section-4",
+    "href": "big-ideas.html#section-4",
+    "title": "Four Big Ideas",
+    "section": "",
+    "text": "“Like utility, expectations are not observed, and surveys cannot be used to test the rational expectations hypothesis.” — Prescott (1977)\n\n\n\n“Once we depart from the full‑information rational‑expectations benchmark, we find ourselves in a wilderness of bounded rationality, with far too many ways to be slightly irrational” — Sargent (1993)\n\n\n\n\n“Happy families are all alike; every unhappy family is unhappy in its own way.” — Leo Tolstoy, Anna Karenina"
+  },
+  {
+    "objectID": "big-ideas.html#section-5",
+    "href": "big-ideas.html#section-5",
+    "title": "Four Big Ideas",
+    "section": "",
+    "text": "“Happy families are all alike; every unhappy family is unhappy in its own way.” — Leo Tolstoy, Anna Karenina\n\n\n\nThe caution of classical economists has some merit. We want models not only to be realistic but also versatile.\n\n\n\n\nWe are looking for maps of the world, not to recreate every detail.\nBut: Behavioral economics developed methods and theories to identify and work with deviations from classical assumptions.\nWe will learn about these methods and theories in this course."
+  },
+  {
+    "objectID": "big-ideas.html#example-continued",
+    "href": "big-ideas.html#example-continued",
+    "title": "Four Big Ideas",
+    "section": "Example, continued",
+    "text": "Example, continued\n\nExample: Public Goods Game. Two agents choose efforts \\(e_1,e_2\\) to produce an output. Utility: \\(u(e_i, e_{-i}) = e_i + e_{-i} - c(e_i)\\), with \\(c(e_i)=\\tfrac12 e_i^2\\).\n\n\nNash Equilibrium\nA strategy profile \\((e_1^*, e_2^*)\\) is a Nash Equilibrium if, for each player \\(i\\), \\(e_i^*\\) is a best response to \\(e_{-i}^*\\). In symbols: \\[\nu(e_i^*, e_{-i}^*) \\ge u(e_i, e_{-i}^*) \\quad \\forall e_i \\in \\mathbb{R_+}.\n\\]"
+  },
+  {
+    "objectID": "big-ideas.html#example-continued-1",
+    "href": "big-ideas.html#example-continued-1",
+    "title": "Four Big Ideas",
+    "section": "Example, continued",
+    "text": "Example, continued\n\nExample: Public Goods Game. Two agents choose efforts \\(e_1,e_2\\) to produce an output. Utility: \\(u(e_i, e_{-i}) = e_i + e_{-i} - c(e_i)\\), with \\(c(e_i)=\\tfrac12 e_i^2\\).\n\n\n\nHere, the Nash Equilibrium is \\(e_1^* = e_2^* = 1\\).\nThe social optimum is \\(e_1^O=e_2^O = 2\\). Since \\(e_i^O &gt; e_i^*\\), the NE allocation is inefficient."
+  },
+  {
+    "objectID": "big-ideas.html#example-continued-2",
+    "href": "big-ideas.html#example-continued-2",
+    "title": "Four Big Ideas",
+    "section": "Example, continued",
+    "text": "Example, continued\n\nExample: Public Goods Game. Two agents choose efforts \\(e_1,e_2\\) to produce an output. Utility: \\(u(e_i, e_{-i}) = e_i + e_{-i} - c(e_i)\\), with \\(c(e_i)=\\tfrac12 e_i^2\\).\n\n\n\nThat \\(e_i^O &gt; e_i^*\\) illustrates the Tragedy of the Commons.\nIt is commonly attributed to selfish preferences.\nBut this is incorrect: The tragedy of the commons is really driven by the joint assumption of (i) selfish preferences and (ii) Nash Equilibrium."
+  },
+  {
+    "objectID": "big-ideas.html#alternatives-to-nash",
+    "href": "big-ideas.html#alternatives-to-nash",
+    "title": "Four Big Ideas",
+    "section": "Alternatives to Nash?",
+    "text": "Alternatives to Nash?"
+  },
+  {
+    "objectID": "big-ideas.html#consider-this",
+    "href": "big-ideas.html#consider-this",
+    "title": "Four Big Ideas",
+    "section": "Consider this",
+    "text": "Consider this\n\n\n\n“Act only according to that maxim whereby you can at the same time will that it should become universal law.” — Immanuel Kant"
+  },
+  {
+    "objectID": "big-ideas.html#kantian-equilibrium",
+    "href": "big-ideas.html#kantian-equilibrium",
+    "title": "Four Big Ideas",
+    "section": "Kantian Equilibrium",
+    "text": "Kantian Equilibrium\n\nKantian Equilibrium (Roemer 2010, SJE) A strategy profile \\((e_1^K,e_2^K)\\) is a Kantian Equilibrium if, for each player \\(i\\), \\[\n\\arg\\max_{\\alpha \\in \\mathbb{R_+}} u(\\alpha e_i^K,\\alpha e_{-i}^K) = 1.\n\\]"
+  },
+  {
+    "objectID": "big-ideas.html#kantian-equilibrium-1",
+    "href": "big-ideas.html#kantian-equilibrium-1",
+    "title": "Four Big Ideas",
+    "section": "Kantian Equilibrium",
+    "text": "Kantian Equilibrium\n\n\nFormalizes a Kantian equilibrium condition:\n\nIf agent \\(i\\) considers deviating, \\(i\\) asks “If everyone deviates in the same way that I do, would I be better off?”\n\nDifferent from Nash:\n\nIf agent \\(i\\) considers deviating, \\(i\\) asks “If I deviate and no one else does, would I be better off?”"
+  },
+  {
+    "objectID": "big-ideas.html#kantian-equilibrium-2",
+    "href": "big-ideas.html#kantian-equilibrium-2",
+    "title": "Four Big Ideas",
+    "section": "Kantian Equilibrium",
+    "text": "Kantian Equilibrium\n\n\nFormalizes a Kantian equilibrium condition:\n\nIf agent \\(i\\) considers deviating, \\(i\\) asks “If everyone deviates in the same way that I do, would I be better off?”\n\nDifferent from Nash:\n\nIf agent \\(i\\) considers deviating, \\(i\\) asks “If I deviate and no one else does, would I be better off?”"
+  },
+  {
+    "objectID": "big-ideas.html#kantian-equilibrium-3",
+    "href": "big-ideas.html#kantian-equilibrium-3",
+    "title": "Four Big Ideas",
+    "section": "Kantian Equilibrium",
+    "text": "Kantian Equilibrium\n\nSelfish preferences + Kantian Equilibrium \\(\\rightarrow\\) No tragedy of the commons.\nTo see this, derive \\[\\arg\\max_{\\alpha} u(\\alpha e_i^K, \\alpha e_{-i}^K) \\]\nFirst-order condition: \\[e_i^K + e_{-i}^K - \\alpha e_i^{K2} = 0.\\]"
+  },
+  {
+    "objectID": "big-ideas.html#kantian-equilibrium-4",
+    "href": "big-ideas.html#kantian-equilibrium-4",
+    "title": "Four Big Ideas",
+    "section": "Kantian Equilibrium",
+    "text": "Kantian Equilibrium\n\nTo see this, derive \\[\\arg\\max_{\\alpha} u(\\alpha e_i^K, \\alpha e_{-i}^K) \\]\nFirst-order condition: \\[e_i^K + e_{-i}^K - \\alpha e_i^{K2} = 0.\\]\nIn a symmetric equilibrium, \\(e_i^K = e_{-i}^K\\): \\[2e_i^K - \\alpha e_i^{K2} = 0.\\] —"
+  },
+  {
+    "objectID": "big-ideas.html#kantian-equilibrium-5",
+    "href": "big-ideas.html#kantian-equilibrium-5",
+    "title": "Four Big Ideas",
+    "section": "Kantian Equilibrium",
+    "text": "Kantian Equilibrium\n\nFirst-order condition: \\[e_i^K + e_{-i}^K - \\alpha e_i^{K2} = 0.\\]\nIn a symmetric equilibrium, \\(e_i^K = e_{-i}^K\\). Simplifying: \\[2e_i^K - \\alpha e_i^{K2} = 0.\\]\nIf \\(e_i^K = 2\\), \\(\\alpha = 1\\).\n\n\n\nThe social optimum is a Kantian Equilibrium, even with selfish preferences."
+  },
+  {
+    "objectID": "big-ideas.html#taking-stock-1",
+    "href": "big-ideas.html#taking-stock-1",
+    "title": "Four Big Ideas",
+    "section": "Taking Stock",
+    "text": "Taking Stock\n\n\nHistorically, arguments in favor of selfish + rational + Nash often made on pragmatic or normative grounds.\n\n\n\n\nGoal of behavioral economics:\n\nFind a set of assumptions on preferences, equilibrium, expectations that has a solid empirical foundations.\nWith some pragmatism still involved (e.g., rationality assumption)."
+  },
+  {
+    "objectID": "big-ideas.html#this-course",
+    "href": "big-ideas.html#this-course",
+    "title": "Four Big Ideas",
+    "section": "This course",
+    "text": "This course\n\n\nWe will learn about alternative models of preferences and beliefs, and alternative equilibrium concepts.\nWe will also talk about the empirical evidence for these models."
+  },
+  {
+    "objectID": "big-ideas.html#outline",
+    "href": "big-ideas.html#outline",
+    "title": "Four Big Ideas",
+    "section": "Outline",
+    "text": "Outline\n\nExpected utility & its critiques\nReference-dependent preferences\nTime preferences\nBeliefs\nMisspecified models and learning\nExpectation management and belief-based utility"
+  },
+  {
+    "objectID": "big-ideas.html#challenges",
+    "href": "big-ideas.html#challenges",
+    "title": "Four Big Ideas",
+    "section": "Challenges",
+    "text": "Challenges\n\nBehavioral economics studies deviations from the standard model.\n\nSo, behavioral economists typically know the standard model extremely well.\nWe will do have to learn quite a bit about the standard model as well."
+  },
+  {
+    "objectID": "big-ideas.html#challenges-1",
+    "href": "big-ideas.html#challenges-1",
+    "title": "Four Big Ideas",
+    "section": "Challenges",
+    "text": "Challenges\n\nBehavioral economics aims to be empirically informed.\n\nWe will need to talk about empirics even though this is a theory class.\nIn this course, we will talk about empirics on the fly when they become relevant."
+  },
+  {
+    "objectID": "big-ideas.html#challenges-2",
+    "href": "big-ideas.html#challenges-2",
+    "title": "Four Big Ideas",
+    "section": "Challenges",
+    "text": "Challenges\n\nBehavioral economics presents no single alternative model.\n\nA heavy dose of pragmatism remains: “All models are wrong, some are useful.”\nWe hope to add a few more useful models to our list."
+  },
+  {
+    "objectID": "big-ideas.html#challenges-3",
+    "href": "big-ideas.html#challenges-3",
+    "title": "Four Big Ideas",
+    "section": "Challenges",
+    "text": "Challenges\n\nThis is not a policy course.\n\nYou will learn about fundamentals of human behavior.\nThis leaves a lot of the transfer to practical applications to you.\nI encourage you to observe and introspect:\n\nIn your daily life, which models can you use to make sense?\nSame when reading the news.\n\nBring examples to class, ask, discuss, criticise…"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Behavioral Economic Theory Slides",
+    "section": "",
+    "text": "Welcome to the course slides. Choose a deck below:\n\nIntroduction\nBig Ideas\nExpected Utility & Its Critiques\nReference Dependence\nTime Preferences"
+  },
+  {
+    "objectID": "reference-dependence.html#section",
+    "href": "reference-dependence.html#section",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Reference-dependence in Kahneman & Tversky (ECTA, 1979)\n\nA disease threatens 600 people.\n\n\n\n\n\n\n\nQ1\nQ2\n\n\n\n\n(A)  Save 200 for sure\n(C)  400 will die\n\n\n(B)  ⅓ chance save 600⅔ chance save 0\n(D)  ⅓ chance none die⅔ chance 600 die\n\n\n\n\n\n\n73 % choose A over B and 78 % choose D over C."
+  },
+  {
+    "objectID": "reference-dependence.html#section-1",
+    "href": "reference-dependence.html#section-1",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Reference-dependence in Kahneman & Tversky (ECTA, 1979)\n\nA disease threatens 600 people.\n\n\n\n\n\n\n\nQ1\nQ2\n\n\n\n\n(A)  Save 200 for sure\n(C)  400 will die\n\n\n(B)  ⅓ chance save 600⅔ chance save 0\n(D)  ⅓ chance none die⅔ chance 600 die\n\n\n\n\n\n\nA and C lead to the same outcome and so do B and D. The example violates the invariance assumption of classical theory."
+  },
+  {
+    "objectID": "reference-dependence.html#section-2",
+    "href": "reference-dependence.html#section-2",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "More systematic evidence (K&T 1979)\n\n\n\n\nSwitching from gains to losses flips the modal lottery choice."
+  },
+  {
+    "objectID": "reference-dependence.html#section-3",
+    "href": "reference-dependence.html#section-3",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "More systematic evidence (K&T 1979)\n\n\n\n\nWhen \\(p\\) is high, individuals are risk averse in the gain domain but risk seeking in the loss domain.\nThis consistent with the life saving example."
+  },
+  {
+    "objectID": "reference-dependence.html#section-4",
+    "href": "reference-dependence.html#section-4",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Value function and loss aversion\n\n\n\n\nK&T make a persuasive argument that individuals treat losses differently from gains.\n\nTheir results can be captured by a value function that is concave in gains and convex in losses."
+  },
+  {
+    "objectID": "reference-dependence.html#section-5",
+    "href": "reference-dependence.html#section-5",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Value function and loss aversion\n\n\n\n\nIn addition, they assume loss aversion: \\(v\\) is steeper for losses than for gains.\nEven though they don’t need loss aversion to explain the data and they provide no evidence for it, loss aversion perhaps is the most influential idea coming out of K&T."
+  },
+  {
+    "objectID": "reference-dependence.html#prospect-theory",
+    "href": "reference-dependence.html#prospect-theory",
+    "title": "Reference-dependent preferences",
+    "section": "Prospect Theory",
+    "text": "Prospect Theory\nCombining probability weighting ✚ loss‑averse value function, we have Prospect Theory.\n\nThe fourfold risk‑attitude pattern is PT’s most celebrated prediction.\n\n\n\n\nProbability\nGains\nLosses\n\n\n\n\nLow\nRisk‑seeking\nRisk‑averse\n\n\nHigh\nRisk‑averse\nRisk‑seeking\n\n\n\n\nCan explain why the same people seek-out insurance and gamble.\n- Insurance: Low probability loss; gambling: Low probability gain."
+  },
+  {
+    "objectID": "reference-dependence.html#section-6",
+    "href": "reference-dependence.html#section-6",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Endowment effect\nThaler (JEBO, 1980) tells the following story.\n\nStory. Mr R bought wine at $5/bottle in 1958. A merchant later offers $100 per bottle; he refuses, though he never pays more than $35 for a bottle.\n\n\n\nThis example is hard to rationalize with EU:\n\nNot selling at wealth \\(y\\) for $100 implies \\(\\small u(\\text{1 wine}, \\$y) &gt; u(\\text{0 wine}, \\$100 + \\$y).\\)\nNot buying for $35 implies \\(\\small u(\\text{1 wine}, \\$y - \\$35) &lt; u(\\text{0 wine}, \\$y).\\)"
+  },
+  {
+    "objectID": "reference-dependence.html#section-7",
+    "href": "reference-dependence.html#section-7",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Endowment effect\nThaler (JEBO, 1980) tells the following story.\n\nStory. Mr R bought wine at $5/bottle in 1958. A merchant later offers $100 per bottle; he refuses, though he never pays more than $35 for a bottle.\n\n\n\nAssuming that \\(u\\) increases in money, the choices imply: \\(\\scriptsize u(\\text{1 wine}, \\$y) &gt; u(\\text{0 wine}, \\$100 + \\$y) &gt; u(\\text{0 wine}, \\$y) &gt; u(\\text{1 wine}, \\$y - \\$35)\\)\n\nThis would only be possible were \\(u\\) extremely concave around \\(\\$y\\)."
+  },
+  {
+    "objectID": "reference-dependence.html#section-8",
+    "href": "reference-dependence.html#section-8",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Endowment effect\nThaler (JEBO, 1980) tells the following story.\n\nStory. Mr R bought wine at $5/bottle in 1958. A merchant later offers $100 per bottle; he refuses, though he never pays more than $35 for a bottle.\n\n\n\nUsing loss aversion: \\(\\small v(-\\text{1 wine}) + v(\\$100) &lt; v(0),\\,v(\\text{1 wine}) + v(-\\$35) &lt; v(0)\\) \\(\\small\\Rightarrow v(\\$100) &lt; -v(-\\text{1 wine}),\\,v(\\text{1 wine})&lt; -v(-\\$35).\\)"
+  },
+  {
+    "objectID": "reference-dependence.html#section-9",
+    "href": "reference-dependence.html#section-9",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Adding loss aversion\n\n\nSuppose now that cab drivers are loss averse. \\[\nu_\\lambda(h) = \\underbrace{wh + \\ell(T-h)}_{\\text{Standard}} + \\underbrace{g(wh - r).}_{\\text{Gain-loss } u}\n\\]\nIdea: Cab drivers have a daily reference income \\(r.\\) If they earn less, they experience a loss. If they earn more, they experience a gain."
+  },
+  {
+    "objectID": "reference-dependence.html#section-10",
+    "href": "reference-dependence.html#section-10",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Adding loss aversion\n\n\nSuppose now that cab drivers are loss averse. \\[\nu_\\lambda(h) = \\underbrace{wh + \\ell(T-h)}_{\\text{Standard}} + \\underbrace{g(wh - r).}_{\\text{Gain-loss } u}\n\\]\nGain-loss utility is a function: \\[\ng(wh - r) = \\begin{cases}\n\\eta(wh-r),\\, wh\\geq r, \\\\\n\\lambda\\eta(wh-r),\\, wh &lt; r.\n\\end{cases}\n\\]\nAbove, \\(\\lambda &gt; 1\\) is the loss aversion parameter and \\(\\eta&gt;0\\) is a utility weight."
+  },
+  {
+    "objectID": "reference-dependence.html#section-11",
+    "href": "reference-dependence.html#section-11",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Consequences\n\n\n\nThe left panel plots the solution w/o loss aversion.\nThe right panel plots the solution w/ loss aversion."
+  },
+  {
+    "objectID": "reference-dependence.html#section-12",
+    "href": "reference-dependence.html#section-12",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Consequences\n\n\n\nThe marginal benefit of working more jumps at \\(\\hat{h} =\\frac{r}{w}.\\)\nThis is where working more turns losses into gains.\nConsequently, the optimal solution may be to work exactly \\(\\hat{h}\\) hours. If so, hours decrease in \\(w.\\)"
+  },
+  {
+    "objectID": "reference-dependence.html#expectationsbased-loss-aversion-ebla",
+    "href": "reference-dependence.html#expectationsbased-loss-aversion-ebla",
+    "title": "Reference-dependent preferences",
+    "section": "Expectations‑Based Loss Aversion (EBLA)",
+    "text": "Expectations‑Based Loss Aversion (EBLA)\n(Kőszegi & Rabin QJE 2006)\n\n\nK&R propose a theory of endogenous reference points that are governed by rational expectations.\nThis should sound familiar to you.\nLA problem: We have a free model parameter \\(r\\).\nK&R solution: Say \\(r\\) is an expectation → assume expectations are rational → \\(r\\) is no longer a free parameter, but part of the model solution."
+  },
+  {
+    "objectID": "reference-dependence.html#section-13",
+    "href": "reference-dependence.html#section-13",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "EBLA Model Setup\n\n\nConsider an agent with utility consisting of a material and a reference-dependent part: \\[\n\\small u_{KR}(c|r) = m(c) + n(c|r).\n\\]\n\\(c = (c_1,\\ldots,c_K)\\) is a \\(K\\)-dimensional consumption vector and \\(r = (r_1,\\ldots,r_K)\\) is a \\(K\\)-dimensional reference vector.\nUtility is seperable accross dimensions: \\[\n\\small m(c) = \\sum_{k=1}^K m_k(c_k),\\, n(c|r) = \\sum_{k=1}^K n_k(c_k|r_k).\n\\]"
+  },
+  {
+    "objectID": "reference-dependence.html#section-14",
+    "href": "reference-dependence.html#section-14",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Utility is seperable accross dimensions: \\[\n\\small m(c) = \\sum_{k=1}^K m_k(c_k),\\, n(c|r) = \\sum_{k=1}^K n_k(c_k|r_k).\n\\]\nGain-loss utility is piecewise linear: \\[\n\\small\nn_k(c_k|r_k) = \\begin{cases}\n\\eta (m_k(c_k) - m_k(r_k)), m_k(c_k) \\geq m_k(r_k) \\\\\n\\lambda\\eta (m_k(c_k) - m_k(r_k)), m_k(c_k) &lt; m_k(r_k).\n\\end{cases}\n\\]\nHere, \\(\\lambda &gt; 1\\) measures loss aversion and \\(\\eta&gt;0\\) is a utility weight."
+  },
+  {
+    "objectID": "reference-dependence.html#section-15",
+    "href": "reference-dependence.html#section-15",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Why this may help\n\n\nThe stochastic reference point allows us to make the reference point endogenous to choices.\nSuppose the agent chooses lottery \\(L=(100,p;0,1-p)\\). They may plausibly perceive winning \\(100\\) more like a gain and winning \\(0\\) more like a loss.\nWe can now formalize this by assuming that \\(r=L:\\) \\[\n\\begin{align*}\n\\small U_{KR}(L|L) = p[p u(100|100) + (1-p)u(0|100)] + \\\\\n\\small (1-p)[p u(100|0) + (1-p) u(0|0)].\n\\end{align*}\n\\]"
+  },
+  {
+    "objectID": "reference-dependence.html#section-16",
+    "href": "reference-dependence.html#section-16",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Buying shoes\n\n\nSuppose our agent goes shopping for shoes. Set \\(K=2,\\) with \\(c_1\\in\\{0,1\\}\\) denoting whether they bought shoes and \\(c_2\\in\\mathbb{R}\\) denoting money. We assume that everything is linear: \\[\nu_{KR}(c|r) = c_1 + c_2 + \\mu(c_1|r_1) + \\mu(c_2|r_2).\n\\]\nBuying shoes costs \\(p.\\) There are two possible outcomes. Either A buys so that \\(c = (c_1 = 1, c_2 = -p)\\) or A doesn’t buy; \\(c = (c_1 = 0, c_2 = 0).\\)"
+  },
+  {
+    "objectID": "reference-dependence.html#section-17",
+    "href": "reference-dependence.html#section-17",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Buying shoes costs \\(p.\\) There are two possible outcomes. Either A buys so that \\(c = (c_1 = 1, c_2 = -p)\\) or A doesn’t buy; \\(c = (c_1 = 0, c_2 = 0).\\)\nBuying is an equilibrium if \\[\nu_{KR}((1,-p)|(1,-p)) \\geq u_{KR}((0,0)|(1,-p)).\n\\]\n\n\n\nWhy? If I expect to buy, my expectation is that I will end up with more shoes and less money. For this expectation to be justified, I must not have an incentive to violate my expectations and not buy."
+  },
+  {
+    "objectID": "reference-dependence.html#section-18",
+    "href": "reference-dependence.html#section-18",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Buying is an equilibrium if \\[\nu_{KR}((1,-p)|(1,-p)) \\geq u_{KR}((0,0)|(1,-p)).\n\\]\nIf A buys expecting to buy, A’s expectations are fulfilled; A neither experiences gain or loss. Hence, utility is equal to material utility: \\[\nu_{KR}((1,-p)|(1,-p)) = 1 - p.\n\\]"
+  },
+  {
+    "objectID": "reference-dependence.html#section-19",
+    "href": "reference-dependence.html#section-19",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Buying is an equilibrium if \\[\nu_{KR}((1,-p)|(1,-p)) \\geq u_{KR}((0,0)|(1,-p)).\n\\]\nIf A does not buy expecting to buy, two things happen.\n\nA experiences a loss in the shoe domain (expected \\(1\\) but received \\(0\\)).\nA experiences a gain in the money domain (expected \\(-p\\) loss but spent \\(0\\)). \\[\nu_{KR}((0,0)|(1,-p)) = \\lambda\\eta(0 - 1) + \\eta(0-(-p))\n\\]"
+  },
+  {
+    "objectID": "reference-dependence.html#section-20",
+    "href": "reference-dependence.html#section-20",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Buying is an equilibrium if \\[\nu_{KR}((1,-p)|(1,-p)) \\geq u_{KR}((0,0)|(1,-p)).\n\\]\nPlugging in what we found, buying is an equilibrium if: \\[\n1 - p \\geq \\lambda\\eta(0-1) + \\eta (0 - (-p)) \\Rightarrow\np \\leq \\frac{1 + \\eta\\lambda}{1 + \\eta}.\n\\]\n\n\n\nAnalogous calculations show that not buying is an equilibrium if \\[\np \\geq \\frac{1+\\eta}{1+\\lambda\\eta}.\n\\]"
+  },
+  {
+    "objectID": "reference-dependence.html#section-21",
+    "href": "reference-dependence.html#section-21",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "Shopping equilibrium\nWe can combine what we’ve learned to derive A’s demand function.\n\n\n\n(Both buying and not buying are an equilibrium in the overlapping middle region.)\n\n\nThis differs in two ways from classical demand:\n\nUnder classical demand, A buys whenever \\(p\\leq\\text{material utility}.\\) Here, if \\(p\\leq 1.\\)\nUnder classical demand, A either buys or doesn’t buy, with no multiple equilibria."
+  },
+  {
+    "objectID": "reference-dependence.html#section-22",
+    "href": "reference-dependence.html#section-22",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "This differs in two ways from classical demand:\n\nUnder classical demand, A buys whenever \\(p\\leq\\text{material utility}.\\) Here, if \\(p\\leq 1.\\)\nUnder classical demand, A either buys or doesn’t buy, with no multiple equilibria.\n\nThis is due to a complementarity between demand decision and gain-loss utility:\n\nA plans to buy → would feel a shoe loss from not buying → increased WTP.\nA plans not to buy → would feel a money loss from buying → decreased WTP."
+  },
+  {
+    "objectID": "reference-dependence.html#testing-ebla",
+    "href": "reference-dependence.html#testing-ebla",
+    "title": "Reference-dependent preferences",
+    "section": "Testing EBLA",
+    "text": "Testing EBLA\n\n\n\n\nEBLA is an elegant, parsimonious way to deal with the reference point, but is it empirically valid?\nAbeler, Falk, Goette, and Huffman (AER, 2011) experimentally test whether reference points are sensitive to expectations.\n\n\n\n\n\n\n\n\nParticipants can earn money by counting zeroes. Q: Does their counting effort depend on their expectations?"
+  },
+  {
+    "objectID": "reference-dependence.html#afgh-2011-design",
+    "href": "reference-dependence.html#afgh-2011-design",
+    "title": "Reference-dependent preferences",
+    "section": "AFGH (2011) Design",
+    "text": "AFGH (2011) Design\n\n\nParticipants can count up to one hour. At the end, they receive a payment:\n\nWith 50%, receive 20 cents per table.\nWith 50%, receive either 7€ (HI treatment) or 3€ (LO treatment)\n\nEBLA prediction: Participants in HI expect more than those in LO. Thus, they experience potentially higher losses. They should work harder."
+  },
+  {
+    "objectID": "reference-dependence.html#afgh-2011-results",
+    "href": "reference-dependence.html#afgh-2011-results",
+    "title": "Reference-dependent preferences",
+    "section": "AFGH (2011) Results",
+    "text": "AFGH (2011) Results\nParticipants in HI count on average more tables than in LO. This is in line with EBLA."
+  },
+  {
+    "objectID": "reference-dependence.html#so-ebla-is-a-resounding-success",
+    "href": "reference-dependence.html#so-ebla-is-a-resounding-success",
+    "title": "Reference-dependent preferences",
+    "section": "So EBLA is a resounding success?",
+    "text": "So EBLA is a resounding success?\n\n\nSome pushback comes from Gneezy, Goette, Sprenger, Zimmermann (JEEA, 2017). They use the AFGH design but explore a larger parameter space.\nSame task, but participants either receive a high payment \\(H\\) with probability \\(p\\), a low payment \\(L\\) with probability \\(q\\), or are paid a piece rate for their effort with \\(1-p-q.\\)\nTreatments vary values of \\(H,p,L,q\\)."
+  },
+  {
+    "objectID": "reference-dependence.html#section-23",
+    "href": "reference-dependence.html#section-23",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "GGSZ results\n\n\n\nThe left panel, middle two dots replicate, and confirm, AFGH experiment results. Far left and far right observation test even higher and lower fixed payment."
+  },
+  {
+    "objectID": "reference-dependence.html#section-24",
+    "href": "reference-dependence.html#section-24",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "GGSZ results\n\n\n\nWe would expect increasing effort. Why not? One possible reason is that, e.g., 14 is simply far too high to have any behavioral effect."
+  },
+  {
+    "objectID": "reference-dependence.html#section-25",
+    "href": "reference-dependence.html#section-25",
+    "title": "Reference-dependent preferences",
+    "section": "",
+    "text": "GGSZ results\n\n\n\nThe right panel varies the probability of receiving a \\(H\\) fixed payment instead of \\(L\\). Here, EBLA predicts a monotonous increase."
   }
 ]
