@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.9.36">
 
   <meta name="author" content="Tilman Fries">
-  <title>Beliefs (theory)</title>
+  <title>Beliefs</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -131,7 +131,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Beliefs (theory)</h1>
+  <h1 class="title">Beliefs</h1>
   <p class="subtitle">Probability Refresher, Bayesian Updating</p>
 
 <div class="quarto-title-authors">
@@ -550,14 +550,14 @@ P(A\cap B)=P(A)P(B).
 <p>By Bayes’ theorem, the agent’s belief after receiving signal <span class="math inline">\(s\)</span> is: <span class="math display">\[
 P(H|s) = \frac{P(H)P(s|H)}{P(s)}
 \]</span></p>
-<p>In the binary-binary model, we can the <span class="math inline">\(t=1\)</span> posterior belief as <span class="math display">\[
+<p>In the binary-binary model, the <span class="math inline">\(t=1\)</span> posterior belief is <span class="math display">\[
 p_1 = \frac{p_0 f^H(s_1)}{p_0 f^H(s_1) + (1-p_0)f^L(s_1)}.
 \]</span></p>
 </section>
 <section id="section-12" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <h3 id="solving-the-model-1">Solving the model</h3>
-<p>In the binary-binary model, we can the <span class="math inline">\(t=1\)</span> posterior belief as <span class="math display">\[
+<p>In the binary-binary model, the <span class="math inline">\(t=1\)</span> posterior belief is <span class="math display">\[
 p_1 = \frac{p_0 f^H(s_1)}{p_0 f^H(s_1) + (1-p_0)f^L(s_1)}.
 \]</span></p>
 <p>In <span class="math inline">\(t=2\)</span>, the <span class="math inline">\(t=1\)</span> posterior belief becomes the new prior: <span class="math display">\[
@@ -569,7 +569,8 @@ p_2 = \frac{p_1 f^H(s_2)}{p_1 f^H(s_2) + (1-p_1)f^L(s_2)}.
 <h3 id="solving-the-model-2">Solving the model</h3>
 <p>For general <span class="math inline">\(t\)</span>, beliefs follow a recursive structure: <span class="math display">\[
 p_t = \frac{p_{t-1} f^H(s_t)}{p_{t-1} f^H(s_t) + (1-p_{t-1})f^L(s_t)}.
-\]</span> Analogously, the belief in <span class="math inline">\(\omega=L\)</span> is <span class="math display">\[
+\]</span></p>
+<p>Analogously, the belief in <span class="math inline">\(\omega=L\)</span> is <span class="math display">\[
 1 - p_t = \frac{(1-p_{t-1})f^L(s_t)}{p_{t-1} f^H(s_t) + (1-p_{t-1})f^L(s_t)}.
 \]</span></p>
 </section>
@@ -674,7 +675,7 @@ p_t = \frac{p_{t-1} f^H(s_t)}{p_{t-1} f^H(s_t) + (1-p_{t-1})f^L(s_t)}.
 <h3 id="limits-and-advantages">Limits and Advantages</h3>
 <div class="no-bullets">
 <ul>
-<li>The <strong>bookbags and pokerchips</strong> paradigm allows for a precise comparison of beliefs to a Bayesian benchmark.</li>
+<li><strong>Bookbags and pokerchips</strong> allows for a precise comparison of beliefs to a Bayesian benchmark.</li>
 <li>But the beliefs that we are more interested in do not allow for the same, precise comparison:
 <ul>
 <li>Eg., it may be relevant to ask whether <em>financial markets</em> over- or underreact to information, or whether people learn rationally from <em>reading the news.</em> Finding the normative benchmark (how much people <em>should</em> react) is often impossible in these cases.</li>
@@ -887,8 +888,8 @@ R = p_1(1-p_1) - p_2(1-p_2).
 <h1>Over- vs.&nbsp;underinference</h1>
 
 </section>
-<section class="slide level2">
-
+<section id="qualitative-vs.-quantitative" class="slide level2">
+<h2>Qualitative vs.&nbsp;quantitative</h2>
 <div class="no-bullets">
 <ul>
 <li class="fragment"><p>Augenblick, Lazarus, Thaler (QJE, 2025) study why individuals sometimes over- and sometimes underinfer from data.</p></li>
@@ -919,7 +920,7 @@ R = p_1(1-p_1) - p_2(1-p_2).
 <li><p>ALT also aim for a test of reactions towards weak and strong signals in sports betting and financial markets.</p></li>
 <li><p>They propose that, in sports, news that are revealed early in the game are less informative about the game outcome than equivalent news revealed later.</p>
 <ul>
-<li>E.g., in football, scoring the first goal in min. 1 is less informative than scoring the first goal in min. 89.</li>
+<li>E.g., in football, scoring first goal in min. 1 is less informative than scoring1 first goal in min. 89.</li>
 </ul></li>
 <li><p>Based on this, they predict that <strong>belief movement &gt; uncertainty reduction</strong> early in the game and <strong>belief movement &lt; uncertainty reduction</strong> late in the game.</p></li>
 </ul>
