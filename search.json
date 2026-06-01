@@ -574,6 +574,195 @@
     "text": "Wrapping up\n\nClassical theory: \\(\\text{EU / SEU + concave utility}\\)\nPeople deviate from the linear probability weighting prediction of EU / SEU\nProbability weighting is better captured by \\(\\pi(p).\\)\nRisk attitudes: part preference, part a reaction to choice complexity.\nNon-linear prob. weighting leads to dominance violations, a theoretical solution exists but there is no empirical support for it."
   },
   {
+    "objectID": "beliefs.html#section",
+    "href": "beliefs.html#section",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "What about nonindependent events?\n\n\n\n\n\nIf \\(\\Omega\\) contains all human knowledge, then \\[\\small P(\\text{Knowledge I have}\\cup\\text{Knowledge required in exam}) &lt; \\\\\n\\small P(\\text{Knowledge I have}) + P(\\text{Knowledge required in exam}).\\]"
+  },
+  {
+    "objectID": "beliefs.html#section-1",
+    "href": "beliefs.html#section-1",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "What about nonindependent events?\n\n\nConsider two subsets \\(A,B\\subset\\Omega,\\) with \\(A\\cap B\\neq \\varnothing\\) (they are not independent).\nThen define:\n\n\\(\\small C \\equiv A\\cap B,\\, A'\\equiv A\\setminus C,\\, B' \\equiv B\\setminus C.\\)\n\nObserve that \\(\\small P(A\\cup B) = P(A'\\cup B' \\cup C).\\)\nBy the sum rule \\(\\small P(A'\\cup B' \\cup C) = P(A') + P(B') + P(C).\\)\nPlug in \\(\\scriptsize P(C) = P(A\\cap B),\\, P(A') = P(A) - P(C),\\, P(B') = P(B)-P(C)\\) to arrive at \\(\\small P(A\\cup B) = P(A) + P(B) - P(A\\cap B)\\)"
+  },
+  {
+    "objectID": "beliefs.html#section-2",
+    "href": "beliefs.html#section-2",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "The conditioning order matters\n\nSuppose that this is the true joint distribution of sports activity and injuries:\n\n\n\n\nPlay football\nPlay other sport\n\n\n\n\nInjury\n3.3%\n6.7%\n\n\nNo injury\n45%\n45%"
+  },
+  {
+    "objectID": "beliefs.html#section-3",
+    "href": "beliefs.html#section-3",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "The conditioning order matters\n\nSuppose that this is the true joint distribution of sports activity and injuries:\n\n\n\n\nPlay football\nPlay other sport\n\n\n\n\nInjury\n3.3%\n6.7%\n\n\nNo injury\n45%\n45%\n\n\n\n\n\n\nThe probability of play football conditional on injury is \\[\n\\small P(\\text{Play football} | \\text{Injury}) = \\frac{3.3\\%}{3.3\\% + 6.7\\%} = \\frac{1}{3}\n\\]"
+  },
+  {
+    "objectID": "beliefs.html#section-4",
+    "href": "beliefs.html#section-4",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "The conditioning order matters\n\nSuppose that this is the true joint distribution of sports activity and injuries:\n\n\n\n\nPlay football\nPlay other sport\n\n\n\n\nInjury\n3.3%\n6.7%\n\n\nNo injury\n45%\n45%\n\n\n\n\n\n\nThe probability of injury conditional on play football is \\[\n\\small P(\\text{Injury} | \\text{Play football}) = \\frac{3.3\\%}{3.3\\% + 45\\%} \\approx 6.8\\%\n\\]"
+  },
+  {
+    "objectID": "beliefs.html#section-5",
+    "href": "beliefs.html#section-5",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "The conditioning order matters\n\nSuppose that this is the true joint distribution of sports activity and injuries:\n\n\n\n\nPlay football\nPlay other sport\n\n\n\n\nInjury\n3.3%\n6.7%\n\n\nNo injury\n45%\n45%\n\n\n\n\n\n\nThe probability of injury conditional on play other sport is \\[\n\\small P(\\text{Injury} | \\text{Play other sport}) = \\frac{6.7\\%}{6.7\\% + 45\\%} \\approx 13.7\\%\n\\]"
+  },
+  {
+    "objectID": "beliefs.html#section-6",
+    "href": "beliefs.html#section-6",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Bayes’ theorem. If \\(A\\) and \\(B\\) are subsets of \\(\\Omega\\) and \\(P(A),P(B)&gt;0,\\) then\n\\[\n    P(A\\mid B)=\\frac{P(A)\\;P(B\\mid A)}{P(B)}.\n  \\]\n\nThis is an implication of the cond. probability definition. We know: \\[\n\\small P(A|B) = \\frac{P(A\\cap B)}{P(B)},\\, P(B|A) = \\frac{P(B\\cap A)}{P(A)}.\n\\]"
+  },
+  {
+    "objectID": "beliefs.html#section-7",
+    "href": "beliefs.html#section-7",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "This is an implication of the cond. probability definition. We know: \\[\n\\small P(A|B) = \\frac{P(A\\cap B)}{P(B)},\\, P(B|A) = \\frac{P(B\\cap A)}{P(A)}.\n\\]\nPlug these definitions into Bayes’ theorem and confirm that the rhs is equal to the lhs: \\[\n\\small \\frac{P(A\\cap B)}{P(B)} = \\frac{P(B\\cap A)}{P(A)}\\frac{P(A)}{P(B)} \\Rightarrow P(A\\cap B) = P(B\\cap A).\n\\]"
+  },
+  {
+    "objectID": "beliefs.html#section-8",
+    "href": "beliefs.html#section-8",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Martingale Property (Law of Iterated Expectations)\n\\[\n\\small \\mathbb{E}\\left[\\mathbb{E}[\\omega | B]\\right]=\\mathbb{E}[\\omega].\n\\]\n\nConditioning then averaging returns the unconditional mean.\nImplication. I cannot expect to change my expectation in any particular direction in the future."
+  },
+  {
+    "objectID": "beliefs.html#section-9",
+    "href": "beliefs.html#section-9",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Law of Iterated Expectations (Martingale Property)\n\\[\n\\small \\mathbb{E}\\left[\\mathbb{E}[\\omega | B]\\right]=\\mathbb{E}[\\omega].\n\\]\n\nE.g., denote tomorrow’s expected temperature by \\(\\mathbb{E}[T].\\) This expectation might change depending on a future weather report, \\(\\mathbb{E}[T|\\text{weather rep.}].\\) However, not knowing the future weather report, \\(\\mathbb{E}[\\mathbb{E}[T|\\text{weather report}]] = \\mathbb{E}[T].\\)\nI cannot expect that listening to the weather report will make me more optimistic about tomorrow’s weather."
+  },
+  {
+    "objectID": "beliefs.html#section-10",
+    "href": "beliefs.html#section-10",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Beliefs = Subjective Probabilities\n\n\nSEU implies individual beliefs must obey probability laws.\nThis has profound implications:\n\nWhen learning new information, beliefs are updated according to Bayes’ rule.\nBeliefs adhere to the martingale property."
+  },
+  {
+    "objectID": "beliefs.html#section-11",
+    "href": "beliefs.html#section-11",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Solving the model\nBy Bayes’ theorem, the agent’s belief after receiving signal \\(s\\) is: \\[\nP(H|s) = \\frac{P(H)P(s|H)}{P(s)}\n\\]\nIn the binary-binary model, we can the \\(t=1\\) posterior belief as \\[\np_1 = \\frac{p_0 f^H(s_1)}{p_0 f^H(s_1) + (1-p_0)f^L(s_1)}.\n\\]"
+  },
+  {
+    "objectID": "beliefs.html#section-12",
+    "href": "beliefs.html#section-12",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Solving the model\nIn the binary-binary model, we can the \\(t=1\\) posterior belief as \\[\np_1 = \\frac{p_0 f^H(s_1)}{p_0 f^H(s_1) + (1-p_0)f^L(s_1)}.\n\\]\nIn \\(t=2\\), the \\(t=1\\) posterior belief becomes the new prior: \\[\np_2 = \\frac{p_1 f^H(s_2)}{p_1 f^H(s_2) + (1-p_1)f^L(s_2)}.\n\\]"
+  },
+  {
+    "objectID": "beliefs.html#section-13",
+    "href": "beliefs.html#section-13",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Solving the model\nFor general \\(t\\), beliefs follow a recursive structure: \\[\np_t = \\frac{p_{t-1} f^H(s_t)}{p_{t-1} f^H(s_t) + (1-p_{t-1})f^L(s_t)}.\n\\] Analogously, the belief in \\(\\omega=L\\) is \\[\n1 - p_t = \\frac{(1-p_{t-1})f^L(s_t)}{p_{t-1} f^H(s_t) + (1-p_{t-1})f^L(s_t)}.\n\\]"
+  },
+  {
+    "objectID": "beliefs.html#section-14",
+    "href": "beliefs.html#section-14",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Long-run beliefs\n\nProposition. In the binary-binary model, posterior beliefs converge to the truth as the number of signals grows to infinity.\n\n(Proof on board)"
+  },
+  {
+    "objectID": "beliefs.html#section-15",
+    "href": "beliefs.html#section-15",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Meta-analytical Results\nBenjamin (2019) provides a meta-analysis summarizing more than 50 years of research."
+  },
+  {
+    "objectID": "beliefs.html#section-16",
+    "href": "beliefs.html#section-16",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Meta-analytical Results\n\n\n\nThe figure plots participant estimates (y-axis) vs. Bayesian estimates (x-axis).\nParticipant estimates are compressed towards their prior.\n\nThis is commonly known as conservatism bias: People revise their beliefs in the correct direction but not far enough."
+  },
+  {
+    "objectID": "beliefs.html#section-17",
+    "href": "beliefs.html#section-17",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Potential Empirical Setup\n\n\nSuppose we can identify an empirical setting with a binary state that can be true or false, \\(\\small\\Omega = \\{T,F\\}.\\) Many potential scenarios:\n\nWhether the Strait of Hormuz will be open by August.\nWhether inflation will be higher than GDP growth this year.\nWhether German bureaucracy will be digitalized by 2035."
+  },
+  {
+    "objectID": "beliefs.html#section-18",
+    "href": "beliefs.html#section-18",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Potential Empirical Setup\n\n\nSuppose we can identify an empirical setting with a binary state that can be true or false, \\(\\small\\Omega = \\{T,F\\}.\\)\nIn such a setting, we could repeatedly ask participants for \\(P_t(\\omega = T)\\) at different \\(t,\\) denoted as \\(p_t.\\)\n\nOr we could simply use betting market data.\n\nThe nice thing when the state is binary is that eliciting \\(p_t\\) pins down the whole belief distribution: \\[\n\\mu_t(\\omega = T) = p_t,\\,\\mu_t(\\omega = F) = 1 - p_t,\\, \\text{Var}_{\\mu_t} = p_t(1-p_t).\n\\]"
+  },
+  {
+    "objectID": "beliefs.html#section-19",
+    "href": "beliefs.html#section-19",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Potential Empirical Setup\n\n\nWe can additionally define belief movement and uncertainty reduction between \\(t=1\\) and \\(t=2\\).\n\n\n\nDefinition. Belief movement \\(M\\) denotes by how much beliefs change between the evaluation periods 1 and 2: \\[\nM = (p_2 - p_1)^2.\n\\]"
+  },
+  {
+    "objectID": "beliefs.html#section-20",
+    "href": "beliefs.html#section-20",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Potential Empirical Setup\n\n\nWe can additionally define belief movement and uncertainty reduction between \\(t=1\\) and \\(t=2\\).\n\n\n\nDefinition. Uncertainty reduction \\(R\\) denotes the reduction in belief variance between periods 1 and 2: \\[\nR = p_1(1-p_1) - p_2(1-p_2).\n\\]"
+  },
+  {
+    "objectID": "beliefs.html#section-21",
+    "href": "beliefs.html#section-21",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Illustration w/ betting market data\n\n\n\n\n\n\n\n\nOn the left, belief \\(\\mu_t(\\text{BAR wins})\\) starts at &gt;50% and moves towards 100% over time. As beliefs move, uncertainty is reduced…"
+  },
+  {
+    "objectID": "beliefs.html#section-22",
+    "href": "beliefs.html#section-22",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Illustration w/ betting market data\n\n\n\n\n\n\n\n\nOn the right, belief starts at &lt;20% and moves to 60% over time. Here, we observe belief movement and an increase in uncertainty."
+  },
+  {
+    "objectID": "beliefs.html#section-23",
+    "href": "beliefs.html#section-23",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Illustration w/ betting market data\n\n\n\n\n\n\n\n\nThe proposition tells us that beliefs should move like the beliefs on the left most of the time."
+  },
+  {
+    "objectID": "beliefs.html#section-24",
+    "href": "beliefs.html#section-24",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Illustration w/ betting market data\n\n\n\n\n\n\n\n\nWhile belief uncertainty can increase sometimes, this should be an exception, not the rule."
+  },
+  {
+    "objectID": "beliefs.html#section-25",
+    "href": "beliefs.html#section-25",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Testing with real forecasts\n\n\n\nExcess movement is defined as \\(M - R.\\)\nExperts (Col. 1) overshoot: \\(\\mathbb E[M]&gt;\\mathbb E[R]\\) by \\(\\approx 20\\%.\\)"
+  },
+  {
+    "objectID": "beliefs.html#section-26",
+    "href": "beliefs.html#section-26",
+    "title": "Beliefs (theory)",
+    "section": "",
+    "text": "Testing with real forecasts\n\n\n\nAlgorithm & betting markets (cols 2 + 3) are much closer to the benchmark.\nBut betting market movement still overshoots by \\(\\approx 4.6\\%.\\)"
+  },
+  {
     "objectID": "big-ideas.html#section",
     "href": "big-ideas.html#section",
     "title": "Four Big Ideas",
@@ -844,7 +1033,7 @@
     "href": "index.html",
     "title": "Behavioral Economic Theory Slides",
     "section": "",
-    "text": "Welcome to the course slides. Choose a deck below:\n\nIntroduction\nBig Ideas\nExpected Utility & Its Critiques\nReference Dependence\nTime Preferences"
+    "text": "Welcome to the course slides. Choose a deck below:\n\nIntroduction\nBig Ideas\nExpected Utility & Its Critiques\nReference Dependence\nTime Preferences\nBeliefs"
   },
   {
     "objectID": "reference-dependence.html#section",
